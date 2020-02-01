@@ -80,6 +80,7 @@
 
 - [x] 페이지 레이아웃 파악을 위한 PC 시안 벤치마킹. - Sohyun
 - [x] 페이지 구성을 위한 와이어프레임 작성. - Sohyun
+- [x] 와이어프레임 통합 문서작성 Mobile , PC v0.3 - Sohyun
 - [ ] 해당 와이어 프레임으로 html, css 작업. -Sohyun
 - [ ] Create React App init.
 
@@ -100,3 +101,4 @@
 - 2020 01 30 퍼블리싱 Node Sass Dev Dependencies로 설치.
 - 2020 01 31 와이어 프레임 html, css작업.
 - 2020 02 01 Create React App init.
+- 2020 02 01 와이어 프레임 통합 문서작성 v0.3.

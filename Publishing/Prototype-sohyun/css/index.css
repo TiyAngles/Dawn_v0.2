@@ -1,0 +1,124 @@
+@charset "utf-8";
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+#wrapper {
+  max-width: 375px;
+  width: 375px;
+  margin: 0 auto;
+  text-align: center;
+}
+header {
+  widows: 100%;
+  height: 200px;
+  line-height: 100px;
+  background: #ff9900;
+}
+.header-nav {
+  width: 100%;
+  height: 60px;
+  background: #a30000;
+  line-height: 60px;
+}
+.header-nav::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.header-nav > h1 {
+  float: left;
+  width: 30%;
+  background: #ffadad;
+}
+.header-nav > .icon {
+  float: right;
+}
+.header-nav > .icon > div {
+  float: left;
+}
+.header-nav > .icon .search-icon {
+  padding: 0 5px;
+  background: #ff8e8e;
+}
+.header-nav > .icon .ham-icon {
+  margin-left: 10px;
+  padding: 0 10px;
+  background: #fa4949;
+}
+nav {
+  width: 100%;
+  padding: 30px 0;
+  background: #ffee00;
+}
+nav > .theme {
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  margin-top: 10px;
+  background: #95f100;
+}
+nav > .area {
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  margin-top: 10px;
+  background: #34d603;
+}
+nav > .season {
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  margin-top: 10px;
+  background: #00c030;
+}
+section > .theme-slide {
+  width: 100%;
+  padding: 50px 0;
+  background: #46dbf5;
+}
+section > .area-slide {
+  width: 100%;
+  padding: 50px 0;
+  background: #46a6f5;
+}
+section > .season-slide {
+  width: 100%;
+  padding: 50px 0;
+  background: #468cf5;
+}
+footer {
+  background: #c26ef3;
+}
+footer::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+footer > p:nth-child(1) {
+  float: left;
+  width: 42%;
+  margin: 20px 0 0 30px;
+}
+footer > p:nth-child(2) {
+  float: right;
+  width: 42%;
+  margin: 20px 30px 0 0;
+}
+footer > ul {
+  width: 100%;
+}
+footer > ul li {
+  display: inline-block;
+  margin-top: 10px;
+}
+footer > h2 {
+  margin-top: 10px;
+}
+footer > h3 {
+  margin-top: 10px;
+  padding-bottom: 20px;
+}

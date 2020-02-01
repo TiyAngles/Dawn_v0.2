@@ -4,7 +4,5 @@
   "repository": "https://github.com/TiyAngles/Dawn.git",
   "author": "vapvin <tpehdj12@daum.net>",
   "license": "MIT",
-  "devDependencies": {
-    "node-sass": "^4.13.1"
-  }
+  "devDependencies": {}
 }

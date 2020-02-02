@@ -115,8 +115,11 @@
   line-height: 40px;
   background: #acacac;
 }
-/* 슬라이드영역 */
-#content .hp-slide > .swiper-wrapper .swiper-slide a {
+/* hp-슬라이드영역 */
+#content .hp-slide > .swiper-wrapper .swiper-slide .slide-margin {
+  margin-left: 100px;
+}
+#content .hp-slide > .swiper-wrapper .swiper-slide .slide-margin a {
   display: block;
   width: 300px;
   height: 300px;
@@ -126,11 +129,11 @@
   line-height: 300px;
   background-color: #a3c6d6;
 }
-/* info 영역 */
-#content .hp-slide > .swiper-wrapper .swiper-slide .hp-info {
+/* hp-info 영역 */
+#content .hp-slide > .swiper-wrapper .swiper-slide .slide-margin .hp-info {
   margin-top: 50px;
 }
-#content .hp-slide > .swiper-wrapper .swiper-slide .hp-info li {
+#content .hp-slide > .swiper-wrapper .swiper-slide .slide-margin .hp-info li {
   margin-bottom: 10px;
 }
 /* 2-4. hot place영역 */

@@ -1,0 +1,7 @@
+{
+  "name": "Dawn-Server",
+  "version": "1.0.0",
+  "description": "Dawn Server with Node, Graphql, Prisma",
+  "main": "index.js",
+  "license": "MIT"
+}

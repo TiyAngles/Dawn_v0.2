@@ -1,0 +1,52 @@
+# HTML 제목
+ - 제목은 <h1> to <h6> 태그로 정의됩니다.
+ - <h1> 가장 중요한 제목을 정의합니다. <h6>가장 중요한 제목을 정의합니다.
+ - 예 : 
+<h1>Heading 1</h1>
+<h2>Heading 2</h2>
+<h3>Heading 3</h3>
+<h4>Heading 4</h4>
+<h5>Heading 5</h5>
+<h6>Heading 6</h6>
+
+# 제목이 중요하다.
+ - 검색 엔진은 표제를 사용하여 웹 페이지의 구조 및 컨텐츠를 색인화합니다.
+ - 사용자는 종종 제목으로 페이지를 훑어 봅니다. 문서 구조를 표시하려면 제목을 사용하는 것이 중요합니다.
+ - <h1>제목은 주 제목에 사용되어야하고 그 뒤에 <h2>제목이 사용되며 그 다음에 덜 중요한 <h3>를 사용합니다.
+ - 제목에만 HTML 제목을 사용하십시오.
+
+# 더 큰 제목
+ - 각 HTML 제목에는 기본 크기가 있습니다. 그러나 style CSS font-size 속성을 사용하여 속성이 있는 제목의 크기를 지정할 수 있습니다.
+ - 예 : <h1 style = "font-size:60px;">Heading 1</h1>
+
+# HTML 수평 규칙
+ - <hr>태그는 HTML 페이지에서 주제 휴식을 정의하고, 가장 자주 수평선으로 표시됩니다.
+ - 이 <hr>요소는 HTML 페이지에서 컨텐츠를 분리하거나 변경을 정의하는데 사용됩니다.
+예 :
+<h1>This is heading 1</h1>
+<p>This is some text.</p>
+<hr>
+<h2>This is heading 2</h2>
+<p>This is some other text.</p>
+<hr>
+
+# HTML <head> 요소
+ - HTML <head> 요소는 메타 데이터를 위한 컨테이너 입니다. HTML 메타 데이터는 HTML문서에 대한 데이터 입니다.
+   메타 데이터가 표시되지 않습니다.
+ - <head>소자 사이에 배치되어 <html>태그와 <body>태그 :
+예 : 
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>My First HTML</title>
+  <meta charset="UTF-8">
+</head>
+
+<body>
+.
+.
+.
+
+ - 참고 : 메타 데이터는 일반적으로 문서 제목, 문자 세트, 스타일, 스크립트 및 기타 메타 정보를 정의합니다.
+

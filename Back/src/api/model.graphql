@@ -1,0 +1,41 @@
+type User {
+    id: ID!
+    password: String!
+    avatar: String
+    username: String!
+    email: String!
+    gender: String!
+    firstName: String!
+    lastName: String!
+    status: String
+    follower: [User]
+    following: [User]
+}
+
+type Post {
+    id: ID!
+    description: String!
+    user: User!
+    file: [File!]!
+    location: String!
+    like: [Like!]!
+    likeStatus: Boolean!
+    likeCount: Int!
+    comment: [Comment!]!
+}
+
+type Comment {
+    
+}   
+
+type Chat {
+
+}   
+
+type File {
+
+}
+
+type Like {
+
+}

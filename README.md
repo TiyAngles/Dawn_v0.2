@@ -83,6 +83,7 @@
   - [ ] Place 항목은 -> 좋아요한 갯수?
 
 #### 데이터 모델
+```
 User {
     id: ID!
     password: String!
@@ -108,6 +109,7 @@ Post {
     likeCount: Int!
     comment: [Comment!]!
 } - 작성자: 예니
+```
 
 ### 공통사항
 

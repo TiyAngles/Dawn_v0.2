@@ -1,4 +1,57 @@
 type User {
   id: ID! @id
-  name: String!
+  password: String! @unique
+  avatar: String
+  username: String! @unique
+  email: String! @unique
+  gender: String!
+  firstName: String! @default(value:'')
+  lastName: String!
+  status: String //상태메세지
+  follower: [User] @relation(name:'FollowRelation')
+  following: [User] @relation(name:'FollowRelation')
+}
+
+type Post {
+  id: ID! @id
+  description: String!
+  user: User! //relation
+  file: [File!]! //relation
+  location: String!
+  like: [Like!]! //relation
+  likeStatus: Boolean!
+  likeCount: Int!
+  comment: [Comment!]! //relation
+}
+
+type Comment {
+  id: ID! @id
+  text: String!
+  user: User! //relation
+  post: Post! //relation
+}
+
+type Like {
+  id: ID! @id
+  user: User! //relation
+  post: Post! //relation
+}
+
+type File {
+  id: ID! @id
+  url: String!
+  post: Post! //relation
+}
+
+type Chat {
+  id: ID! @id
+  member: [User!]!
+  message: [Message!]!
+}
+
+type Message {
+  id: ID! @id
+  text: String!
+  sender: User! //relation
+  receiver: User! //relation
 }

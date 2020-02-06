@@ -25,17 +25,26 @@ type Post {
 }
 
 type Comment {
-    
+    id: ID!
+    text: String!
+    user: User!
+    post: Post!
 }   
 
 type Chat {
-
+    id: ID!
+    user: User!
+    post: Post!
 }   
 
 type File {
-
+    id: ID!
+    url: String!
+    post: Post!
 }
 
 type Like {
-
+    id: ID!
+    member: [User!]!
+    message: [Message!]!
 }

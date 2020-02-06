@@ -82,6 +82,33 @@
   - [ ] 댓글은 리얼타임
   - [ ] Place 항목은 -> 좋아요한 갯수?
 
+#### 데이터 모델
+User {
+    id: ID!
+    password: String!
+    avatar: String
+    username: String!
+    email: String!
+    gender: String!
+    firstName: String!
+    lastName: String!
+    status: String
+    follower: [User]
+    following: [User]
+}
+
+Post {
+    id: ID!
+    description: String!
+    user: User!
+    file: [File!]!
+    location: String!
+    like: [Like!]!
+    likeStatus: Boolean!
+    likeCount: Int!
+    comment: [Comment!]!
+} - 작성자: 예니
+
 ### 공통사항
 
 - git은 절대 마스터에 푸쉬하지않습니다. 각자 브랜치 생성후 작업 후 브랜치에 푸쉬 및 Pull Request 작성

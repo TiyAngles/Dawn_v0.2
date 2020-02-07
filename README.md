@@ -83,31 +83,65 @@
   - [ ] Place 항목은 -> 좋아요한 갯수?
 
 #### 데이터 모델
+```
 User {
-    id: ID!
-    password: String!
-    avatar: String
-    username: String!
-    email: String!
-    gender: String!
-    firstName: String!
-    lastName: String!
-    status: String
-    follower: [User]
-    following: [User]
+  id: ID! @id
+  password: String! @unique
+  avatar: String
+  username: String! @unique
+  email: String! @unique
+  gender: String!
+  firstName: String! @default(value:'')
+  lastName: String!
+  status: String //상태메세지
+  follower: [User] @relation(name:'FollowRelation')
+  following: [User] @relation(name:'FollowRelation')
 }
 
 Post {
-    id: ID!
-    description: String!
-    user: User!
-    file: [File!]!
-    location: String!
-    like: [Like!]!
-    likeStatus: Boolean!
-    likeCount: Int!
-    comment: [Comment!]!
-} - 작성자: 예니
+  id: ID! @id
+  description: String!
+  user: User! //relation
+  file: [File!]! //relation
+  location: String!
+  like: [Like!]! //relation
+  likeStatus: Boolean!
+  likeCount: Int!
+  comment: [Comment!]! //relation
+}
+
+Comment {
+  id: ID! @id
+  text: String!
+  user: User! //relation
+  post: Post! //relation
+}
+
+Like {
+  id: ID! @id
+  user: User! //relation
+  post: Post! //relation
+}
+
+File {
+  id: ID! @id
+  url: String!
+  post: Post! //relation
+}
+
+Chat {
+  id: ID! @id
+  member: [User!]!
+  message: [Message!]!
+}
+
+Message {
+  id: ID! @id
+  text: String!
+  sender: User! //relation
+  receiver: User! //relation
+}
+```
 
 ### 공통사항
 
@@ -128,19 +162,21 @@ Post {
 - [ ] 글쓰기 에디터 = 추천,문의하기 둘다 사용가능하게 와이어프레임 제작. -Sohyun
 - [ ] 상세 페이지 = 댓글 리스트형식 (지도영역 밑으로 배치예정), 에디터 와이어프레임 수정. -Sohyun
 - [ ] 서브 페이지 = 유저가 추천가능하게 글작성 영역 만들기 와이어프레임 수정. -Sohyun
+- [x] 게시판 와이어프레임 작성 -kangdonghune
 
 ---
 
 ### 이슈사항 리스트
 
-- [ ] 퍼블리싱 팀에서 추가적인 페이지 및 레이아웃 기획 필요. - Vins
-- [ ] 프론트분들 git pull을 통해서 리엑트를 로컬에 받아주시고 오류없는지 확인 부탁드립니다. - Vins
+- [x] 퍼블리싱 팀에서 추가적인 페이지 및 레이아웃 기획 필요. - Vins
+- [x] 프론트분들 git pull을 통해서 리엑트를 로컬에 받아주시고 오류없는지 확인 부탁드립니다. - Vins
 - [ ] 퍼블리싱팀 02.03 ~ 02.07 헤더구현된 메인,서브페이지 디자인작업 하실때 폭은 640고정에 이미지배치, 본인이 생각한 텍스트 작업 부탁 드리겠습니다. 폰트는 웹폰트로 하시되 배치시 그리드에 맞춰주시면 좋습니다. -Sohyun
 - [ ] 마이페이지 Place 항목 -> 유저가 좋아요 누른게시물 카운팅으로 변경
 - [ ] 소셜로그인
 - [ ] 추가페이지 생성으로 와이어프레임 수정,추가. -Sohyun
 - [x] 퍼블리싱 -> 시멘틱태그 사용
 - [ ] 퍼블리싱 -> SCSS 사용하나요?
+- [ ] relation 작성필요.
 
 ---
 
@@ -156,3 +192,4 @@ Post {
 - 2020 02 02 소현 프로토 업로드.
 - 2020 02 03 와이어프레임으로 디자인 작업
 - 2020 02 05 추가페이지 생성으로 와이어프레임 수정,추가.
+- 2020 02 07 데이터 모델 추가

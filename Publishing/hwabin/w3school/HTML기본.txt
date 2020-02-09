@@ -1,0 +1,37 @@
+# 제목태그
+- <h1>~<h6>
+- 중요한 제목을 정의한다.
+
+# <p>태그
+ - HTML의 단락은 <p>태그로 정의한다.
+
+# <a>태그
+ - 예 : <a href="https://www.w3schools.com">This is a link</a>
+ - 링크대상이 href속성에 지정되어 있다.
+ - 속성은 HTML 요소에 대한 추가 정보를 제공하는 데 사용된다.
+ 
+# HTML 이미지
+ - HTML 이미지는 <img> 태그.
+ - 소스 파일 (src), 대체 텍스트 (alt) width,height 속성으로 제공된다.
+ - 예 : <img src="w3schools.jpg" alt="W3Schools.com" width="104" height="142">
+
+# HTML 버튼
+ - 예 : <button>Click Me</button>
+
+# HTML 목록
+ - HTMl 목록은 <ul>(정렬되지않은/글 머리 기호목록)
+ - <ol> (순서 / 번호가 매겨진 목록)
+ - <li>아이템태그 
+ - 예 : 
+
+<ul>
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ul>
+
+<ol>
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ol>

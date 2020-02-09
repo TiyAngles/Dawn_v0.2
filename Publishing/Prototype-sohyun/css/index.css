@@ -7,118 +7,187 @@
   box-sizing: border-box;
 }
 #wrapper {
-  max-width: 375px;
-  width: 375px;
+  max-width: 1440px;
+  width: 1440px;
   margin: 0 auto;
+}
+/* 1.header영역 */
+#header {
+  background: #282828;
+}
+#header::after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+#header h1 {
+  float: left;
+  width: 100px;
+  height: 50px;
   text-align: center;
+  line-height: 50px;
+  background: #919191;
 }
-header {
-  widows: 100%;
-  height: 200px;
-  line-height: 100px;
-  background: #ff9900;
+#header .header-layout {
+  float: right;
+  height: 50px;
+  line-height: 50px;
+  background: #ccc;
 }
-.header-nav {
-  width: 100%;
-  height: 60px;
-  background: #a30000;
-  line-height: 60px;
-}
-.header-nav::after {
-  content: "";
+#header .header-layout::after {
+  content: " ";
   display: block;
   clear: both;
 }
-.header-nav > h1 {
+#header .search-form {
   float: left;
-  width: 30%;
-  background: #ffadad;
+  background: #888888;
 }
-.header-nav > .icon {
+#header .gnb {
   float: right;
+  margin-left: 30px;
+  border: 1px solid #000;
 }
-.header-nav > .icon > div {
-  float: left;
-}
-.header-nav > .icon .search-icon {
-  padding: 0 5px;
-  background: #ff8e8e;
-}
-.header-nav > .icon .ham-icon {
-  margin-left: 10px;
-  padding: 0 10px;
-  background: #fa4949;
-}
-nav {
-  width: 100%;
-  padding: 30px 0;
-  background: #ffee00;
-}
-nav > .theme {
-  width: 100%;
-  height: 60px;
-  line-height: 60px;
-  margin-top: 10px;
-  background: #95f100;
-}
-nav > .area {
-  width: 100%;
-  height: 60px;
-  line-height: 60px;
-  margin-top: 10px;
-  background: #34d603;
-}
-nav > .season {
-  width: 100%;
-  height: 60px;
-  line-height: 60px;
-  margin-top: 10px;
-  background: #00c030;
-}
-section > .theme-slide {
-  width: 100%;
-  padding: 50px 0;
-  background: #46dbf5;
-}
-section > .area-slide {
-  width: 100%;
-  padding: 50px 0;
-  background: #46a6f5;
-}
-section > .season-slide {
-  width: 100%;
-  padding: 50px 0;
-  background: #468cf5;
-}
-footer {
-  background: #c26ef3;
-}
-footer::after {
-  content: "";
-  display: block;
-  clear: both;
-}
-footer > p:nth-child(1) {
-  float: left;
-  width: 42%;
-  margin: 20px 0 0 30px;
-}
-footer > p:nth-child(2) {
-  float: right;
-  width: 42%;
-  margin: 20px 30px 0 0;
-}
-footer > ul {
-  width: 100%;
-}
-footer > ul li {
+#header .gnb li {
   display: inline-block;
-  margin-top: 10px;
 }
-footer > h2 {
-  margin-top: 10px;
+/* 1.header영역 */
+/* 2.content영역 */
+/* 2-1. banner-slide영역 */
+#content .banner-slide > .swiper-wrapper a:nth-child(odd) {
+  background: #f1c9c9;
 }
-footer > h3 {
-  margin-top: 10px;
-  padding-bottom: 20px;
+#content .banner-slide > .swiper-wrapper a:nth-child(even) {
+  background: #ececae;
 }
+#content .banner-slide > .swiper-wrapper .swiper-slide {
+  width: 100%;
+  height: 300px;
+  text-align: center;
+  font-size: 48px;
+  font-weight: bold;
+  line-height: 300px;
+}
+/* 2-1. banner-slide영역 */
+/* 2-2. travel form영역 */
+#content .trv-form {
+  background: #6b6b6b;
+}
+#content .trv-form input {
+  width: 80%;
+  height: 50px;
+}
+/* 2-2. travel form영역 */
+/* 2-3. travel choice영역 */
+#content .trv-choice::after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+#content .trv-choice h2 {
+  height: 40px;
+  font-size: 20px;
+  line-height: 40px;
+  background: #acacac;
+}
+#content .trv-choice > a {
+  display: block;
+  float: left;
+  width: 33.33%;
+  height: 100px;
+  text-align: center;
+  line-height: 100px;
+}
+#content .trv-choice .theme {
+  background: #9ccaf0;
+}
+#content .trv-choice .area {
+  background: #84beee;
+}
+#content .trv-choice .season {
+  background: #65b0ee;
+}
+/* 2-3. travel choice영역 */
+/* 2-4. hot place영역 */
+#content .hot-place h2 {
+  height: 40px;
+  font-size: 20px;
+  line-height: 40px;
+  background: #acacac;
+}
+/* hp-슬라이드영역 */
+#content .hp-slide > .swiper-wrapper .swiper-slide .slide-margin {
+  margin-left: 100px;
+}
+#content .hp-slide > .swiper-wrapper .swiper-slide .slide-margin a {
+  display: block;
+  width: 300px;
+  height: 300px;
+  text-align: center;
+  font-size: 48px;
+  font-weight: bold;
+  line-height: 300px;
+  background-color: #a3c6d6;
+}
+/* hp-info 영역 */
+#content .hp-slide > .swiper-wrapper .swiper-slide .slide-margin .hp-info {
+  margin-top: 50px;
+}
+#content .hp-slide > .swiper-wrapper .swiper-slide .slide-margin .hp-info li {
+  margin-bottom: 10px;
+}
+/* 2-4. hot place영역 */
+/* 3. footer영역 */
+#footer {
+  margin-top: 50px;
+}
+#footer .terms {
+  background: #ccc;
+}
+#footer .terms li {
+  display: inline-block;
+  margin-left: 20px;
+}
+#footer .company {
+  background: #b1b1b1;
+  height: 40px;
+  line-height: 40px;
+}
+#footer .company::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+#footer .company h1 {
+  float: left;
+  width: 50px;
+  margin-left: 20px;
+  text-align: center;
+  background: #686868;
+}
+#footer .company p {
+  float: left;
+  width: 200px;
+  margin-left: 20px;
+  text-align: center;
+  background: #4e4e4e;
+}
+#footer .sns {
+  height: 50px;
+  line-height: 50px;
+  background: #9e9e9e;
+}
+#footer .sns li {
+  display: inline-block;
+  margin-left: 20px;
+}
+#footer .sns li i {
+  font-size: 18px;
+}
+#footer > p {
+  height: 30px;
+  padding-left: 20px;
+  line-height: 30px;
+  background: #5e5e5e;
+}
+/* 3. footer영역 */

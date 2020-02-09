@@ -1,0 +1,11 @@
+type Mutation {
+    Account(
+        id: String!
+        password: String!
+        username: String!
+        email: String!
+        gender: String!
+        firstName: String!
+        lastName: String!
+    ): User!
+}

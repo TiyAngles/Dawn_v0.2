@@ -23,7 +23,7 @@
 - title : 18px
 - 본문 : 16px
 - 숫자, 버튼, 푸터 : 14px
-- letter-spacing : 포토샵기준
+- letter-spacing : 포토샵기준-25
 - 주 색상 : #2e8bff
 - 글자 색상 : #282828
 

@@ -5,17 +5,18 @@ type User {
   username: String! @unique
   email: String! @unique
   gender: String!
-  firstName: String! @default(value:'')
+  firstName: String! @default(value:"")
   lastName: String!
   status: String //상태메세지
-  follower: [User] @relation(name:'FollowRelation')
-  following: [User] @relation(name:'FollowRelation')
+  follower: [User] @relation(name:"FollowRelation")
+  following: [User] @relation(name:"FollowRelation")
+  posts: [Post!]! @relatiom(name: "PostsInUser", onDelete: CASCADE)
 }
 
 type Post {
   id: ID! @id
   description: String!
-  user: User! //relation
+  user: User @relation(name: "PostsInUser")
   file: [File!]! //relation
   location: String!
   like: [Like!]! //relation

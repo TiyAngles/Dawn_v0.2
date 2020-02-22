@@ -13,4 +13,20 @@
 
 ### 디자인 정보
 
+- Traveler 디자인은 psd-design 폴더안의 sohyun폴더에 v0.1 있습니다
+- 디자인 환경설정
+- 영문 : Roboto Condensed
+- 한글 : Noto-Sans-KR
+- h1 : 36px
+- h2 : 32px
+- h3 : 28px
+- title : 18px
+- 본문 : 16px
+- 숫자, 버튼, 푸터 : 14px
+- letter-spacing : 포토샵기준-25
+- 주 색상 : #2e8bff
+- 글자 색상 : #3c3c3c
+
+- 추가로 나오는 디자인 색상은 작업후에 한꺼번에 업데이트 하도록 하겠습니다. -Sohyun
+
 ---

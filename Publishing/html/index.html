@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="css/style.css">
     <script src="https://kit.fontawesome.com/164552570a.js" crossorigin="anonymous"></script>
     <script src="js/common.js"></script>
+    <script src="js/jquery-1.12.3.min.js"></script>
+    <script src="js/header.js"></script>
     <!-- <script src="js/slidetoggle.js"></script> -->
 </head>
 <body>
@@ -38,7 +40,7 @@
                 </span>
             </a>
             <!--//btnOpen-->
-            <nav>
+            <nav class="list-nav">
                 <a id="btnClose" href="#">
                     <span>
                         <i class="fas fa-times"></i>
@@ -49,8 +51,9 @@
                     <div id="gnb">
                         <ul class="gnb-inner">
                             <li class="gnb-list">
-                                <a href="#" class="depth1">Theme</a>
+                                <a href="#" class="depth1"><span><i class="fas fa-th-large"></i></span>Theme</a>
                                 <ul class="open-menu">
+                                    <li class="on"><a href="#">depth2</a></li>
                                     <li><a href="#">depth2</a></li>
                                     <li><a href="#">depth2</a></li>
                                     <li><a href="#">depth2</a></li>
@@ -58,14 +61,14 @@
                                 </ul>
                             </li>
                             <li class="gnb-list">
-                                <a href="#" class="depth1">Area</a>
+                                <a href="#" class="depth1"><span><i class="fas fa-snowflake"></i></span>Area</a>
                                 <ul class="open-menu">
                                     <li><a href="#">depth2</a></li>
                                     <li><a href="#">depth2</a></li>
                                 </ul>
                             </li>
                             <li class="gnb-list">
-                                <a href="#" class="depth1">Season</a>
+                                <a href="#" class="depth1"><span><i class="fas fa-compass"></i></span>Season</a>
                                 <ul class="open-menu">
                                     <li><a href="#">depth2</a></li>
                                     <li><a href="#">depth2</a></li>
@@ -75,7 +78,7 @@
                     </div>
                     <div id="rnb">
                         <ul>
-                            <li><a href="#">LOGIN</a></li>
+                            <li><a href="#" class="on">LOGIN</a></li>
                             <li><a href="#">JOIN US</a></li>
                         </ul>
                     </div>

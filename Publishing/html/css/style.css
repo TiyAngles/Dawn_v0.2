@@ -61,10 +61,11 @@ header{
 
 #searchBox{
     /* height:100%; */
-}
-#searchBox a{
     position: absolute;
     right:60px;
+}
+#searchBox a{
+    height:60px;
 }
 #searchBox a span{
     display: block;
@@ -75,7 +76,7 @@ header{
     color:#2e8cff;
 }
 #searchInput{
-    position: absolute;
+    position: fixed;
     z-index:10;
     right:0;
     top:0;
@@ -174,19 +175,12 @@ nav{
     right:0;
     width:100%;
 }
-/* .menu-wrapper>h2{
-    position: absolute;
-    width:100%;
-    padding:40px 0 28px;
-} */
 #gnb{
     top:0;
-    /* padding-top:40px; */
     padding:40px 20px 0 20px;
 }
 .gnb-list{
     padding:8px 0;
-    /* background:yellow; */
 }
 .gnb-list>a{
     position: relative;
@@ -206,7 +200,6 @@ nav{
 }
 .gnb-list a span{
     display:inline-block;
-    /* background:#fff; */
     text-align: center;
     width:30px;
     height:30px;
@@ -315,43 +308,150 @@ nav{
         height:80px;
     }
     #logo a{
-        display: block;
-        width:auto;
+        width:200px;
         height:80px;
         padding:0 20px;
-        line-height:80px;
-        font-size:44px;
     }
 
-    /* gnb */
-    /* #gnb{
+    #searchBox{
+        /* height:100%; */
+        position: absolute;
+        left:50%;
+        top:50%;
+        transform:translate(-50%,-50%);
+        right:360px;
+        /* background:green; */
+    }
+    #searchBox a{
+        position: absolute;
+        right:0;
+        /* height:80px; */
+    }
+    #searchInput{
+        position: static;
+        opacity:1;
+    }
+
+    #searchInput label{
+        position: absolute;
+        top:0;
+        left:0;
+    }
+    /*--------------------*/
+    nav{
         z-index:30;
         position:absolute;
-        right:20px;
+        left:auto;
+        right:0;
         width:auto;
         height:auto;
-        background:orange;
+        background:green;
+    
     }
-    #gnb>ul{
+    .menu-wrapper::after{display: block;content:'';clear:both;}
+
+    .menu-wrapper{
+        position: static;
+        top:auto;
+        right:auto;
+        width:auto;
+        height:auto;
+        background:green;
+    }
+    .menu-wrapper>div{
+        position: static;
+        right:auto;
+        width:auto;
+    }
+    #gnb{
+        float:left;
+        top:auto;
         padding:0;
     }
-    #gnb>ul::after{
+    .gnb-inner::after{
         display: block;
         content:'';
         clear:both;
     }
-    #gnb>ul>li{
-        padding:0;
-        float:left;
-        background:yellow;
+    .gnb-list{
+        padding:15px 34px;
+        float: left;
     }
-    #gnb>ul>li>a{
-        font-size:24px;
-        line-height:80px;
+    .gnb-list>a{
+        position: relative;
+        font-size:22px;
+        line-height:50px;
         font-weight:bold;
-        padding:0 20px;
-    } */
+    }
+    .gnb-list>a::before{display: none;}
+    .gnb-list a span{display: none;}
+    #gnb .open-menu{
+        padding:6px 0 22px;
+        display: none;
+    }
+    #gnb .open-menu li{
+        position: relative;
+        font-size:14px;
+        padding-left:48px;
+    }
+    
+    #gnb .open-menu li.on::before{
+        display: block;
+        position: absolute;
+        top:5px;
+        left:32px;
+        width:20px;
+        height:20px;
+        line-height:20px;
+        color:#2d8bff;
+        font-family:'FontAwesome';
+        font-weight:900;
+        content:'\f054';
+    }
+    #gnb .open-menu li.on a{
+        color:#2d8bff;
+    }
+    
+    #rnb::after{display: block; content:''; clear:both;}
+    #rnb{
+        float: left;
+        /* z-index:30; */
+        position:static;
+        right:auto;
+        bottom:auto;
+        border-top:none;
+    }
+    #rnb li{
+        float: left;
+        display: block;
+        width:50%;
+        line-height:40px;
+    }
+    #rnb a{
+        display: block;
+        text-align: center;
+        background:#fff;
+        /* border-radius:15px; */
+        /* border:1px solid #2e8cff; */
+        box-sizing:border-box;
+        color:#653ee9;
+        background:#fff;
+    }
+    #rnb a.on{
+        display: block;
+        text-align: center;
+        background:#fff;
+        /* border-radius:15px; */
+        /* border:1px solid #2e8cff; */
+        box-sizing:border-box;
+        border:1px solid transparent;
+        color:#fff;
+        background: linear-gradient(0.25turn, #d061fe, #653ee9);
+    }
 
+
+
+    /*--------------------*/
     #container{
         margin-top:80px;
     }

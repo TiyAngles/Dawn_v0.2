@@ -397,7 +397,7 @@ nav{
     .gnb-list a span{display: none;}
     #gnb .open-menu{
         /* padding:6px 0 22px; */
-        display: block;
+        /* display: block; */
         /* background:red; */
         background:#fff;
         border-bottom:1px solid #ccc;

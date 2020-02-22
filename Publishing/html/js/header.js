@@ -20,4 +20,9 @@ $(document).ready(function() {
         $('#searchInput').toggleClass('on');
     })
 
+    $('#rnb li').on('click',function(){
+        $(this).children('a').toggleClass('on');
+        $(this).siblings().children('a').removeClass('on');
+    });
+
 });

@@ -254,7 +254,7 @@ nav{
     width:50%;
     line-height:40px;
 }
-#rnb a{
+.mobile #rnb a{
     display: block;
     text-align: center;
     background:#fff;
@@ -264,7 +264,7 @@ nav{
     color:#653ee9;
     background:#fff;
 }
-#rnb a.on{
+.mobile #rnb a.on{
     display: block;
     text-align: center;
     background:#fff;
@@ -316,10 +316,9 @@ nav{
     #searchBox{
         /* height:100%; */
         position: absolute;
-        left:50%;
         top:50%;
-        transform:translate(-50%,-50%);
-        right:360px;
+        transform:translateY(-50%);
+        right:680px;
         /* background:green; */
     }
     #searchBox a{
@@ -330,8 +329,18 @@ nav{
     #searchInput{
         position: static;
         opacity:1;
+        width:340px;
     }
-
+    #searchInput input[type="text"]{
+        background:#fff;
+        width:100%;
+        height:60px;
+        padding:0 20px;
+        border:1px solid #2e8cff;
+        border-top:none;
+        border-left:none;
+        border-right:none;
+    }
     #searchInput label{
         position: absolute;
         top:0;
@@ -345,7 +354,7 @@ nav{
         right:0;
         width:auto;
         height:auto;
-        background:green;
+        padding:0 30px;
     
     }
     .menu-wrapper::after{display: block;content:'';clear:both;}
@@ -356,7 +365,7 @@ nav{
         right:auto;
         width:auto;
         height:auto;
-        background:green;
+        background:transparent;
     }
     .menu-wrapper>div{
         position: static;
@@ -374,25 +383,30 @@ nav{
         clear:both;
     }
     .gnb-list{
-        padding:15px 34px;
         float: left;
+        margin:0 4px;
+        padding:0;
     }
     .gnb-list>a{
-        position: relative;
         font-size:22px;
-        line-height:50px;
-        font-weight:bold;
+        line-height:80px;
+        padding:0 22px;
+        /* text-align: center; */
     }
     .gnb-list>a::before{display: none;}
     .gnb-list a span{display: none;}
     #gnb .open-menu{
-        padding:6px 0 22px;
-        display: none;
-    }
+        /* padding:6px 0 22px; */
+        display: block;
+        /* background:red; */
+        background:#fff;
+        border-bottom:1px solid #ccc;
+      }
     #gnb .open-menu li{
         position: relative;
         font-size:14px;
-        padding-left:48px;
+        padding-left:0;
+        padding:0 11px;
     }
     
     #gnb .open-menu li.on::before{
@@ -414,39 +428,23 @@ nav{
     
     #rnb::after{display: block; content:''; clear:both;}
     #rnb{
+        margin-left:22px;
         float: left;
-        /* z-index:30; */
         position:static;
         right:auto;
         bottom:auto;
         border-top:none;
     }
     #rnb li{
-        float: left;
-        display: block;
-        width:50%;
-        line-height:40px;
+        width:auto;
+        line-height:80px;
+        padding:0 20px;
     }
-    #rnb a{
-        display: block;
-        text-align: center;
-        background:#fff;
-        /* border-radius:15px; */
-        /* border:1px solid #2e8cff; */
-        box-sizing:border-box;
-        color:#653ee9;
-        background:#fff;
+    .pc #rnb a{
+        color:#444;
     }
-    #rnb a.on{
-        display: block;
-        text-align: center;
-        background:#fff;
-        /* border-radius:15px; */
-        /* border:1px solid #2e8cff; */
-        box-sizing:border-box;
-        border:1px solid transparent;
-        color:#fff;
-        background: linear-gradient(0.25turn, #d061fe, #653ee9);
+    .pc #rnb a.on{
+        color:#2d8bff;
     }
 
 

@@ -18,6 +18,11 @@ header {
   color: #3c3c3c;
 }
 
+/* swiper스타일링 */
+
+.swiper-wrapper .swiper-slide {
+  margin: 0 0 0 60px;
+}
 .swiper-slide .slider-list {
   position: relative;
   width: 268px;
@@ -139,6 +144,10 @@ hr {
 }
 .page ul li:first-child {
   margin: 0;
+}
+.page ul li a:focus {
+  color: #2e8bff;
+  font-size: 18px;
 }
 
 .edit-btn .fa-edit {

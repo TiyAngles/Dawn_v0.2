@@ -11,9 +11,9 @@ input[type="text"]{font-size:16px;}
 h1{font-size:36px;}
 h2{font-size:32px;}
 h3{font-size:28px;}
-
 em{font-size:14px;}
 
+/*구분*/
 .pc #btnOpen{
     display: none;
 }
@@ -24,17 +24,12 @@ em{font-size:14px;}
     display: none;
 }
 
-
-
-
-
+/*header*/
 header{
     position: fixed;
     top:0;
     left:0;
     width:100%;
-    background:#ccc;
-    /* z-index:90; */
 }
 .header-inner{
     background:#fff;
@@ -45,6 +40,8 @@ header{
     box-sizing:border-box;
     border-bottom:1px solid #ccc;
 }
+
+/*logo*/
 #logo{
     position: absolute;
     left:0;
@@ -63,6 +60,7 @@ header{
     transform:translateY(-50%);
 }
 
+/*searchbox*/
 #searchBox{
     /* height:100%; */
     position: absolute;
@@ -79,6 +77,23 @@ header{
     line-height:60px;
     color:#2e8cff;
 }
+#searchBox label{
+    position: absolute;
+    top:0;
+    right:0;
+    background:#ccc;
+}
+#searchBox label span{
+    display: block;
+    width:80px;
+    height:80px;
+    padding:10px;
+    text-align: center;
+    line-height:60px;
+    font-size:22px;
+}
+
+/*searchinput*/
 #searchInput{
     position: fixed;
     z-index:10;
@@ -91,7 +106,6 @@ header{
     opacity:0;
     transition:all 0.3s ease-out;
 }
-
 #searchInput.on{
     opacity:1;
     top:60px;
@@ -109,6 +123,7 @@ header{
     border:2px solid #2e8cff;
 }
 
+/*button*/
 #btnOpen{
     position: absolute;
     z-index:20;
@@ -122,13 +137,6 @@ header{
     font-size:24px;
     color:#2e8cff;
 }
-
-#dimmed{
-    position: fixed;
-    width:100%;
-    height:100%;
-    background:#222;
-}
 #btnClose{
     z-index:30;
     position: absolute;
@@ -139,22 +147,8 @@ header{
     color:#fff;
 }
 
-#searchBox label{
-    position: absolute;
-    top:0;
-    right:0;
-    background:#ccc;
-}
-#searchBox label span{
-    display: block;
-    width:80px;
-    height:80px;
-    padding:10px;
-    text-align: center;
-    line-height:60px;
-    font-size:22px;
-}
 
+/*nav*/
 nav{
     z-index:30;
     position:absolute;
@@ -176,6 +170,7 @@ nav{
     right:0;
     width:100%;
 }
+/*gnb*/
 #gnb{
     top:0;
     padding:40px 20px 0 20px;
@@ -223,7 +218,6 @@ nav{
     font-size:14px;
     padding-left:48px;
 }
-
 #gnb .open-menu li.on::before{
     display: block;
     position: absolute;
@@ -240,7 +234,15 @@ nav{
 #gnb .open-menu li.on a{
     color:#2d8bff;
 }
+#gnb .active .open-menu{
+}
+#gnb .open-menu>li{
+    line-height:30px;
+}
+#gnb .open-menu>li>a{
+}
 
+/*rnb*/
 #rnb::after{display: block; content:''; clear:both;}
 #rnb{
     z-index:30;
@@ -255,6 +257,8 @@ nav{
     width:50%;
     line-height:40px;
 }
+
+/*mobile rnb*/
 .mobile #rnb a{
     display: block;
     text-align: center;
@@ -272,18 +276,15 @@ nav{
     background: linear-gradient(0.25turn, #d061fe, #653ee9);
 }
 
-
-
-
-
-#gnb .active .open-menu{
-}
-#gnb .open-menu>li{
-    line-height:30px;
-}
-#gnb .open-menu>li>a{
+/*dimmed area*/
+#dimmed{
+    position: fixed;
+    width:100%;
+    height:100%;
+    background:#222;
 }
 
+/*container*/
 #container{
     margin-top:60px;
     background:#ccc;
@@ -292,16 +293,19 @@ nav{
 
 /* tablet */
 @media screen and (min-width: 940px) {
-
+    /* header */
     .header-inner{
         height:80px;
     }
+
+    /*logo*/
     #logo a{
         width:200px;
         height:80px;
         padding:0 20px;
     }
 
+    /*serachbox*/
     #searchBox{
         height:100%;
         right:520px;
@@ -315,7 +319,6 @@ nav{
         height: 80px;
         line-height: 80px;
     }
-
     #searchInput{
         position: static;
         opacity:1;
@@ -323,7 +326,8 @@ nav{
         height:80px;
         padding:10px 0;
     }
-    /*--------------------*/
+
+    /*nav*/
     nav{
         float: right;
         z-index:30;
@@ -334,7 +338,6 @@ nav{
     
     }
     .menu-wrapper::after{display: block;content:'';clear:both;}
-
     .menu-wrapper{
         position: static;
         top:auto;
@@ -348,6 +351,8 @@ nav{
         right:auto;
         width:auto;
     }
+
+    /*gnb*/
     #gnb{
         float:left;
         top:auto;
@@ -367,7 +372,6 @@ nav{
         font-size:22px;
         line-height:80px;
         padding:0 22px;
-        /* text-align: center; */
     }
     .gnb-list>a::before{display: none;}
     .gnb-list a span{display: none;}
@@ -380,8 +384,7 @@ nav{
         font-size:14px;
         padding-left:0;
         padding:0 11px;
-    }
-    
+    }    
     #gnb .open-menu li.on::before{
         display: block;
         position: absolute;
@@ -399,6 +402,7 @@ nav{
         color:#2d8bff;
     }
     
+    /*rnb*/
     #rnb::after{display: block; content:''; clear:both;}
     #rnb{
         padding-left:12px;
@@ -425,14 +429,14 @@ nav{
         line-height:80px;
         padding:0 12px;
     }
+
+    /*pc rnb*/
     .pc #rnb a{
         color:#444;
     }
     .pc #rnb a.on{
         color:#2d8bff;
     }
-
-
 
     /*--------------------*/
     #container{

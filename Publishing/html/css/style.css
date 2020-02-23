@@ -301,9 +301,9 @@ nav{
 }
 .footer-inner>div{
     text-align: center;
-    margin:8px 0;
 }
-.footer-logo{}
+.footer-logo{
+    padding:8px 0;}
 .footer-logo h2{display: inline-block;}
 .footer-logo h2 a{}
 .footer-logo h2 a img{width:100px;}
@@ -316,10 +316,12 @@ nav{
 .footer-info ul li:first-child::before{display: none;}
 .footer-info ul li a{display: block;}
 
-.footer-sns{}
+.footer-sns{background:#3c97f9;padding:8px 0 4px; }
 .footer-sns ul{}
-.footer-sns ul li{display: inline-block;}
-.footer-sns ul li a{display: block;}
+.footer-sns ul li{display: inline-block;padding:0 4px;}
+.footer-sns ul li a{display: block;color:#fff;}
+
+.footer-description{background: #3c97f9; padding:4px 0 8px; color:#fff;}
 
 /* tablet */
 @media screen and (min-width: 940px) {

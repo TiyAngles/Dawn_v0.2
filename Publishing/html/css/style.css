@@ -294,10 +294,9 @@ nav{
 
 /*footer*/
 #footer{}
-.footer-inner{
+/* .footer-inner{
     padding:60px 0;
     border-top:2px solid #3c97f9;
-    /* border-bottom:2px solid #3c97f9; */
     color:#3c3c3c;
 }
 .footer-inner>div{
@@ -319,21 +318,17 @@ nav{
 .footer-info ul li a{display: block; font-weight:700;}
 
 .footer-sns{
-    /* background:#3c97f9; */
     padding:8px 0 4px;
 }
 .footer-sns ul{}
 .footer-sns ul li{display: inline-block;padding:0 4px;}
 .footer-sns ul li a{
     display: block;
-    /* color:#fff; */
 }
 
 .footer-description{
-    /* background: #3c97f9; */
     padding:4px 0 8px;
-    /* color:#fff; */
-}
+} */
 
 /* tablet */
 @media screen and (min-width: 940px) {

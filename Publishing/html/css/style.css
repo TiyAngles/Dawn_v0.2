@@ -331,9 +331,15 @@ nav{
 .footer-top>div>ul{
     padding-top:24px;
     padding-bottom:12px;
-    font:400 14px/1.37 'Roboto Condensed';
+}
+.footer-top>div>ul>li{
+    font:400 14px/1.42 'Roboto Condensed';
     letter-spacing:0.02rem;
     color:#555;
+}
+.footer-top>div>p a{
+    font-weight:bold;
+    color:#3c97f9;
 }
 .footer-top>div>ul>li>a{
     color:#434343;
@@ -352,6 +358,9 @@ nav{
     text-indent:-9999em;
     width:44px;
     height:44px;
+}
+.footer-top>div:nth-of-type(1)>ul>li:last-child{
+    margin-right:0;
 }
 .footer-top>div:nth-of-type(1)>ul>li>a{
 }
@@ -415,6 +424,9 @@ nav{
         width:200px;
         height:80px;
         padding:0 20px;
+    }
+    #logo a img{
+        width:130px;
     }
 
     /*serachbox*/
@@ -568,7 +580,18 @@ nav{
     }
     .footer-top{
     }
-    .footer-top>div{
+    .footer-top>div:nth-of-type(1){
+        width:25%;
+    }
+    .footer-top>div:nth-of-type(2){
+        padding-left:2%;
+        width:23%;
+    }
+    .footer-top>div:nth-of-type(3){
+        padding-left:2%;
+        width:23%;
+    }
+    .footer-top>div:nth-of-type(4){
         width:25%;
     }
     .footer-top>div>h3{
@@ -578,7 +601,7 @@ nav{
         font-size:16px;
     }
     .footer-bottom{
-        margin-top:12px;
+        margin-top:24px;
         padding:32px 20px 42px;
     }    
     .footer-bottom>div{

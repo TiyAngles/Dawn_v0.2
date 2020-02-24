@@ -312,7 +312,9 @@ nav{
     content:'';
     clear:both;
 }
-.footer-top{}
+.footer-top{
+    padding:0 20px;
+}
 .footer-top>div{
     float: left;
     width:100%;
@@ -359,7 +361,7 @@ nav{
     clear:both;
 }
 .footer-bottom{
-    padding:32px 0 22px;
+    padding:32px 20px 22px;
     background-color:#3c97f9;
     color:#ccc;
 }
@@ -433,10 +435,11 @@ nav{
         position: static;
         opacity:1;
         width:340px;
-        height:80px;
-        padding:10px 0;
+        padding-top:20px;
     }
-
+    #searchInput input[type="text"] {
+        height: 40px;
+    }
     /*nav*/
     nav{
         float: right;
@@ -479,7 +482,7 @@ nav{
         padding:0;
     }
     .gnb-list>a{
-        font-size:22px;
+        font-size:16px;
         line-height:80px;
         padding:0 22px;
     }
@@ -530,7 +533,7 @@ nav{
         display: block;
         content:'';
         width:1px;
-        height:20px;
+        height:14px;
         background:#333;
 
     }
@@ -538,6 +541,7 @@ nav{
         width:auto;
         line-height:80px;
         padding:0 12px;
+        font-size:14p[x;]
     }
 
     /*pc rnb*/
@@ -562,7 +566,8 @@ nav{
     .footer-inner{
         padding-top:64px;
     }
-    .footer-top{}
+    .footer-top{
+    }
     .footer-top>div{
         width:25%;
     }
@@ -574,7 +579,7 @@ nav{
     }
     .footer-bottom{
         margin-top:12px;
-        padding:32px 0 42px;
+        padding:32px 20px 42px;
     }    
     .footer-bottom>div{
         width:50%;
@@ -594,8 +599,5 @@ nav{
         margin-right:22px;
         width:72px;
         height:72px;
-    }
-    .footer-bottom{
-        padding:32px 20px 42px;
     }
 }

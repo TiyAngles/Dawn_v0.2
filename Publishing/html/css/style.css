@@ -337,7 +337,7 @@ nav{
     letter-spacing:0.02rem;
     color:#555;
 }
-.footer-top>div>ul>li>span{
+.footer-top>div>ul>li span{
     font-weight:700;
     padding-right:2px;
 }

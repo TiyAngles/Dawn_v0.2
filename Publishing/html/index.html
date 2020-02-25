@@ -11,7 +11,9 @@
     <link rel="stylesheet" href="css/style.css">
     <script src="https://kit.fontawesome.com/164552570a.js" crossorigin="anonymous"></script>
     <script src="js/common.js"></script>
-    <script src="js/slidetoggle.js"></script>
+    <script src="js/jquery-1.12.3.min.js"></script>
+    <script src="js/header.js"></script>
+    <!-- <script src="js/slidetoggle.js"></script> -->
 </head>
 <body>
     <!--header-->
@@ -19,9 +21,23 @@
         <div class="header-inner">
             <!--logo-->
             <h1 id="logo">
-                <a href="#">LOGO</a>
+                <a href="#">
+                    <img src="img/logo.png" alt="logo">
+                </a>
             </h1>
             <!--//logo-->
+            <div id="searchBox">
+                <a>                        
+                    <span class="">
+                        <i class="fas fa-search"></i>
+                    </span>
+                </a>
+                
+                <div id="searchInput">
+                    <label for="search-text"></label>
+                    <input type="text" id="search-text">
+                </div>
+            </div>
             <!--btnOpen-->
             <a id="btnOpen" href="#">
                 <span>
@@ -29,45 +45,58 @@
                 </span>
             </a>
             <!--//btnOpen-->
-            <nav>
-                <!--btnOpen-->
+            <nav class="list-nav">
                 <a id="btnClose" href="#">
                     <span>
                         <i class="fas fa-times"></i>
                     </span>
                 </a>
-                <!--//btnOpen-->
                 <div id="dimmed"></div>
-                <div id="gnb">
-                    <ul class="gnb-inner">
-                        <li class="gnb-list">
-                            <a href="#" class="depth1">depth1-1</a>
-                            <ul class="open-menu">
-                                <li><a href="#">depth2</a></li>
-                                <li><a href="#">depth2</a></li>
-                                <li><a href="#">depth2</a></li>
-                                <li><a href="#">depth2</a></li>
-                            </ul>
-                        </li>
-                        <li class="gnb-list">
-                            <a href="#" class="depth1">depth1-2</a>
-                            <ul class="open-menu">
-                                <li><a href="#">depth2</a></li>
-                                <li><a href="#">depth2</a></li>
-                                <li><a href="#">depth2</a></li>
-                                <li><a href="#">depth2</a></li>
-                            </ul>
-                        </li>
-                        <li class="gnb-list">
-                            <a href="#" class="depth1">depth1-3</a>
-                            <ul class="open-menu">
-                                <li><a href="#">depth2</a></li>
-                                <li><a href="#">depth2</a></li>
-                            </ul>
-                        </li>
-                    </ul>
+                <div class="menu-wrapper">
+                    <div id="gnb">
+                        <ul class="gnb-inner">
+                            <li class="gnb-list">
+                                <a href="#" class="depth1"><span><i class="fas fa-th-large"></i></span>THEME</a>
+                                <ul class="open-menu">
+                                    <li><a href="#">기차여행</a></li>
+                                    <li><a href="#">맛집탐방</a></li>
+                                    <li><a href="#">축제</a></li>
+                                    <li><a href="#">액티비티</a></li>
+                                    <li><a href="#">데이트</a></li>
+                                </ul>
+                            </li>
+                            <li class="gnb-list">
+                                <a href="#" class="depth1"><span><i class="fas fa-snowflake"></i></span>AREA</a>
+                                <ul class="open-menu">
+                                    <li><a href="#">서울/경기</a></li>
+                                    <li><a href="#">강원도</a></li>
+                                    <li><a href="#">충청도</a></li>
+                                    <li><a href="#">경상도</a></li>
+                                    <li><a href="#">전라도</a></li>
+                                    <li><a href="#">제주도</a></li>
+                                    <li><a href="#">독도</a></li>
+                                </ul>
+                            </li>
+                            <li class="gnb-list">
+                                <a href="#" class="depth1"><span><i class="fas fa-compass"></i></span>SEASON</a>
+                                <ul class="open-menu">
+                                    <li><a href="#">산뜻한봄</a></li>
+                                    <li><a href="#">시원한여름</a></li>
+                                    <li><a href="#">맛있는가을</a></li>
+                                    <li><a href="#">따뜻한겨울</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="rnb">
+                        <ul>
+                            <li><a href="#" class="on">LOGIN</a></li>
+                            <li><a href="#">JOIN US</a></li>
+                        </ul>
+                    </div>
                 </div>
             </nav>
+            <!---->
         </div>
     </header>
     <!--//header-->
@@ -89,17 +118,75 @@
     <!--//container-->
     <!--footer-->
     <div id="footer">
-        <div class="footer-info">
-            <ul>
-                <li><a href="#">로그인</a></li>
-                <li><a href="#">이용약관</a></li>
-                <li><a href="#">개인정보처리방침</a></li>
-            </ul>
+        <div class="footer-inner">
+            <div class="footer-top">
+                <div class="">
+                    <h2><a href="#">Tiyangle.co</a></h2>
+                    <ul>
+                        <li><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                    </ul>
+                    <p>Follow us on <a href="#">tiyangle.co</a></p>
+                </div>
+                <div class="">
+                    <h3>leave a message</h3>
+                    <ul>
+                        <li><a href="#">dawn@tiyangle.co</a></li>
+                        <li><a href="tel:000-0000-0000">(+82) 000-0000-0000</a></li>
+                    </ul>
+                </div>
+                <div class="">
+                    <h3>info</h3>
+                    <ul>
+                        <li><a href="#">이용약관</a></li>
+                        <li><a href="#">개인정보처리방침</a></li>
+                        <li><a href="#">문의게시판</a></li>
+                    </ul>
+                </div>
+                <div class="">
+                    <h3>maker</h3>
+                    <ul>
+                        <li>
+                            <span>PM</span>
+                            <a href="https://github.com/vapvin">vapvin</a>
+                        </li>
+                        <li>
+                            <span>FRONT</span>
+                            <a href="#">abcdefg</a>
+                            <a href="#">abcdefg</a>
+                        </li>
+                        <li>
+                            <span>PUB</span>
+                            <a href="https://github.com/qkaxhfms">qkaxhfms</a>
+                            <a href="https://github.com/sohyun0">sohyun0</a>
+                        </li>
+                        <li>
+                            <span>BACK</span>
+                            <a href="#">abcdefg</a>
+                            <a href="#">abcdefg</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="footer-sns">
+                    <ul>
+                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fab fa-google"></i></a></li>
+                        <li><a href="#"><i class="fab fa-google-drive"></i></a></li>
+                        <li><a href="#"><i class="fab fa-github"></i></a></li>
+                        <li><a href="#"><i class="fab fa-trello"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+                <div class="footer-description">
+                    <p>&copy;<span>Traveler</span>. designed and Developed by tiyangle</p>
+                </div>
+            </div>
         </div>
-        <div class="footer-description">
-            <p>이 사이트는 샘플 포트폴리오용 사이트이며 상업적 목적은 없습니다</p>
-        </div>
-    </div>
+    </div>                        
     <!--//footer-->
 </body>
 </html>

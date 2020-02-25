@@ -1,0 +1,152 @@
+@charset "utf-8";
+/* 스타일링을 위해 임의지정 */
+
+header {
+  z-index: 10;
+}
+#container {
+  background: none;
+}
+
+/* 스타일링을 위해 임의지정 */
+
+/* recommed */
+
+.recommed h2 {
+  padding: 100px 0 0 31px;
+  font-size: 32px;
+  color: #3c3c3c;
+}
+
+.reco-slider li .slider-list {
+  position: relative;
+  width: 268px;
+  height: 455px;
+  margin: 50px 0 0 31px;
+  border-radius: 30px;
+}
+.reco-slider li .slider-list a {
+  border-radius: 30px;
+  overflow: hidden;
+}
+.reco-slider li .slider-list img {
+  overflow: hidden;
+  border-radius: 30px;
+}
+/* 핀스타일링 */
+.slider-list .pin {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 8px 30px 6px 218px;
+  background: rgba(85, 85, 85, 0.5);
+  border-radius: 30px 30px 0 0;
+}
+.pin .fa-map-pin {
+  text-align: right;
+  transform: rotate(30deg);
+  font-size: 36px;
+  color: #fff;
+}
+.slider-list .reco-box {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 268px;
+  height: 150px;
+  background: rgba(85, 85, 85, 0.5);
+  border-radius: 0 0 30px 30px;
+}
+.slider-list .reco-info {
+  margin: 26px 0 0 10px;
+}
+.slider-list .reco-info h3 {
+  font-size: 28px;
+  color: #3c3c3c;
+}
+.slider-list .reco-chat {
+  margin: 10px 0 0 0;
+  color: #3c3c3c;
+}
+.reco-chat::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.reco-chat img {
+  display: block;
+  float: left;
+  margin: 0 0 0 10px;
+}
+.reco-chat .user {
+  float: right;
+  width: 200px;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.reco-box .fa-star {
+  position: absolute;
+  top: 40px;
+  right: 20px;
+  font-size: 36px;
+  color: #fff;
+}
+
+/* travel  */
+.travel {
+  margin: 35px 0 0 0;
+}
+.travel .season-list::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.travel .season-list li {
+  float: left;
+  margin: 0 0 0 35px;
+  font-size: 28px;
+  color: #ff0;
+}
+.travel .season-list li a {
+  color: #3c3c3c;
+}
+.travel .tra-list {
+  margin: 50px 0 0 15px;
+}
+.tra-list .tra-spring-list1 ol {
+  margin: 25px 0 0 0;
+}
+.tra-list .tra-spring-list1 ol li {
+  font-size: 16px;
+}
+.tra-list .tra-spring-list1 ol li:nth-child(1) {
+  margin: 0 0 25px 0;
+  font-size: 18px;
+}
+hr {
+  width: 90%;
+}
+.page {
+  text-align: center;
+}
+
+.page ul li {
+  display: inline-block;
+  margin: 0 0 0 25px;
+  font-size: 16px;
+}
+.page ul li:first-child {
+  margin: 0;
+}
+
+.edit-btn .fa-edit {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  font-size: 40px;
+  border: 1px solid #000;
+  border-radius: 50%;
+  padding: 20px;
+}

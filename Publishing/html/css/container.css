@@ -1,0 +1,20 @@
+@charset 'utf-8';
+/*container*/
+
+/*container*/
+#container{
+    margin-top:60px;
+    background:#ccc;
+}
+
+/* tablet */
+@media screen and (min-width: 940px) {
+    #container{
+        margin-top:80px;
+    }
+}
+
+/* pc */
+@media screen and (min-width: 1200px) {
+
+}

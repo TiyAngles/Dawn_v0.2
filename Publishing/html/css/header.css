@@ -33,7 +33,7 @@ header{
 /*logo*/
 #logo{
     position: absolute;
-    left:0;
+    left:10px;
     top:0;
 }
 #logo a{
@@ -274,8 +274,8 @@ nav{
     .header-inner{
         height:80px;
     }
+    /*logo*//*logo*/
 
-    /*logo*/
     #logo a{
         width:200px;
         height:80px;

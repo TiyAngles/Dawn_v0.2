@@ -11,7 +11,7 @@
 /*common*/
 a{text-decoration:none; color:#000;}
 body{
-    font:400 16px/1.37 'Roboto Condensed','Nanum Gothic', sans-serif;
+    font:400 16px/1.37 'Roboto Condensed','Noto Sans KR','Nanum Gothic', sans-serif;
     letter-spacing:1.012px;
 }
 input[type="text"]{font-size:16px;}

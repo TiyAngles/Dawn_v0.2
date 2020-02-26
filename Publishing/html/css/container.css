@@ -6,15 +6,220 @@
     margin-top:60px;
     background:#ccc;
 }
+.container-inner{
+    background:blue;
+}
+
+/* main-visual */
+.main-visual{
+    background:#555;
+}
+
+/* slider */
+.slider-wrapper{position: relative;}
+#slider-custom{height:440px; position: relative;}
+.slider-content.on{display:block;}
+.slider-content{display: none; position: absolute; width:100%;height:100%;}
+.slider-inner{position: relative; height:100%;}
+.slider-inner > div{
+    position: absolute;
+    width:100%;
+    color:#fff;
+    text-shadow: 2px 2px 2px rgba(0,0,0,0.3);
+    background:no-repeat 50% 50% url('../img/slider/visual_slider_img_1.jpg');
+    background-size:cover;
+}
+.slider-inner > div::before{
+    position: absolute;
+    left:0;
+    top:0;
+    content:'';
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.45);
+}
+.slider-inner > div > h3{
+    position: relative;
+    z-index:2;
+    font:700 34px/1.42 'Noto Sans KR';
+    margin-bottom:20px;
+}
+.slider-inner > div > p{
+    position: relative;
+    z-index:2;
+    font:400 22px/1.37 'Nanum Gothic';
+
+}
+.slider-inner > div > a{
+}
+.slider-inner .top{
+    background:Red;
+}
+.slider-inner .center{
+    height:100%;
+    padding:56px 20px;
+}
+.slider-inner .center a{
+    bottom:85px;
+    left:20px;
+    position: absolute;
+    display: block;
+    padding:12px 24px;
+    color:#fff;
+    border:2px solid #fff;
+}
+.slider-inner .bottom{
+    background:green;
+}
+.slider-inner > a{
+}
+
+/* navi */
+.navi{
+    position: absolute;
+    right:20px;
+    bottom:85px;
+}
+.navi-inner::after{
+    display: block; 
+    content:'';
+    clear:both;
+}
+.navi-inner{
+}
+.navi a{
+    display:block;
+    float: left;
+    width:12px;
+    height:12px;
+    border-radius:6px;
+    margin-right:4px;
+    background:rgba(255,255,255,0.3);
+}
+.navi a.on{
+    background:rgba(255,255,255,1);
+}
+.navi a:last-of-type{
+    margin-right:0;
+}
+
+/* pager */
+.pager{
+    display: none;
+}
+.pager a{
+    position: absolute;
+    display: block;
+    top:50%;
+    transform:TranslateY(-50%);
+    width:24px;
+    height:24px;
+    line-height:24px;
+    color:#fff;
+    z-index:2;
+}
+/* pager button */
+.pager .prev{
+    left:20px;
+}
+.pager .next{
+    right:20px;
+}
+
+.search-visual{
+    position: absolute;
+    left:20px;
+    bottom:-30px;
+    width:calc(100% - 40px);
+    background:#fff;
+    border-radius:20px;
+}
+.search-visual label{
+    position: absolute;
+    top:9px;
+    left:18px;
+    display: block;
+    width:42px;
+    height:42px;
+    font-size:24px;
+    line-height:42px;
+    text-align: center;
+    color:#3c97f9;
+}
+.search-visual input[type="text"]{
+    padding:12px 60px;
+    height:60px;
+}
+
+
+
 
 /* tablet */
 @media screen and (min-width: 940px) {
     #container{
         margin-top:80px;
     }
+    #slider-custom {
+        height: 720px;
+    }
+    .slider-inner .center{
+        padding:160px 45px;
+        /* text-align: center; */
+    }
+    .slider-inner .center a{
+        position:relative;
+        bottom:auto;
+        display: inline-block;
+        margin-top:48px;
+        left:auto;
+    }
+
+    .slider-inner > div > h3{
+        font:700 62px/1.42 'Noto Sans KR';
+        margin-bottom:20px;
+    }
+    .slider-inner > div > p{
+        font:400 28px/1.37 'Nanum Gothic';
+    
+    }
+
+
+    /* navi */
+    .navi{
+        position: absolute;
+        bottom:50%;
+        margin-top:-29px;
+    }
+    .navi a{
+        float: initial;
+        margin-right:0;
+        margin-bottom:6px;
+    }
+    .search-visual{
+        bottom:145px;
+        left:50%;
+        transform:translateX(-50%);
+        width:500px;
+    }
+    .search-visual label{
+        top:19px;
+        font-size:30px;
+    }
+    .search-visual input[type="text"]{
+        padding:12px 60px;
+        height:80px;
+    }
+    
 }
 
 /* pc */
 @media screen and (min-width: 1200px) {
-
+    .container-inner{
+        width:1200px;
+        margin:0 auto;
+        background:green;
+    }
+    .container-inner.w100{
+        width:100%;
+    }
 }

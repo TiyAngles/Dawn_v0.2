@@ -1,29 +1,32 @@
 @charset "utf-8";
-/* 스타일링을 위해 임의지정 */
-header {
-  z-index: 10;
-}
 #container {
-  background: none;
 }
-/* 스타일링을 위해 임의지정 추후삭제 */
-
+.container-inner {
+  background-color: transparent;
+}
+.visual {
+  /* 스타일링을 위해 임의지정 추후삭제 */
+  width: 100%;
+  height: 600px;
+  /* 스타일링을 위해 임의지정 추후삭제 */
+  background-image: url(../img/paragliding-4823764_1920.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
 /* recommed */
-
 .recommed h2 {
-  margin: 100px 0 20px 31px;
-  font-size: 32px;
   color: #3c3c3c;
 }
 
 /* reco-swiper스타일링 */
-
 .reco-slide .swiper-wrapper .swiper-slide {
   position: relative;
   width: 80%;
   margin: 0 0 0 5%;
 }
-
+.swiper-slide button {
+  border: 0;
+}
 /* 핀스타일링 */
 .swiper-slide .pin {
   position: absolute;
@@ -38,12 +41,15 @@ header {
   position: absolute;
   top: 6px;
   right: 30px;
-  text-align: right;
   transform: rotate(30deg);
+  text-align: right;
   font-size: 30px;
+  border: 0;
   color: #fff;
 }
-
+.pin .fa-map-pin:hover {
+  color: #2e8bff;
+}
 .swiper-slide img {
   width: 100%;
   /* 스타일링을 위해 강제로 높이값을 잡음 (사진의 크기가 너무다름) */
@@ -64,12 +70,13 @@ header {
   display: block;
   clear: both;
 }
-.swiper-slide .reco-info h3 {
+.swiper-slide .reco-info > h3 {
+  padding: 0;
   margin: 15px 0 0 10px;
   font-size: 18px;
   color: #fff;
 }
-.swiper-slide .reco-info h4 {
+.swiper-slide .reco-info > h4 {
   margin: 5px 0 0 10px;
   font-size: 16px;
   font-weight: normal;
@@ -100,45 +107,49 @@ header {
   font-size: 30px;
   color: #fff;
 }
-
-/* travel  */
-.travel {
-  margin: 35px 0 0 0;
+.swiper-slide .reco-info .fa-star:hover {
+  color: #f2d91f;
 }
-.travel .swiper-slide {
+/* travel-menu  */
+.travel-menu {
+  margin: 150px 0 0 0;
+}
+.travel-menu .swiper-slide {
   text-align: center;
 }
-.travel .swiper-slide a {
+.travel-menu .swiper-slide a {
   font-size: 32px;
   font-weight: bold;
   color: #3c3c3c;
+  padding: 10px;
 }
-.travel .tra-list ul {
+
+.travel-list ul {
   margin: 50px 0 0 15px;
 }
-.travel .tra-list ul > li {
+.travel-list ul > li {
   width: 80%;
-  margin: 10%;
+  margin: 2.5% 10%;
 }
-.travel .tra-list ul > li a {
+.travel-list ul > li .travel-img > a {
   width: 80%;
 }
-.travel .tra-list ul li a img {
+.travel-list ul li .travel-img > a img {
   width: 100%;
 }
-.tra-list ul li ol {
+.travel-list ul li ol {
   margin: 25px 0 0 0;
 }
-.tra-list ul li ol li {
+.travel-list ul li ol li {
   font-size: 16px;
   margin: 0 0 15px 0;
   line-height: 26px;
 }
-.tra-list ul li ol li:nth-child(1) {
+.travel-list ul li ol li:nth-child(1) {
   margin: 0 0 25px 0;
   font-size: 18px;
 }
-.tra-list hr {
+.travel-list hr {
   display: block;
   width: 100%;
   height: 2px;
@@ -154,60 +165,82 @@ header {
 
 .page ul li {
   display: inline-block;
-  margin: 0 0 0 25px;
   font-size: 16px;
+  padding: 10px;
 }
-.page ul li:first-child {
-  margin: 0;
-}
+
 .page ul li a:focus {
   color: #2e8bff;
   font-size: 18px;
 }
 
-.edit-btn .fa-edit {
+.edit-btn button {
+  width: 0;
+  height: 0;
+  border: 0;
+  line-height: 0;
+  transition: 0;
+}
+.edit-btn button {
   position: fixed;
   right: 20px;
   bottom: 20px;
-  padding: 20px;
+  padding: 40px;
   background: linear-gradient(90deg, #d161ff, #623ee8);
   border-radius: 50%;
+  z-index: 10;
+}
+
+.edit-btn .fa-edit {
+  position: fixed;
+  right: 35px;
+  bottom: 42px;
   font-size: 40px;
   color: #fff;
-  z-index: 2;
+  z-index: 10;
 }
-/* 임의설정 크기를 보기위해서 설정해둠 */
-@media screen and (min-width: 768px) {
+
+@media screen and (min-width: 940px) {
   .reco-slide .swiper-wrapper .swiper-slide {
     width: 40%;
   }
-  .travel .tra-list ul::after {
+  .travel-menu .swiper-slide a {
+    padding: 10px 20px;
+  }
+  .travel-list ul > li {
+    width: 100%;
+    margin: 2.5% 0;
+  }
+  .travel-list ul > li ::after {
     content: "";
     display: block;
     clear: both;
   }
-  .travel .tra-list ul > li {
+  .travel-list ul > li .travel-img {
     float: left;
+    width: 25%;
+    margin: 0 2.5% 2.5% 0;
   }
-  .travel .tra-list ul > li {
-    width: 40%;
-    margin: 5%;
-  }
-  .travel .tra-list ul > li a {
+  .travel-list ul > li .travel-img > a {
     width: 100%;
   }
+  .travel-list ul > li .travel-img > a > img {
+    height: 200px;
+  }
+  .travel-list ul li ol {
+    float: left;
+    width: 70%;
+    margin: 0;
+  }
+  .travel-list ul li ol li:nth-child(1) {
+    margin: 0 0 25px 0;
+  }
 }
-@media screen and (min-width: 940px) {
+@media screen and (min-width: 1200px) {
   .reco-slide .swiper-wrapper .swiper-slide {
     width: 30%;
   }
-  .travel .tra-list ul > li {
-    width: 30%;
-    margin: 1.5%;
-  }
-}
-@media screen and (min-width: 1440px) {
-  .reco-slide .swiper-wrapper .swiper-slide {
-    width: 20%;
+  .travel-menu .swiper-slide a {
+    padding: 10px 30px;
   }
 }

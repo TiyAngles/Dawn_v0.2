@@ -12,235 +12,279 @@
     <title>sample layout</title>
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/swiper.css" />
     <link rel="stylesheet" href="css/sub_season.css" />
     <script
       src="https://kit.fontawesome.com/164552570a.js"
       crossorigin="anonymous"
     ></script>
-    <script src="js/common.js"></script>
-    <script src="js/slidetoggle.js"></script>
+    <script src="js/jquery-1.12.3.min.js"></script>
+    <script src="js/swiper.js"></script>
+    <script src="js/swiper_sub.js"></script>
   </head>
+
   <body>
-    <!--header-->
-    <header>
-      <div class="header-inner">
-        <!--logo-->
-        <h1 id="logo">
-          <a href="#">LOGO</a>
-        </h1>
-        <!--//logo-->
-        <!--btnOpen-->
-        <a id="btnOpen" href="#">
-          <span>
-            <i class="fas fa-bars"></i>
-          </span>
-        </a>
-        <!--//btnOpen-->
-        <nav>
-          <!--btnOpen-->
-          <a id="btnClose" href="#">
-            <span>
-              <i class="fas fa-times"></i>
-            </span>
-          </a>
-          <!--//btnOpen-->
-          <div id="dimmed"></div>
-          <div id="gnb">
-            <ul class="gnb-inner">
-              <li class="gnb-list">
-                <a href="#" class="depth1">depth1-1</a>
-                <ul class="open-menu">
-                  <li><a href="#">depth2</a></li>
-                  <li><a href="#">depth2</a></li>
-                  <li><a href="#">depth2</a></li>
-                  <li><a href="#">depth2</a></li>
-                </ul>
+    <!-- header -->
+    <!-- content -->
+    <!-- 임시로 작성한것입니다 -->
+    <h1>바둑판레이아웃</h1>
+    <div id="container">
+      <!--visual-->
+      <div class="visual"></div>
+      <!--visual-->
+      <!-- recommed -->
+      <div class="container-inner">
+        <div class="recommed">
+          <div class="inner">
+            <h2>Recommed</h2>
+            <div class="swiper-container reco-slide">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div>
+                    <button class="pin"><i class="fas fa-map-pin"></i></button>
+                    <a href="#">
+                      <img
+                        src="https://images.unsplash.com/photo-1500835556837-99ac94a94552?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+                        alt="슬라이더이미지"
+                      />
+                    </a>
+                    <div class="reco-info">
+                      <!-- mob-13글자이상 x -->
+                      <!-- pc-16글자이상 x -->
+                      <h3>협재해수욕장협재해수욕장협</h3>
+                      <!-- mob-15글자이상 x -->
+                      <!-- pc-18글자이상 x -->
+                      <h4>제주시한림읍제주시한림읍제주시</h4>
+                      <img src="http://placehold.it/40x40" alt="프로필사진" />
+                      <div class="reco-chat">
+                        <!-- mob-12글자이상x -->
+                        <!-- pc-16글자이상x -->
+                        <p>홍길동홍길동홍길동홍길동<span>99:99:99</span></p>
+                        <!-- mob-16글자이상x -->
+                        <!-- pc-20글자이상x -->
+                        <p>안녕하세요안녕하세요안녕하세요안</p>
+                      </div>
+                      <button><i class="fas fa-star"></i></button>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div>
+                    <button class="pin"><i class="fas fa-map-pin"></i></button>
+                    <a href="#">
+                      <img
+                        src="https://images.unsplash.com/photo-1537522306408-8435f315b2e3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+                        alt="슬라이더이미지"
+                      />
+                    </a>
+                    <div class="reco-info">
+                      <h3>협재해수욕장</h3>
+                      <h4>제주시 한림읍</h4>
+                      <img src="http://placehold.it/40x40" alt="프로필사진" />
+                      <div class="reco-chat">
+                        <p>홍길동<span>00:00:00</span></p>
+                        <p>안녕하세요.안녕하세요.안녕하세요</p>
+                      </div>
+                      <button><i class="fas fa-star"></i></button>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div>
+                    <button class="pin"><i class="fas fa-map-pin"></i></button>
+                    <a href="#">
+                      <img
+                        src="https://images.unsplash.com/photo-1530521954074-e64f6810b32d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+                        alt="슬라이더이미지"
+                      />
+                    </a>
+                    <div class="reco-info">
+                      <h3>협재해수욕장</h3>
+                      <h4>제주시 한림읍</h4>
+                      <img src="http://placehold.it/40x40" alt="프로필사진" />
+                      <div class="reco-chat">
+                        <p>홍길동<span>00:00:00</span></p>
+                        <p>안녕하세요.안녕하세요.안녕하세요</p>
+                      </div>
+                      <button><i class="fas fa-star"></i></button>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div>
+                    <button class="pin"><i class="fas fa-map-pin"></i></button>
+                    <a href="#">
+                      <img
+                        src="https://images.unsplash.com/photo-1507608616759-54f48f0af0ee?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+                        alt="슬라이더이미지"
+                      />
+                    </a>
+                    <div class="reco-info">
+                      <h3>협재해수욕장</h3>
+                      <h4>제주시 한림읍</h4>
+                      <img src="http://placehold.it/40x40" alt="프로필사진" />
+                      <div class="reco-chat">
+                        <p>홍길동<span>00:00:00</span></p>
+                        <p>안녕하세요.안녕하세요.안녕하세요</p>
+                      </div>
+                      <button><i class="fas fa-star"></i></button>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div>
+                    <button class="pin"><i class="fas fa-map-pin"></i></button>
+                    <a href="#">
+                      <img
+                        src="https://images.unsplash.com/photo-1537522306408-8435f315b2e3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+                        alt="슬라이더이미지"
+                      />
+                    </a>
+                    <div class="reco-info">
+                      <h3>협재해수욕장</h3>
+                      <h4>제주시 한림읍</h4>
+                      <img src="http://placehold.it/40x40" alt="프로필사진" />
+                      <div class="reco-chat">
+                        <p>홍길동<span>00:00:00</span></p>
+                        <p>안녕하세요.안녕하세요.안녕하세요</p>
+                      </div>
+                      <button><i class="fas fa-star"></i></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- travel -->
+      <div class="container-inner">
+        <div class="travel-menu">
+          <div class="inner">
+            <div class="swiper-container tra-menu">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide"><a href="#">봄</a></div>
+                <div class="swiper-slide"><a href="#">여름</a></div>
+                <div class="swiper-slide"><a href="#">가을</a></div>
+                <div class="swiper-slide"><a href="#">겨울</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-inner">
+        <div class="travel-list">
+          <div class="inner">
+            <ul>
+              <li>
+                <div>
+                  <a href="#">
+                    <img
+                      src="https://images.unsplash.com/photo-1530521954074-e64f6810b32d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+                      alt="슬라이더이미지"
+                    />
+                    <ol>
+                      <li>
+                        봄 여행봄 여행봄 여행봄 여행봄 여행봄 여행봄 여행봄
+                        여행봄 여행봄 여행
+                      </li>
+                      <li>
+                        주소 : 서울시 강북구 수유동서울시 강북구 수유동서울시
+                        강북구 수유동
+                      </li>
+                      <li>
+                        주변관광지 : 식당, 영화관, 옷가게등등등식당, 영화관,
+                        옷가게등등등식당, 영화관, 옷가게등등등식당, 영화관,
+                        옷가게등등등식당, 영화관, 옷가게등등등식당, 영화관,
+                        옷가게등등등
+                      </li>
+                    </ol>
+                  </a>
+                </div>
+                <hr />
               </li>
-              <li class="gnb-list">
-                <a href="#" class="depth1">depth1-2</a>
-                <ul class="open-menu">
-                  <li><a href="#">depth2</a></li>
-                  <li><a href="#">depth2</a></li>
-                  <li><a href="#">depth2</a></li>
-                  <li><a href="#">depth2</a></li>
-                </ul>
+              <li>
+                <div>
+                  <a href="#">
+                    <img
+                      src="https://images.unsplash.com/photo-1507608616759-54f48f0af0ee?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+                      alt="슬라이더이미지"
+                    />
+
+                    <ol>
+                      <li>봄 여행</li>
+                      <li>주소 : 서울시 강북구 수유동</li>
+                      <li>주변관광지 : 식당, 영화관, 옷가게등등등</li>
+                    </ol>
+                  </a>
+                </div>
+                <hr />
               </li>
-              <li class="gnb-list">
-                <a href="#" class="depth1">depth1-3</a>
-                <ul class="open-menu">
-                  <li><a href="#">depth2</a></li>
-                  <li><a href="#">depth2</a></li>
-                </ul>
+              <li>
+                <div>
+                  <a href="#">
+                    <img
+                      src="https://images.unsplash.com/photo-1507608616759-54f48f0af0ee?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+                      alt="슬라이더이미지"
+                    />
+
+                    <ol>
+                      <li>봄 여행</li>
+                      <li>주소 : 서울시 강북구 수유동</li>
+                      <li>주변관광지 : 식당, 영화관, 옷가게등등등</li>
+                    </ol>
+                  </a>
+                </div>
+                <hr />
+              </li>
+              <li>
+                <div>
+                  <a href="#">
+                    <img
+                      src="https://images.unsplash.com/photo-1507608616759-54f48f0af0ee?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+                      alt="슬라이더이미지"
+                    />
+
+                    <ol>
+                      <li>봄 여행</li>
+                      <li>주소 : 서울시 강북구 수유동</li>
+                      <li>주변관광지 : 식당, 영화관, 옷가게등등등</li>
+                    </ol>
+                  </a>
+                </div>
+                <hr />
               </li>
             </ul>
           </div>
-        </nav>
+        </div>
       </div>
-    </header>
-    <!--//header-->
-    <!--container-->
-    <div id="container">
-      <!--visual-->
-      <div class="visual">
-        <!-- <img src="http://placehold.it/375x315" alt="페이지소개 이미지" /> -->
-      </div>
-      <!--//visual-->
-      <div class="recommed">
-        <h2>Recommed</h2>
-        <div class="swiper-container">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide"></div>
-            <div class="swiper-slide">2</div>
-            <div class="swiper-slide">3</div>
-            <div class="swiper-slide">4</div>
+      <div class="container-inner">
+        <div class="page">
+          <div class="inner">
+            <ul>
+              <li><a href="#">이전</a></li>
+              <li><a href="#">1</a></li>
+              <li><a href="#">2</a></li>
+              <li><a href="#">3</a></li>
+              <li><a href="#">4</a></li>
+              <li><a href="#">다음</a></li>
+            </ul>
           </div>
         </div>
-        <div class="reco-slider-box">
-          <ul class="reco-slider">
-            <li>
-              <div class="slider-list">
-                <a href="#">
-                  <img
-                    src="http://placehold.it/268x455"
-                    alt="슬라이더이미지1"
-                  />
-                </a>
-                <button class="pin">
-                  <i class="fas fa-map-pin"></i>
-                </button>
-                <div class="reco-box">
-                  <div class="reco-info">
-                    <h3>협재해수욕장</h3>
-                    <p>제주시 한림읍</p>
-                  </div>
-                  <div class="reco-chat">
-                    <img src="http://placehold.it/40x40" alt="프로필사진" />
-                    <div class="user">
-                      <p>홍길동<span>00:00:00</span></p>
-                      <p>안녕하세요.안녕하세요.안녕하세요</p>
-                    </div>
-                  </div>
-                  <button>
-                    <i class="fas fa-star"></i>
-                  </button>
-                </div>
-              </div>
-            </li>
-            <li></li>
-            <li></li>
-            <li></li>
-          </ul>
+      </div>
+      <!-- page -->
+
+      <!-- edit-btn -->
+      <div class="container-inner">
+        <div class="edit-btn">
+          <div class="inner">
+            <button>
+              <i class="far fa-edit"></i>
+            </button>
+          </div>
         </div>
       </div>
-      <div class="travel">
-        <ul class="season-list">
-          <li><a href="#">봄</a></li>
-          <li><a href="#">여름</a></li>
-          <li><a href="#">가을</a></li>
-          <li><a href="#">겨울</a></li>
-        </ul>
-        <div class="tra-list">
-          <ul>
-            <li>
-              <div class="tra-spring-list1">
-                <a href="#">
-                  <img
-                    src="http://placehold.it/344x172"
-                    alt="봄여행지이미지1"
-                  />
-                  <ol>
-                    <li>봄 여행</li>
-                    <li>주소 : 서울시 강북구 수유동</li>
-                    <li>주변관광지 : 식당, 영화관, 옷가게등등등</li>
-                  </ol>
-                </a>
-              </div>
-              <hr />
-            </li>
-            <li>
-              <div class="tra-spring-list1">
-                <a href="#">
-                  <img
-                    src="http://placehold.it/344x172"
-                    alt="봄여행지이미지1"
-                  />
-                  <ol>
-                    <li>봄 여행</li>
-                    <li>주소 : 서울시 강북구 수유동</li>
-                    <li>주변관광지 : 식당, 영화관, 옷가게등등등</li>
-                  </ol>
-                </a>
-              </div>
-              <hr />
-            </li>
-            <li>
-              <div class="tra-spring-list1">
-                <a href="#">
-                  <img
-                    src="http://placehold.it/344x172"
-                    alt="봄여행지이미지1"
-                  />
-                  <ol>
-                    <li>봄 여행</li>
-                    <li>주소 : 서울시 강북구 수유동</li>
-                    <li>주변관광지 : 식당, 영화관, 옷가게등등등</li>
-                  </ol>
-                </a>
-              </div>
-              <hr />
-            </li>
-            <li>
-              <div class="tra-spring-list1">
-                <a href="#">
-                  <img
-                    src="http://placehold.it/344x172"
-                    alt="봄여행지이미지1"
-                  />
-                  <ol>
-                    <li>봄 여행</li>
-                    <li>주소 : 서울시 강북구 수유동</li>
-                    <li>주변관광지 : 식당, 영화관, 옷가게등등등</li>
-                  </ol>
-                </a>
-              </div>
-              <hr />
-            </li>
-          </ul>
-        </div>
-        <div class="tra-summer"></div>
-        <div class="tra-fall"></div>
-        <div class="tra-winter"></div>
-      </div>
-      <div class="page">
-        <ul>
-          <li><a href="#">이전</a></li>
-          <li><a href="#">1</a></li>
-          <li><a href="#">2</a></li>
-          <li><a href="#">3</a></li>
-          <li><a href="#">4</a></li>
-          <li><a href="#">다음</a></li>
-        </ul>
-      </div>
-      <div class="edit-btn">
-        <button>
-          <i class="far fa-edit"></i>
-        </button>
-      </div>
     </div>
-    <!--//container-->
-    <!--footer-->
-    <div id="footer">
-      <div class="footer-info">
-        <ul>
-          <li><a href="#">로그인</a></li>
-          <li><a href="#">이용약관</a></li>
-          <li><a href="#">개인정보처리방침</a></li>
-        </ul>
-      </div>
-      <div class="footer-description">
-        <p>이 사이트는 샘플 포트폴리오용 사이트이며 상업적 목적은 없습니다</p>
-      </div>
-    </div>
-    <!--//footer-->
+    <!-- footer -->
   </body>
 </html>

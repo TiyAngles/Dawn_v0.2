@@ -1,132 +1,164 @@
 @charset "utf-8";
-/* 스타일링을 위해 임의지정 */
-
-header {
-  z-index: 10;
-}
 #container {
-  background: none;
 }
-
-/* 스타일링을 위해 임의지정 */
-
+.container-inner {
+  background-color: transparent;
+}
+.visual {
+  /* 스타일링을 위해 임의지정 추후삭제 */
+  width: 100%;
+  height: 600px;
+  /* 스타일링을 위해 임의지정 추후삭제 */
+  background-image: url(../img/paragliding-4823764_1920.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
 /* recommed */
-
 .recommed h2 {
-  padding: 100px 0 0 31px;
-  font-size: 32px;
   color: #3c3c3c;
 }
 
-.reco-slider li .slider-list {
+/* reco-swiper스타일링 */
+.reco-slide .swiper-wrapper .swiper-slide {
   position: relative;
-  width: 268px;
-  height: 455px;
-  margin: 50px 0 0 31px;
-  border-radius: 30px;
+  width: 80%;
+  margin: 0 0 0 5%;
 }
-.reco-slider li .slider-list a {
-  border-radius: 30px;
-  overflow: hidden;
-}
-.reco-slider li .slider-list img {
-  overflow: hidden;
-  border-radius: 30px;
+.swiper-slide button {
+  border: 0;
 }
 /* 핀스타일링 */
-.slider-list .pin {
+.swiper-slide .pin {
   position: absolute;
   top: 0;
-  left: 0;
-  padding: 8px 30px 6px 218px;
+  right: 0;
+  width: 100%;
+  height: 40px;
   background: rgba(85, 85, 85, 0.5);
-  border-radius: 30px 30px 0 0;
+  border-radius: 25px 25px 0 0;
 }
 .pin .fa-map-pin {
-  text-align: right;
+  position: absolute;
+  top: 6px;
+  right: 30px;
   transform: rotate(30deg);
-  font-size: 36px;
+  text-align: right;
+  font-size: 30px;
+  border: 0;
   color: #fff;
 }
-.slider-list .reco-box {
+.pin .fa-map-pin:hover {
+  color: #2e8bff;
+}
+.swiper-slide img {
+  width: 100%;
+  /* 스타일링을 위해 강제로 높이값을 잡음 (사진의 크기가 너무다름) */
+  height: 350px;
+  border-radius: 25px;
+}
+.swiper-slide .reco-info {
   position: absolute;
   left: 0;
   bottom: 0;
-  width: 268px;
-  height: 150px;
-  background: rgba(85, 85, 85, 0.5);
-  border-radius: 0 0 30px 30px;
+  width: 100%;
+  height: 125px;
+  background: rgba(85, 85, 85, 0.8);
+  border-radius: 0 0 25px 25px;
 }
-.slider-list .reco-info {
-  margin: 26px 0 0 10px;
-}
-.slider-list .reco-info h3 {
-  font-size: 28px;
-  color: #3c3c3c;
-}
-.slider-list .reco-chat {
-  margin: 10px 0 0 0;
-  color: #3c3c3c;
-}
-.reco-chat::after {
+.swiper-slide .reco-info::after {
   content: "";
   display: block;
   clear: both;
 }
-.reco-chat img {
-  display: block;
-  float: left;
-  margin: 0 0 0 10px;
-}
-.reco-chat .user {
-  float: right;
-  width: 200px;
-  overflow: hidden;
-  white-space: nowrap;
-}
-
-.reco-box .fa-star {
-  position: absolute;
-  top: 40px;
-  right: 20px;
-  font-size: 36px;
+.swiper-slide .reco-info > h3 {
+  padding: 0;
+  margin: 15px 0 0 10px;
+  font-size: 18px;
   color: #fff;
 }
-
-/* travel  */
-.travel {
-  margin: 35px 0 0 0;
+.swiper-slide .reco-info > h4 {
+  margin: 5px 0 0 10px;
+  font-size: 16px;
+  font-weight: normal;
+  color: #fff;
 }
-.travel .season-list::after {
-  content: "";
+.swiper-slide .reco-info img {
   display: block;
-  clear: both;
+  float: left;
+  /* 스타일링을 위해 강제로 크기설정*/
+  width: 40px;
+  height: 40px;
+  margin: 6px 10px 0 10px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+.swiper-slide .reco-info .reco-chat {
+  float: left;
+  margin: 6px 0 0 0;
+  font-size: 14px;
+}
+.swiper-slide .reco-info .reco-chat span {
+  margin: 0 0 0 10px;
+}
+.swiper-slide .reco-info .fa-star {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 30px;
+  color: #fff;
+}
+.swiper-slide .reco-info .fa-star:hover {
+  color: #f2d91f;
+}
+/* travel-menu  */
+.travel-menu {
+  margin: 150px 0 0 0;
+}
+.travel-menu .swiper-slide {
+  padding: 10px;
+  text-align: center;
+}
+.travel-menu .swiper-slide a {
+  font-size: 32px;
+  font-weight: bold;
+  color: #3c3c3c;
+  padding: 10px;
 }
 
-.travel .season-list li {
-  float: left;
-  margin: 0 0 0 35px;
-  font-size: 28px;
-  color: #ff0;
-}
-.travel .season-list li a {
-  color: #3c3c3c;
-}
-.travel .tra-list {
+.travel-list ul {
   margin: 50px 0 0 15px;
 }
-.tra-list .tra-spring-list1 ol {
+.travel-list ul > li {
+  width: 80%;
+  margin: 2.5% 10%;
+}
+.travel-list ul > li a {
+  width: 80%;
+}
+.travel-list ul li a img {
+  width: 100%;
+}
+.travel-list ul li ol {
   margin: 25px 0 0 0;
 }
-.tra-list .tra-spring-list1 ol li {
+.travel-list ul li ol li {
   font-size: 16px;
+  margin: 0 0 15px 0;
+  line-height: 26px;
 }
-.tra-list .tra-spring-list1 ol li:nth-child(1) {
+.travel-list ul li ol li:nth-child(1) {
   margin: 0 0 25px 0;
   font-size: 18px;
 }
-hr {
-  width: 90%;
+.travel-list hr {
+  display: block;
+  width: 100%;
+  height: 2px;
+  margin: 20px 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  background-color: #b5b5b5;
 }
 .page {
   text-align: center;
@@ -134,19 +166,73 @@ hr {
 
 .page ul li {
   display: inline-block;
-  margin: 0 0 0 25px;
   font-size: 16px;
+  padding: 10px;
 }
-.page ul li:first-child {
-  margin: 0;
+
+.page ul li a:focus {
+  color: #2e8bff;
+  font-size: 18px;
+}
+
+.edit-btn button {
+  width: 0;
+  height: 0;
+  border: 0;
+  line-height: 0;
+  transition: 0;
+}
+.edit-btn button {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  padding: 40px;
+  background: linear-gradient(90deg, #d161ff, #623ee8);
+  border-radius: 50%;
+  z-index: 10;
 }
 
 .edit-btn .fa-edit {
   position: fixed;
-  right: 20px;
-  bottom: 20px;
+  right: 35px;
+  bottom: 42px;
   font-size: 40px;
-  border: 1px solid #000;
-  border-radius: 50%;
-  padding: 20px;
+  color: #fff;
+  z-index: 10;
+}
+/* 임의설정 크기를 보기위해서 설정해둠 */
+@media screen and (min-width: 940px) {
+  .reco-slide .swiper-wrapper .swiper-slide {
+    width: 40%;
+  }
+  .travel-menu .swiper-slide a {
+    padding: 10px 20px;
+  }
+  .travel-list ul::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+  .travel-list ul > li {
+    float: left;
+  }
+  .travel-list ul > li {
+    width: 40%;
+    margin: 2.5% 5%;
+  }
+  .travel-list ul > li a {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .reco-slide .swiper-wrapper .swiper-slide {
+    width: 30%;
+  }
+  .travel-menu .swiper-slide a {
+    padding: 10px 30px;
+  }
+  .travel-list ul > li {
+    width: 30%;
+    margin: 2.5% 1.5%;
+  }
 }

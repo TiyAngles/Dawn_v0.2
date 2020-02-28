@@ -1,4 +1,4 @@
-endpoint: https://us1.prisma.sh/vins/Back/dev
+endpoint: https://us1.prisma.sh/tpehdj12-4d0755/Back/dev
 datamodel: datamodel.prisma
 
 generate:

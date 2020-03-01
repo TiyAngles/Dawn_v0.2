@@ -1,0 +1,234 @@
+@charset "utf-8";
+/* visual  */
+.visual {
+  height: 300px;
+  background-image: url("../img/sub/season_bg.JPG");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: 100%;
+}
+/* recommed */
+.recommed h2 {
+  color: #3c3c3c;
+}
+/* reco-swiper */
+.reco-slide .swiper-wrapper .swiper-slide {
+  position: relative;
+  width: 80%;
+  margin: 0 0 0 5%;
+}
+.swiper-slide {
+}
+.swiper-slide .inner {
+  height: 440px;
+  background-image: url("../img/sub/slider/reco_slider_1.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+  border-radius: 25px;
+}
+.swiper-slide .top {
+  width: 100%;
+  height: 40px;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 25px 25px 0 0;
+  text-align: right;
+}
+.swiper-slide .top .fa-map-pin {
+  display: inline-block;
+  color: #fff;
+  font-size: 30px;
+  padding: 10px;
+  transform: translate(-15px, -3px) rotate(35deg);
+}
+.swiper-slide .top .fa-map-pin:hover {
+  color: #2e8bff;
+}
+.swiper-slide .bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 150px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 0 0 25px 25px;
+}
+.swiper-slide .bottom::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.swiper-slide .bottom h3 {
+  padding: 15px 0 0 10px;
+  font-size: 24px;
+  color: #fff;
+}
+.swiper-slide .bottom h4 {
+  padding: 10px 0 0 10px;
+  color: #ebebeb;
+  font-size: 16px;
+}
+.swiper-slide .bottom img {
+  display: block;
+  float: left;
+  width: 40px;
+  height: 40px;
+  margin: 10px 10px 0 10px;
+  border-radius: 50%;
+}
+
+.swiper-slide .bottom .chat {
+  float: left;
+  margin: 10px 0 0 0;
+  font-size: 14px;
+}
+.swiper-slide .bottom .chat span {
+  margin-left: 5px;
+}
+.swiper-slide .bottom a {
+  position: absolute;
+  right: 0;
+  top: 5px;
+  display: inline-block;
+  padding: 10px;
+  color: #fff;
+  font-size: 30px;
+}
+.swiper-slide .bottom a .fa-star:hover {
+  color: #f2d91f;
+}
+/* travel-menu  */
+.travel-menu {
+  margin: 150px 0 0 0;
+}
+.travel-menu .swiper-slide {
+  text-align: center;
+}
+.travel-menu .swiper-slide a {
+  font-size: 32px;
+  font-weight: bold;
+  color: #3c3c3c;
+  padding: 10px;
+}
+/* travel-list  */
+.travel-list ul {
+  margin: 50px 0 0 15px;
+}
+.travel-list ul > li {
+  width: 90%;
+  margin: 2.5% 5%;
+}
+.travel-list ul > li .travel-img > a {
+  width: 80%;
+}
+.travel-list ul li .travel-img > a img {
+  width: 100%;
+}
+.travel-list ul li ol {
+  margin: 25px 0 0 0;
+}
+.travel-list ul li ol li {
+  font-size: 16px;
+  margin: 0 0 15px 0;
+  line-height: 26px;
+}
+.travel-list ul li ol li:nth-child(1) {
+  margin: 0 0 25px 0;
+  font-size: 18px;
+}
+.travel-list hr {
+  display: block;
+  width: 100%;
+  height: 2px;
+  margin: 20px 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  background-color: #b5b5b5;
+}
+/* page */
+.page {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.page ul li {
+  display: inline-block;
+}
+.page ul li a {
+  display: inline-block;
+  font-size: 16px;
+  padding: 10px;
+}
+.page ul li a:focus {
+  color: #2e8bff;
+  font-size: 18px;
+}
+/* edit-btn */
+.edit-btn button {
+  width: 0;
+  height: 0;
+  border: 0;
+  line-height: 0;
+  transition: 0;
+}
+.edit-btn button {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  padding: 40px;
+  background: linear-gradient(90deg, #d161ff, #623ee8);
+  border-radius: 50%;
+  z-index: 10;
+}
+
+.edit-btn .fa-edit {
+  position: fixed;
+  right: 35px;
+  bottom: 42px;
+  font-size: 40px;
+  color: #fff;
+  z-index: 10;
+}
+
+@media screen and (min-width: 940px) {
+  .visual {
+    height: 440px;
+    background-image: url("../img/sub/season_bg_pc2.JPG");
+  }
+  .travel-menu .swiper-slide a {
+    padding: 10px 20px;
+  }
+  .travel-list ul > li {
+    width: 100%;
+    margin: 2.5% 0;
+  }
+  .travel-list ul > li ::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+  .travel-list ul > li .travel-img {
+    float: left;
+    width: 25%;
+    margin: 0 2.5% 2.5% 0;
+  }
+  .travel-list ul > li .travel-img > a {
+    width: 100%;
+  }
+  .travel-list ul > li .travel-img > a > img {
+    height: 200px;
+  }
+  .travel-list ul li ol {
+    float: left;
+    width: 70%;
+    margin: 0;
+  }
+  .travel-list ul li ol li:nth-child(1) {
+    margin: 0 0 25px 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .travel-menu .swiper-slide a {
+    padding: 10px 30px;
+  }
+}

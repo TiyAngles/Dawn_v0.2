@@ -200,7 +200,7 @@ Message {
 - [x] 서브페이지 html.css파일작성-Sohyun
 - [x] ~02.25 1차디자인 수정, 디자인 psd 제작 -Sohyun
 - [x] ~02.27 전체페이지 디자인psd제작,로고제작 -Sohyun
-- [ ] 서브페이지 퍼블리싱 수정 -Sohyun
+- [ ] ~03.01서브페이지 퍼블리싱 수정 -Sohyun
 
 ---
 

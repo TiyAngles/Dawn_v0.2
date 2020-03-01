@@ -1,8 +1,13 @@
-import React from 'react';
+import React from "react";
+import Routes from "./Routes/Routes";
+import GlobalStyles from "./Styles/GlobalStyles";
 
 function App() {
   return (
-    <h1>Hello Dawn Project Frontedn!! Welcome Here!!</h1>
+    <>
+      <Routes />
+      <GlobalStyles />
+    </>
   );
 }
 

@@ -1,0 +1,240 @@
+@charset "uft-8";
+/* search-bar */
+.container-inner {
+  width: 90%;
+  margin: 0 auto;
+}
+.search-bar {
+  position: relative;
+  margin: 0 auto;
+  background: #fff;
+  border-radius: 20px;
+  border: 2px solid #c0dcff;
+  padding: 8px 20px;
+}
+input[id="searchBar"] {
+  width: 85%;
+  height: 54px;
+  padding: 0;
+  box-sizing: border-box;
+  border-bottom: 1px solid #ccc;
+  font-size: 16px;
+}
+label[for="searchBar"] {
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  right: -1px;
+  display: block;
+  width: 15%;
+  height: 70px;
+  line-height: 70px;
+  background-color: #c0dcff;
+  text-align: center;
+  border-radius: 0 16px 16px 0;
+}
+label[for="searchBar"] .fa-search {
+  color: #fff;
+  font-size: 20px;
+}
+/* notice */
+.notice hr {
+  display: block;
+  width: 100%;
+  height: 2px;
+  margin: 20px 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  background-color: #555555;
+}
+.notice-inner li {
+  border-bottom: 1px solid #ccc;
+}
+.notice-inner li a {
+  display: block;
+  margin: 10px 0 10px 10px;
+}
+.notice-info {
+  margin-top: 10px;
+}
+.notice-info span:last-child::before {
+  content: " | ";
+}
+/* qna-list */
+.qna-list-inner li {
+  border-bottom: 1px solid #ccc;
+}
+.qna-list-inner li a {
+  display: block;
+  position: relative;
+  margin: 10px 0 10px 10px;
+}
+.qna-list-inner li a em {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  font-weight: bold;
+}
+.qna-list-text {
+  margin-left: 30px;
+}
+.qna-list-info {
+  margin-top: 10px;
+}
+.qna-list-info span:last-child::before {
+  content: " | ";
+}
+/* edit-btn */
+.edit-btn .pc {
+  display: none;
+}
+.edit-btn button {
+  width: 0;
+  height: 0;
+  border: 0;
+  line-height: 0;
+  transition: 0;
+}
+.edit-btn .mob button {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  padding: 40px;
+  background: linear-gradient(90deg, #d161ff, #623ee8);
+  border-radius: 50%;
+  z-index: 10;
+}
+
+.edit-btn .mob .fa-edit {
+  position: fixed;
+  right: 35px;
+  bottom: 42px;
+  font-size: 40px;
+  color: #fff;
+  z-index: 10;
+}
+
+.edit-btn .pc::after {
+  display: block;
+  content: "";
+  clear: both;
+}
+.edit-btn .pc {
+  width: 100px;
+  height: 50px;
+  line-height: 50px;
+  float: right;
+  background: linear-gradient(90deg, #d161ff, #623ee8);
+  border-radius: 25px;
+}
+.edit-btn .pc button {
+  width: 94px;
+  height: 44px;
+  margin: 3px;
+  line-height: 40px;
+  border-radius: 25px;
+  background: #fff;
+}
+.edit-btn .pc button:hover {
+  color: #623ee8;
+  font-weight: bold;
+}
+.edit-btn .pc .fa-edit {
+}
+
+/* page */
+.page {
+  text-align: center;
+  margin: 20px 0;
+}
+.page ul li {
+  display: inline-block;
+}
+.page ul li a {
+  display: inline-block;
+  font-size: 16px;
+  padding: 10px;
+}
+.page ul li a:focus {
+  color: #2e8bff;
+  font-size: 18px;
+}
+
+@media screen and (min-width: 940px) {
+  .qna .inner::after {
+    display: block;
+    content: "";
+    clear: both;
+  }
+  .qna .inner h2 {
+    padding-bottom: 10px;
+  }
+  .search-bar {
+    float: right;
+    width: 500px;
+    margin-bottom: 20px;
+    padding: 5px 20px;
+  }
+
+  input[id="searchBar"] {
+    height: 40px;
+  }
+  label[for="searchBar"] {
+    height: 50px;
+    line-height: 50px;
+  }
+  /* notice-inner */
+  .notice-inner a::after {
+    display: block;
+    clear: both;
+    content: "";
+  }
+  .notice-inner p {
+    float: left;
+    width: 70%;
+  }
+  .notice-inner .notice-info {
+    float: right;
+    text-align: center;
+    padding-right: 10px;
+    width: 30%;
+  }
+  .notice-info {
+    margin-top: 0;
+  }
+  /* qna-list */
+  .qna-list-text::after {
+    display: block;
+    clear: both;
+    content: "";
+  }
+  .qna-list-text p {
+    float: left;
+    width: 70%;
+  }
+  .qna-list-text .qna-list-info {
+    float: right;
+    text-align: center;
+    padding-right: 10px;
+    width: 30%;
+  }
+  .qna-list-info {
+    margin-top: 0;
+  }
+  .edit-btn {
+    margin-top: 10px;
+  }
+  .edit-btn .mob {
+    display: none;
+  }
+  .edit-btn .pc {
+    display: block;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container-inner {
+    width: 1200px;
+  }
+}

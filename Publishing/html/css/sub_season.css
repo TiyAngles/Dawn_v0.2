@@ -17,9 +17,16 @@
   width: 80%;
   margin: 0 0 0 5%;
 }
-.swiper-slide {
+.reco-slide {
+  /* background: yellow; */
 }
-.swiper-slide .inner {
+.reco-slide .swiper-slide {
+  /* background: red; */
+}
+.reco-slide .swiper-slide .inner {
+  /* background: blue; */
+}
+.reco-slide .swiper-slide .inner {
   height: 440px;
   background-image: url("../img/sub/slider/reco_slider_1.jpg");
   background-repeat: no-repeat;
@@ -31,9 +38,15 @@
   width: 100%;
   height: 40px;
   background-color: rgba(0, 0, 0, 0.3);
+  background: linear-gradient(
+    rgba(38, 38, 38, 0.5) 15%,
+    rgba(115, 115, 115, 0.3) 70%,
+    rgba(160, 160, 160, 0.2) 100%
+  );
   border-radius: 25px 25px 0 0;
   text-align: right;
 }
+
 .swiper-slide .top .fa-map-pin {
   display: inline-block;
   color: #fff;
@@ -51,8 +64,15 @@
   width: 100%;
   height: 150px;
   background-color: rgba(0, 0, 0, 0.5);
+  background: linear-gradient(
+    -360deg,
+    rgba(38, 38, 38, 1) 15%,
+    rgba(115, 115, 115, 0.7) 90%,
+    rgba(160, 160, 160, 0.2) 100%
+  );
   border-radius: 0 0 25px 25px;
 }
+
 .swiper-slide .bottom::after {
   content: "";
   display: block;
@@ -68,19 +88,20 @@
   color: #ebebeb;
   font-size: 16px;
 }
-.swiper-slide .bottom img {
-  display: block;
+.swiper-slide .bottom .pro-img {
   float: left;
   width: 40px;
   height: 40px;
   margin: 10px 10px 0 10px;
   border-radius: 50%;
+  background: #000;
 }
 
 .swiper-slide .bottom .chat {
   float: left;
   margin: 10px 0 0 0;
   font-size: 14px;
+  color: #fff;
 }
 .swiper-slide .bottom .chat span {
   margin-left: 5px;
@@ -110,30 +131,33 @@
   color: #3c3c3c;
   padding: 10px;
 }
-/* travel-list  */
-.travel-list ul {
-  margin: 50px 0 0 15px;
+.travel-menu .swiper-slide a:hover {
+  color: #2e8bff;
 }
+/* travel-list  */
 .travel-list ul > li {
   width: 90%;
-  margin: 2.5% 5%;
+  margin: 0 auto;
+  /* margin: 2.5% 5%; */
 }
-.travel-list ul > li .travel-img > a {
-  width: 80%;
-}
-.travel-list ul li .travel-img > a img {
+.travel-list ul > li .travel-img {
   width: 100%;
+  height: 200px;
+  background: #ccc;
+  background-image: url("../img/sub/slider/reco_slider_1.jpg");
+  background-position: 50% 50%;
+  background-size: cover;
 }
 .travel-list ul li ol {
-  margin: 25px 0 0 0;
+  /* margin: 25px 0 0 0; */
 }
 .travel-list ul li ol li {
   font-size: 16px;
-  margin: 0 0 15px 0;
+  /* margin: 0 0 15px 0; */
   line-height: 26px;
 }
 .travel-list ul li ol li:nth-child(1) {
-  margin: 0 0 25px 0;
+  /* margin: 0 0 25px 0; */
   font-size: 18px;
 }
 .travel-list hr {
@@ -146,10 +170,68 @@
   outline: 0;
   background-color: #b5b5b5;
 }
+/* edit-btn */
+.edit-btn .pc {
+  display: none;
+}
+.edit-btn button {
+  width: 0;
+  height: 0;
+  border: 0;
+  line-height: 0;
+  transition: 0;
+}
+.edit-btn .mob button {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  padding: 40px;
+  background: linear-gradient(90deg, #d161ff, #623ee8);
+  border-radius: 50%;
+  z-index: 10;
+}
+
+.edit-btn .mob .fa-edit {
+  position: fixed;
+  right: 35px;
+  bottom: 42px;
+  font-size: 40px;
+  color: #fff;
+  z-index: 10;
+}
+
+.edit-btn .pc::after {
+  display: block;
+  content: "";
+  clear: both;
+}
+.edit-btn .pc {
+  width: 100px;
+  height: 50px;
+  line-height: 50px;
+  float: right;
+  background: linear-gradient(90deg, #d161ff, #623ee8);
+  border-radius: 25px;
+}
+.edit-btn .pc button {
+  width: 94px;
+  height: 44px;
+  margin: 3px;
+  line-height: 40px;
+  border-radius: 25px;
+  background: #fff;
+}
+.edit-btn .pc button:hover {
+  color: #623ee8;
+  font-weight: bold;
+}
+.edit-btn .pc .fa-edit {
+}
+
 /* page */
 .page {
   text-align: center;
-  margin-bottom: 20px;
+  margin: 20px 0;
 }
 .page ul li {
   display: inline-block;
@@ -163,37 +245,14 @@
   color: #2e8bff;
   font-size: 18px;
 }
-/* edit-btn */
-.edit-btn button {
-  width: 0;
-  height: 0;
-  border: 0;
-  line-height: 0;
-  transition: 0;
-}
-.edit-btn button {
-  position: fixed;
-  right: 20px;
-  bottom: 20px;
-  padding: 40px;
-  background: linear-gradient(90deg, #d161ff, #623ee8);
-  border-radius: 50%;
-  z-index: 10;
-}
-
-.edit-btn .fa-edit {
-  position: fixed;
-  right: 35px;
-  bottom: 42px;
-  font-size: 40px;
-  color: #fff;
-  z-index: 10;
-}
 
 @media screen and (min-width: 940px) {
   .visual {
     height: 440px;
     background-image: url("../img/sub/season_bg_pc2.JPG");
+  }
+  .reco-slide .swiper-wrapper .swiper-slide {
+    width: 40%;
   }
   .travel-menu .swiper-slide a {
     padding: 10px 20px;
@@ -215,9 +274,6 @@
   .travel-list ul > li .travel-img > a {
     width: 100%;
   }
-  .travel-list ul > li .travel-img > a > img {
-    height: 200px;
-  }
   .travel-list ul li ol {
     float: left;
     width: 70%;
@@ -226,8 +282,20 @@
   .travel-list ul li ol li:nth-child(1) {
     margin: 0 0 25px 0;
   }
+  .edit-btn {
+    margin-top: 10px;
+  }
+  .edit-btn .mob {
+    display: none;
+  }
+  .edit-btn .pc {
+    display: block;
+  }
 }
 @media screen and (min-width: 1200px) {
+  .reco-slide .swiper-wrapper .swiper-slide {
+    width: 33%;
+  }
   .travel-menu .swiper-slide a {
     padding: 10px 30px;
   }

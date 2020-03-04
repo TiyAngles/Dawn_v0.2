@@ -2,6 +2,15 @@ import React from "react";
 import styled from "styled-components";
 import Gnb from "./Gnb";
 import Rnb from "./Rnb";
+
+export default function MenuWrapper() {
+  return (
+    <Container>
+      <Gnb />
+      <Rnb />
+    </Container>
+  );
+}
 const Container = styled.nav`
   position: absolute;
   top: 0;
@@ -17,11 +26,3 @@ const Container = styled.nav`
     width: 100%;
   }
 `;
-export default function MenuWrapper() {
-  return (
-    <Container>
-      <Gnb />
-      <Rnb />
-    </Container>
-  );
-}

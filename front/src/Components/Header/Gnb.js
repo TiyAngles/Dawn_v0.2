@@ -52,7 +52,7 @@ export default function Gnb() {
     }
   };
   return (
-    <Container>
+    <Container listState={listState}>
       <GnbInner>
         <GnbList
           detail={theme}
@@ -75,10 +75,4 @@ const Container = styled.div`
   padding: 40px 20px 0 20px;
 `;
 
-const GnbInner = styled.ul`
-  &::after {
-    display: block;
-    content: "";
-    clear: both;
-  }
-`;
+const GnbInner = styled.ul``;

@@ -11,3 +11,8 @@
 
 - 2020 03 01 리액트 라우터 세팅, 글로벌 스타일, reset.css(peppermint100)
 - 2020 03 01 퍼블리싱 폴더에서 이미지 가져옴(components/img), 폰트어썸 라이브러리 설치, Header 작업중...(peppermint100)
+- 2020 03 04 헤더 모바일 디테일 애니메이션 빼고 완료
+
+### 이슈
+
+- GlobalStyle 세팅(reset.css, style.css)

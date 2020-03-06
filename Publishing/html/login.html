@@ -18,56 +18,63 @@
     <!--modal-->
     <div id="signID" class="modal">
         <div class="modal-inner">
-        <!--form-wrap-->
-        <div class="form-wrap">
-            <form action="modal-content" method="GET">
-                <!--form-list-->
-                <div class="form-list">
-                    <div class="form-row">
-                        <div class="form-col">
-                            <div class="form">
-                                <label for="id_abc">ID</label>
-                                <input type="text" id="id_abc" name="username">
+            <!--form-wrap-->
+            <h2 class="logo">
+                <a href="#">
+                    <img src="img/logo.png" alt="logo">
+                </a>
+            </h2>
+            <div class="form-wrap">
+                <form action="modal-content" method="GET">
+                    <!--form-list-->
+                    <div class="form-list">
+                        <div class="form-row">
+                            <div class="form-col">
+                                <div class="form">
+                                    <label for="id_abc">아이디</label>
+                                    <input type="text" id="id_abc" name="username">
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <!--//form-list-->
-                <!--form-list-->
-                <div class="form-list">
-                    <div class="form-row">
-                        <div class="form-col">
-                            <div class="form">
-                                <label for="pw_1">PW</label>
-                                <input type="password" id="pw_1" name="password">
+                    <!--//form-list-->
+                    <!--form-list-->
+                    <div class="form-list">
+                        <div class="form-row">
+                            <div class="form-col">
+                                <div class="form">
+                                    <label for="pw_1">비밀번호</label>
+                                    <input type="password" id="pw_1" name="password">
+                                </div>
                             </div>
                         </div>
                     </div>
+                    <!--//form-list-->
+                    <div class="form-login">
+                        <a href="">아이디찾기</a>
+                        <a href="">비밀번호찾기</a>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox"id="ch_1">
+                        <label for="ch_1">로그인 상태 유지</label>
+                    </div>
+                    <div class="btn-login">
+                        <button>로그인</button>
+                    </div>
+                </form> 
+                <p>다른 로그인 방식을 선택해주세요</p>
+                <div class="btn-social">
+                    <button>카카오 계정으로 로그인</button>
+                    <button>네이버 계정으로 로그인</button>
                 </div>
-                <!--//form-list-->
-                <div class="form-login">
-                    <a href="">아이디찾기</a>
-                    <a href="">비밀번호찾기</a>
+                <div class="ad-question">
+                    <a href="javascript;">
+                        아직도 회원이 아니신가요?
+                        <span>회원가입</span>
+                    </a>
                 </div>
-                <div class="form-check">
-                    <label for="">                            
-                        <input type="checkbox" checked="checked" name="remember">로그인 상태 유지
-                    </label>
-                </div>
-                <div class="btn-login">
-                    <button>LOGIN</button>
-                </div>
-            </form> 
-            <p>다른 로그인 방식을 선택해주세요</p>
-            <div class="btn-social">
-                <button>KAKAO</button>
-                <button>NAVER</button>
             </div>
-            <div class="ad-question">
-                <a href="javascript;">아직도 회원이 아니신가요?</a>
-            </div>
-        </div>
-        <!--//form-wrap-->
+            <!--//form-wrap-->
         </div>
     </div>
     <!--//modal-->

@@ -27,7 +27,7 @@
                     <div class="form-row">
                         <div class="form-col">
                             <div class="form">
-                                <label for="name_abc">NAME</label>
+                                <label for="name_abc">이름</label>
                                 <input type="text" id="name_abc" name="username">
                             </div>
                         </div>
@@ -39,7 +39,7 @@
                     <div class="form-row">
                         <div class="form-col">
                             <div class="form">
-                                <label for="abc">NICK NAME</label>
+                                <label for="abc">닉네임</label>
                                 <input type="text"" id="abc" name="password">
                             </div>
                         </div>
@@ -51,7 +51,7 @@
                     <div class="form-row">
                         <div class="form-col">
                             <div class="form">
-                                <label for="id_abc">ID</label>
+                                <label for="id_abc">아이디</label>
                                 <input type="text" id="id_abc" name="username">
                             </div>
                         </div>
@@ -63,7 +63,7 @@
                     <div class="form-row">
                         <div class="form-col">
                             <div class="form">
-                                <label for="pw_2">PW</label>
+                                <label for="pw_2">비밀번호</label>
                                 <input type="password" id="pw_2" name="password">
                             </div>
                         </div>
@@ -75,7 +75,7 @@
                     <div class="form-row">
                         <div class="form-col">
                             <div class="form">
-                                <label for="pw_3">PW CHECK</label>
+                                <label for="pw_3">비밀번호 확인</label>
                                 <input type="password" id="pw_3" name="password">
                             </div>
                         </div>
@@ -99,7 +99,7 @@
                     <div class="form-row">
                         <div class="form-col">
                             <div class="form">
-                                <label for="pw_3">BIRTHDAY</label>
+                                <label for="pw_3">생년월일</label>
                                 <input type="text" id="birthday_1" name="password">
                             </div>
                         </div>
@@ -109,46 +109,52 @@
                 <div class="form-gender">
                     <div>성별</div>
                     <div>
-                        <input type="radio" name="tabmenu" id="gender_1" checked />
-                        <label for="gender_1">남자</label>
-                        <input type="radio" name="tabmenu" id="gender_2" />
-                        <label for="gender_2">여자</label>
+                        <div class="form-check-2">
+                            <input type="checkbox" name="tabmenu" id="gender_1" checked />
+                            <label for="gender_1">남자</label>
+                        </div>
+                        <div class="form-check-2">
+                            <input type="checkbox" name="tabmenu" id="gender_2" />
+                            <label for="gender_2">여자</label>
+                        </div>
                     </div>
                 </div>
                 <div class="ad-agreement">
-                    <p>
+                    <div class="form-check-2">
                         <input type="checkbox" name="tabmenu" id="agreement_all" />
-                        <label for="tab1">전체동의</label>
-                    </p>
-                    <ul>
-                        <li>
-                            <div>
-                                <input type="checkbox" name="tabmenu" id="agreement_1" />
-                                <label for="tab1">항목1</label>
-                            </div>
-                            <div>세부내용1세부내용1세부내용1세부내용1세부내용1세부내용1세부내용1세부내용1세부내용1</div>
-                        </li>
-                        <li>
-                            <div>
-                                <input type="checkbox" name="tabmenu" id="agreement_2" />
-                                <label for="tab2">항목2</label>
-                            </div>
-                            <div>세부내용2세부내용2세부내용2세부내용2세부내용2세부내용2세부내용2세부내용2세부내용2</div>
-                        </li>
-                        <li>
-                            <div>
-                                <input type="checkbox" name="tabmenu" id="agreement_3" />
-                                <label for="tab2">항목3</label>
-                            </div>
-                            <div>세부내용3세부내용3세부내용3세부내용3세부내용3세부내용3세부내용3세부내용3세부내용3</div>
-                        </li>
-                    </ul>
-                    <p>
+                        <label for="agreement_all">전체동의</label>
+                    </div>
+                    <div>
+                        <ul>
+                            <li>
+                                <div class="form-check-2">
+                                    <input type="checkbox" name="tabmenu" id="agreement_1" />
+                                    <label for="agreement_1">항목1</label>
+                                </div>
+                                <div class="form-description">세부내용1세부내용1세부내용1세부내용1세부내용1세부내용1세부내용1세부내용1세부내용1</div>
+                            </li>
+                            <li>
+                                <div class="form-check-2">
+                                    <input type="checkbox" name="tabmenu" id="agreement_2" />
+                                    <label for="agreement_2">항목2</label>
+                                </div>
+                                <div class="form-description">세부내용2세부내용2세부내용2세부내용2세부내용2세부내용2세부내용2세부내용2세부내용2</div>
+                            </li>
+                            <li>
+                                <div class="form-check-2">
+                                    <input type="checkbox" name="tabmenu" id="agreement_3" />
+                                    <label for="agreement_3">항목3</label>
+                                </div>
+                                <div class="form-description">세부내용3세부내용3세부내용3세부내용3세부내용3세부내용3세부내용3세부내용3세부내용3</div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="form-check-2">
                         <input type="checkbox" name="tabmenu" id="agreement_end" />
-                        <label for="tab1">다 읽어보셨나요?</label>
-                    </p>
+                        <label for="agreement_end">다 읽어보셨나요?</label>
+                    </div>
                 </div>
-                <div class="btn-login">
+                <div class="btn-agree">
                     <button>회원가입</button>
                 </div>
             </form>

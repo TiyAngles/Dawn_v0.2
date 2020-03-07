@@ -19,20 +19,14 @@
 input[type="text"],
 input[type="password"]{width:100%;padding:12px 20px;box-sizing:border-box;}
 form input[type="checkbox"]{margin-right:8px;}
-/* input[type="checkbox"]{
-    width:24px;
-    height:24px;
-    border-radius:100%;
-    border:2px solid #3c97f9;
-    background:transparent;
-    box-sizing:border-box;
-} */
 
-
-/* input[type="checkbox"]:checked + label {
-	background-color: #666666;
-} */
-.form-check {position: relative;}
+/* form-check */
+.form-check {
+    position: relative;
+    font-size:12px;
+    margin:24px 0 8px;
+    color:#777;
+}
 .form-check input[type="checkbox"] {
      /* 실제 체크박스는 화면에서 숨김 */
      position: absolute;
@@ -81,14 +75,70 @@ form input[type="checkbox"]{margin-right:8px;}
     inset 0px 1px 3px rgba(0,0,0,0.1);
 }
 .form-check input[type="checkbox"]:checked + label:before {
-    /* 체크박스를 체크했을때 */
-    /* content: '\f00c';
+    color: #3c97f9;
+    text-shadow: 1px 1px #fff;
+    background: #fff;
+    border-color: #3c97f9;
+    box-shadow: 0px 1px 2px rgba(0,0,0,0.05),
+    inset 0px -15px 10px -12px rgba(0,0,0,0.05),
+    inset 15px 10px -12px rgba(255,255,255,0.1);
+}
+
+/* form-check-2 */
+.form-check-2 {
+    position: relative;
+    font-size:12px;
+    margin:4px 0 8px;
+    color:#333;
+}
+.form-check-2 input[type="checkbox"] {
+     /* 실제 체크박스는 화면에서 숨김 */
+     position: absolute;
+     width: 1px;
+     height: 1px;
+     padding: 0;
+     margin: -1px;
+     overflow: hidden;
+     clip:rect(0,0,0,0);
+     border: 0 ;
+}
+.form-check-2 input[type="checkbox"] + label {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+.form-check-2 input[type="checkbox"] + label:before {
+    /* 가짜 체크박스 */ 
+    content: '\f00c';
     font-family: FontAwesome;
     font-style: normal;
     font-weight: normal;
-    font-size:12px;
-    text-decoration: inherit; */
-     /* 체크표시 유니코드 사용 */
+    font-size:8px;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    line-height: 16px;
+    color: #ccc;
+    margin: -2px 8px 0 0;
+    text-align: center;
+    vertical-align: middle;
+    background: #fafafa;
+    border: 1px solid #cacece;
+    border-radius : 10px;
+    box-shadow: 0px 1px 2px rgba(0,0,0,0.05),
+    inset 0px -15px 10px -12px rgba(0,0,0,0.05);
+} 
+
+.form-check-2 input[type="checkbox"] + label:active:before,
+.form-check-2 input[type="checkbox"]:checked + label:active:before {
+    box-shadow: 0 1px 2px rgba(0,0,0,0.05),
+    inset 0px 1px 3px rgba(0,0,0,0.1);
+}
+.form-check-2 input[type="checkbox"]:checked + label:before {
     color: #3c97f9;
     text-shadow: 1px 1px #fff;
     background: #fff;
@@ -133,23 +183,31 @@ button:hover{}
 
 
 
-/*form-content*/
-.form-check{
-    font-size:12px;
-    margin:24px 0 8px;
+
+/* .form-gender{display: flex;} */
+.form-gender{margin-top:12px;}
+.form-gender::after{display: block;content:'';clear:both;}
+.form-gender>div{float: left;}
+
+
+
+.form-description{
     color:#777;
+    font-size:12px;
 }
 
-.form-gender{display: flex; margin:10px 0;}
+
 .form-gender>div:first-of-type{margin-right:10px;}
+.form-gender>div:last-of-type{display: flex;}
+.form-gender>div>div:first-of-type{margin-right:10px;}
 .form-login{text-align:right;margin-top:8px;}
 .form-login>a{
     margin-left:8px;
     color:#777;
     font-size:12px;
 }
-.btn-login > button{background:#2e8bff;}
-.btn-login > button:hover{background:#222;}
+.btn-agree > button{background:#2e8bff;color:#fff;}
+/* .btn-login > button:hover{background:#222;} */
 .form-wrap > p{
     font-size:12px;
     margin:24px 0 8px;
@@ -219,7 +277,6 @@ button:hover{}
 
 
 
-.ad-agreement{margin:40px 0;}
-.ad-agreement>p{margin:12px 0;}
-.ad-agreement>ul>li{margin:12px 0;}
-.ad-agreement>ul>li>div:first-of-type{margin-bottom:8px;}
+.ad-agreement{margin:24px 0;}
+.ad-agreement ul>li{margin:12px 0;}
+.ad-agreement ul>li>div:first-of-type{margin-bottom:8px;}

@@ -42,7 +42,9 @@
 }
 
 .myprofile-head .personal-info .info .personal-id{
-    padding:12px 0 0 0;
+    /* padding:12px 0 0 0; */
+    margin:12px 0 0 0;
+    padding:0;
     font-size:27px;
 
 }
@@ -51,7 +53,6 @@
 }
 
 /* personal-list */
-
 .myprofile-head .personal-list{
     padding:36px 0 24px;
 }
@@ -79,6 +80,37 @@
     color:#fff;
 }
 
+/* 수정 */
+/* personal-list */
+.edit.myprofile-head{
+    /* padding:36px 0 24px; */
+    /* background:yellow; */
+}
+.edit.myprofile-head .personal-info .info{
+    position: relative;
+    /* background:orange; */
+    color:#ccc;
+}
+.edit.myprofile-head .personal-info .info .personal-id{
+}
+.edit.myprofile-head .personal-info .info::before{
+    position: absolute;
+    top:0;
+    right:20px;
+    width:30px;
+    height:30px;
+    color:#ccc;
+    content: '\f303';
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    line-height:32px;
+}
+.edit.myprofile-head .personal-info .info .personal-des{
+    
+}
+
+
 
 /* myprofile-list */
 .myprofile-list{
@@ -101,13 +133,13 @@
     float: left;
     width:25%;
 }
+
+
 .myprofile-list .inner .tab-list li a.on{
     /* background: #3c97f9; */
     border:1px solid #3c97f9;
     color:#3c97f9;
 }
-
-
 
 .myprofile-list .inner .tab-list li a{
     display: block;
@@ -121,8 +153,6 @@
     height:600px;
     overflow-y:scroll;
 }
-
-
 .myprofile-list .inner .tab-content>div.on{
     display:block;
 }
@@ -306,6 +336,44 @@
 
 
 
+
+/*myprofile-edit*/
+.myprofile-edit{
+    margin-bottom:60px;
+}
+.myprofile-edit .inner{
+    padding:0 10px;
+}
+
+.myprofile-edit button{
+    background:#3c97f9;
+    color:#fff;
+}
+
+/* form-list */
+.form-list.btn-change{
+    position: relative;
+}
+.myprofile-edit .btn-send{
+    /* margin-top:12px; */
+    position: absolute;
+    width:80px;
+    right:0;
+    bottom:-8px;
+}
+.myprofile-edit .btn-send button{
+    line-height:24px;
+    font-size:12px;
+}
+.myprofile-edit .btn-change{
+    margin-top:12px;
+}
+.myprofile-edit .form-wrap p{
+    text-align: left;
+    margin:8px 0 24px;
+    font-size:12px;
+    color:#cc4848;
+}
 /* tablet */
 @media screen and (min-width: 940px) {
 
@@ -379,8 +447,5 @@
 /* pc */
 @media screen and (min-width: 1200px) {
 
-    /* .myprofile-head .personal-list>div{
-        width:1200px;
-        margin:0 auto;
-    } */
+
 }

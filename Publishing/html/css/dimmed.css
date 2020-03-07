@@ -12,6 +12,8 @@
 /*form*/
 .form-row{display:flex;flex-wrap:wrap;position:relative;}
 .form-col{flex:1;font-size:16px;line-height:40px;}
+.form-col.blank{flex:none;position: relative; padding:0 10px;}
+.form-col.blank span{position: absolute; bottom:0;left:50%;transform:translateX(-50%)}
 .form{position:relative;}
 .form::after{content:"";display:block;position:absolute;left:0;bottom:0;width:0;height:1px;background:#222;}
 .form::before{content:"";display:block;position:absolute;left:0;bottom:0;width:100%;height:1px;background:#ccc;}

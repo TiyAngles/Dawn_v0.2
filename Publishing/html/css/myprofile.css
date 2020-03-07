@@ -1,9 +1,120 @@
 @charset 'utf-8';
 /*myprofile*/
 
+
+/* myprofile-head */
 .myprofile-head{
     background:green;
+    text-align: center;
 }
-.myprofile-list{
-    background:blue;
+
+.myprofile-head .inner{
+    padding:0 10px;
+    background:lightblue;
+}
+.myprofile-head .btn-set{
+    padding-top:12px;
+    background:green;
+    text-align: right;
+}
+.myprofile-head .btn-set a{
+    display: inline-block;
+    width:30px;
+    height:30px;
+    text-align: center;
+    font-size:24px;
+    line-height:28px;
+    background:yellow;
+}
+
+/* personal-info */
+.myprofile-head .personal-info{
+    padding:20px 0;
+}
+
+.myprofile-head .personal-info .img{
+    display: inline-block;
+    width:200px;
+    height:200px;
+    border-radius:100%;
+    overflow:hidden;
+    background:red;
+}
+
+.myprofile-head .personal-info .info .personal-id{
+    padding:12px 0 0 0;
+    font-size:28px;
+}
+.myprofile-head .personal-info .info .personal-des{
+    
+}
+
+/* personal-list */
+.myprofile-head .personal-list::after{
+    display: block;
+    content:'';
+    clear:both;
+}
+.myprofile-head .personal-list{
+    background:gray;
+    padding:36px 0 24px;
+}
+.myprofile-head .personal-list li{
+    background:#222;
+    display:block;
+    float: left;
+    width:25%;
+    padding:20px 0;
+}
+.myprofile-head .personal-list li span{
+    display: block;
+}
+.myprofile-head .personal-list li span.number{
+    font-size:22px;
+}
+
+/* tablet */
+@media screen and (min-width: 940px) {
+
+    .myprofile-head .inner{
+        padding:0;
+    }
+    .myprofile-head .personal-info::after{
+        display: block;
+        content:'';
+        clear:both;
+    }
+    .myprofile-head .personal-info{
+        background:orange;
+        position: relative;
+    }
+    .myprofile-head .personal-info .img{
+        float: left;
+    }
+
+    /* personal-info */
+    .myprofile-head .personal-info .info{
+        float: left;
+        text-align: left;
+        padding-left:22px;
+        height:200px;
+        display: table;
+    }
+    .myprofile-head .personal-info .info>div{
+        display: table-cell;
+        vertical-align:middle;
+    }
+    .myprofile-head .personal-info .info .personal-id{
+        padding:0 0 6px 0;
+        font-size:34px;
+    }
+    .myprofile-head .personal-info .info .personal-des{
+        font-size:18px;
+    }
+}
+
+/* pc */
+@media screen and (min-width: 1200px) {
+
+
 }

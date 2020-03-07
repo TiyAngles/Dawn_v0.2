@@ -4,18 +4,20 @@
 
 /* myprofile-head */
 .myprofile-head{
-    background:green;
     text-align: center;
 }
 
 .myprofile-head .inner{
-    padding:0 10px;
-    background:lightblue;
+    /* padding:0 10px; */
+    position: relative;
 }
 .myprofile-head .btn-set{
-    padding-top:12px;
-    background:green;
-    text-align: right;
+    position: absolute;
+    /* background:orange; */
+    width:60px;
+    height:60px;
+    top:0;
+    right:0;
 }
 .myprofile-head .btn-set a{
     display: inline-block;
@@ -23,8 +25,7 @@
     height:30px;
     text-align: center;
     font-size:24px;
-    line-height:28px;
-    background:yellow;
+    line-height:58px;
 }
 
 /* personal-info */
@@ -38,7 +39,6 @@
     height:200px;
     border-radius:100%;
     overflow:hidden;
-    background:red;
 }
 
 .myprofile-head .personal-info .info .personal-id{
@@ -50,21 +50,21 @@
 }
 
 /* personal-list */
-.myprofile-head .personal-list::after{
+
+.myprofile-head .personal-list{
+    padding:36px 0 24px;
+}
+.myprofile-head .personal-list ul::after{
     display: block;
     content:'';
     clear:both;
 }
-.myprofile-head .personal-list{
-    background:gray;
-    padding:36px 0 24px;
-}
 .myprofile-head .personal-list li{
-    background:#222;
     display:block;
     float: left;
     width:25%;
     padding:20px 0;
+    background:#3c97f9;
 }
 .myprofile-head .personal-list li span{
     display: block;
@@ -72,21 +72,126 @@
 .myprofile-head .personal-list li span.number{
     font-size:22px;
 }
+.myprofile-head .personal-list li a{
+    display: block;
+    color:#fff;
+}
+
+
+/* myprofile-list */
+.myprofile-list{
+    margin-bottom:30px;
+}
+.myprofile-list .inner{
+    /* background:blue; */
+}
+
+/* tab-list */
+.myprofile-list .inner .tab-list{
+    border-top:1px solid #ccc;
+    border-bottom:1px solid #ccc;
+}
+.myprofile-list .inner .tab-list ul::after{
+    display: block;
+    content:'';
+    clear:both;
+}
+.myprofile-list .inner .tab-list ul{}
+.myprofile-list .inner .tab-list li{
+    float: left;
+    width:50%;
+}
+.myprofile-list .inner .tab-list li a{
+    display: block;
+    /* background:green; */
+    line-height:60px;
+    text-align: center;
+}
+
+/* tab-content */
+.myprofile-list .inner .tab-content{
+    position: relative;
+    height:600px;
+    /* background:green; */
+    overflow-y:scroll;
+}
+.myprofile-list .inner .tab-content>div.on{
+    display:block;
+}
+.myprofile-list .inner .tab-content>div{
+    display: none;
+    position: absolute;
+    width:100%;
+    padding:12px 10px;
+    left:0;
+    top:0;
+    /* background:pink; */
+}
+.myprofile-list .inner .tab-content .con1{
+    /* background:gray; */
+}
+.myprofile-list .inner .tab-content .con1 li{
+    /* background:gray; */
+    margin:4px 0;
+}
+.myprofile-list .inner .tab-content .con1 li div{
+    /* background:yellow; */
+}
+.myprofile-list .inner .tab-content .con1 li div>a::after{
+    display: block;
+    content:'';
+    clear:both;
+}
+.myprofile-list .inner .tab-content .con1 li div a{
+    padding:10px 0;
+    display: block;
+}
+
+.myprofile-list .inner .tab-content .con1 li div a p{
+    float: left;
+    /* display: inline-block; */
+    font-weight:bold;
+    min-width:90px;
+    font-size:14px;
+}
+.myprofile-list .inner .tab-content .con1 li div a div{
+    float: left;
+    /* width:100px; */
+    width:calc(100% - 90px);
+    /* font-size:16px; */
+    /* padding-left:12px; */
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* tablet */
 @media screen and (min-width: 940px) {
 
-    .myprofile-head .inner{
-        padding:0;
-    }
+    /* .myprofile-head .inner{
+        padding:0 20px;
+    } */
+    /* .myprofile-head .btn-set{
+        padding:32px 20px 0 0;
+        text-align: right;
+    } */
+
     .myprofile-head .personal-info::after{
         display: block;
         content:'';
         clear:both;
     }
     .myprofile-head .personal-info{
-        background:orange;
-        position: relative;
+        padding:20px 20px 0;
     }
     .myprofile-head .personal-info .img{
         float: left;
@@ -111,10 +216,22 @@
     .myprofile-head .personal-info .info .personal-des{
         font-size:18px;
     }
+
+
+
+    .myprofile-head .personal-list li span{
+        display: inline-block;
+    }
+    .myprofile-head .personal-list li span.number{
+        font-size:32px;
+    }
 }
 
 /* pc */
 @media screen and (min-width: 1200px) {
 
-
+    /* .myprofile-head .personal-list>div{
+        width:1200px;
+        margin:0 auto;
+    } */
 }

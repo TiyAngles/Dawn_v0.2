@@ -61,34 +61,34 @@ label[for="searchBar"] .fa-search {
 .notice-info span:last-child::before {
   content: " | ";
 }
-/* bbs-list */
-.bbs-list-inner li {
+/* qna-list */
+.qna-list-inner li {
   border-bottom: 1px solid #ccc;
 }
-.bbs-list-inner li a {
+.qna-list-inner li a {
   display: block;
   position: relative;
   margin: 10px 0 10px 10px;
 }
-.bbs-list-inner li a em {
+.qna-list-inner li a em {
   position: absolute;
   top: 50%;
   left: 0;
   transform: translateY(-50%);
   font-weight: bold;
 }
-.bbs-list-text {
+.qna-list-text {
   margin-left: 30px;
 }
-.bbs-list-info {
+.qna-list-info {
   margin-top: 10px;
 }
-.bbs-list-info span:last-child::before {
+.qna-list-info span:last-child::before {
   content: " | ";
 }
 /* edit-btn */
-.edit-btn {
-  margin-top: 10px;
+.edit-btn .pc {
+  display: none;
 }
 .edit-btn button {
   width: 0;
@@ -97,12 +97,31 @@ label[for="searchBar"] .fa-search {
   line-height: 0;
   transition: 0;
 }
-.edit-btn::after {
+.edit-btn .mob button {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  padding: 40px;
+  background: linear-gradient(90deg, #d161ff, #623ee8);
+  border-radius: 50%;
+  z-index: 10;
+}
+
+.edit-btn .mob .fa-edit {
+  position: fixed;
+  right: 35px;
+  bottom: 42px;
+  font-size: 40px;
+  color: #fff;
+  z-index: 10;
+}
+
+.edit-btn .pc::after {
   display: block;
   content: "";
   clear: both;
 }
-.edit-btn .inner {
+.edit-btn .pc {
   width: 100px;
   height: 50px;
   line-height: 50px;
@@ -110,7 +129,7 @@ label[for="searchBar"] .fa-search {
   background: linear-gradient(90deg, #d161ff, #623ee8);
   border-radius: 25px;
 }
-.edit-btn .inner button {
+.edit-btn .pc button {
   width: 94px;
   height: 44px;
   margin: 3px;
@@ -118,16 +137,17 @@ label[for="searchBar"] .fa-search {
   border-radius: 25px;
   background: #fff;
 }
-.edit-btn .inner button:hover {
+.edit-btn .pc button:hover {
   color: #623ee8;
   font-weight: bold;
+}
+.edit-btn .pc .fa-edit {
 }
 
 /* page */
 .page {
-  display: block;
   text-align: center;
-  margin-bottom: 10px;
+  margin: 20px 0;
 }
 .page ul li {
   display: inline-block;
@@ -143,12 +163,12 @@ label[for="searchBar"] .fa-search {
 }
 
 @media screen and (min-width: 940px) {
-  .bbs-qna .inner::after {
+  .qna .inner::after {
     display: block;
     content: "";
     clear: both;
   }
-  .bbs-qna .inner h2 {
+  .qna .inner h2 {
     padding-bottom: 10px;
   }
   .search-bar {
@@ -184,24 +204,33 @@ label[for="searchBar"] .fa-search {
   .notice-info {
     margin-top: 0;
   }
-  /* bbs-list */
-  .bbs-list-text::after {
+  /* qna-list */
+  .qna-list-text::after {
     display: block;
     clear: both;
     content: "";
   }
-  .bbs-list-text p {
+  .qna-list-text p {
     float: left;
     width: 70%;
   }
-  .bbs-list-text .bbs-list-info {
+  .qna-list-text .qna-list-info {
     float: right;
     text-align: center;
     padding-right: 10px;
     width: 30%;
   }
-  .bbs-list-info {
+  .qna-list-info {
     margin-top: 0;
+  }
+  .edit-btn {
+    margin-top: 10px;
+  }
+  .edit-btn .mob {
+    display: none;
+  }
+  .edit-btn .pc {
+    display: block;
   }
 }
 @media screen and (min-width: 1200px) {

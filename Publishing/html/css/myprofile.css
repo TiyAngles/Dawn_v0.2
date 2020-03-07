@@ -70,7 +70,8 @@
     display: block;
 }
 .myprofile-head .personal-list li span.number{
-    font-size:22px;
+    font-size:62px;
+    letter-spacing:-0.017em;''
 }
 .myprofile-head .personal-list li a{
     display: block;
@@ -83,12 +84,10 @@
     margin-bottom:30px;
 }
 .myprofile-list .inner{
-    /* background:blue; */
 }
 
 /* tab-list */
 .myprofile-list .inner .tab-list{
-    border-top:1px solid #ccc;
     border-bottom:1px solid #ccc;
 }
 .myprofile-list .inner .tab-list ul::after{
@@ -99,11 +98,10 @@
 .myprofile-list .inner .tab-list ul{}
 .myprofile-list .inner .tab-list li{
     float: left;
-    width:50%;
+    width:25%;
 }
 .myprofile-list .inner .tab-list li a{
     display: block;
-    /* background:green; */
     line-height:60px;
     text-align: center;
 }
@@ -112,9 +110,10 @@
 .myprofile-list .inner .tab-content{
     position: relative;
     height:600px;
-    /* background:green; */
     overflow-y:scroll;
 }
+
+
 .myprofile-list .inner .tab-content>div.on{
     display:block;
 }
@@ -125,17 +124,16 @@
     padding:12px 10px;
     left:0;
     top:0;
-    /* background:pink; */
 }
+
+/* tab-contnt con1 */
+/* 활동로그 */
 .myprofile-list .inner .tab-content .con1{
-    /* background:gray; */
 }
 .myprofile-list .inner .tab-content .con1 li{
-    /* background:gray; */
     margin:4px 0;
 }
 .myprofile-list .inner .tab-content .con1 li div{
-    /* background:yellow; */
 }
 .myprofile-list .inner .tab-content .con1 li div>a::after{
     display: block;
@@ -146,30 +144,155 @@
     padding:10px 0;
     display: block;
 }
-
 .myprofile-list .inner .tab-content .con1 li div a p{
     float: left;
-    /* display: inline-block; */
     font-weight:bold;
     min-width:90px;
     font-size:14px;
 }
 .myprofile-list .inner .tab-content .con1 li div a div{
     float: left;
-    /* width:100px; */
     width:calc(100% - 90px);
-    /* font-size:16px; */
-    /* padding-left:12px; */
+}
+
+/* tab-contnt con2 */
+/* 위시리스트 */
+.myprofile-list .inner .tab-content .con2{
+}
+.myprofile-list .inner .tab-content .con2 ul::after{
+    display: block;
+    content:'';
+    clear:both;
+}
+.myprofile-list .inner .tab-content .con2 li{
+    float: left;
+    width:50%;
+    /* border:1px solid #3c97f9; */
+}
+/*이미지 크기 제어를 위한 background image*/
+.myprofile-list .inner .tab-content .con2 li>div{
+    padding:10px 0;
+
+}
+.myprofile-list .inner .tab-content .con2 li>div a{
+    display: block;
+    text-align: center;
+}
+.myprofile-list .inner .tab-content .con2 li>div a .img{
+    display: inline-block;
+    width:160px;
+    height:160px;
+    background:no-repeat url('../img/myprofile/wishlist/img_wishlist_1.jpg') center center;
+    background-size:cover;
+}
+.myprofile-list .inner .tab-content .con2 li>div a p{
+    font-size:14px;
+    line-height:30px;
+    color:#aaa;
+    width:160px;
+    margin:0 auto;
+}
+
+/* tab-contnt con3 */
+/* 팔로워영역 */
+.myprofile-list .inner .tab-content .con3{
+}
+.myprofile-list .inner .tab-content .con3 ul{
+
+}
+.myprofile-list .inner .tab-content .con3 li{
+    margin-bottom:14px;
+}
+.myprofile-list .inner .tab-content .con3 li>div::after{
+    display: block;
+    content:'';
+    clear:both;
+}
+.myprofile-list .inner .tab-content .con3 li>div{
+    position: relative;
+}
+.myprofile-list .inner .tab-content .con3 li>div>div{
+    float: left;
+}
+.myprofile-list .inner .tab-content .con3 li>div>div.img{
+    width:80px;    
+}
+.myprofile-list .inner .tab-content .con3 li>div>div.info{
+    display: table;
+    height:80px;
+    width:calc(100% - 80px);
+}
+.myprofile-list .inner .tab-content .con3 li>div>div.info>div{
+    display: table-cell;
+    vertical-align:middle;
+    padding:0 62px 0 8px;
+}
+.myprofile-list .inner .tab-content .con3 li>div>div.info>div>div{
+}
+.myprofile-list .inner .tab-content .con3 li>div>div.btn-delete{
+    position: absolute;
+    right:0;
+    top:50%;
+    transform:translateY(-50%);
+}
+.myprofile-list .inner .tab-content .con3 li>div>div.btn-delete a{
+    display: block;
+    padding:2px 10px;
+    border-radius:5px;
+    border:2px solid #3c97f9;
+    color:#3c97f9;
 }
 
 
+/* tab-contnt con4 */
+/* 팔로잉영역 */
+.myprofile-list .inner .tab-content .con4{
+}
+.myprofile-list .inner .tab-content .con4 ul{
 
-
-
-
-
-
-
+}
+.myprofile-list .inner .tab-content .con4 li{
+    margin-bottom:14px;
+}
+.myprofile-list .inner .tab-content .con4 li>div::after{
+    display: block;
+    content:'';
+    clear:both;
+}
+.myprofile-list .inner .tab-content .con4 li>div{
+    position: relative;
+}
+.myprofile-list .inner .tab-content .con4 li>div>div{
+    float: left;
+}
+.myprofile-list .inner .tab-content .con4 li>div>div.img{
+    width:80px;    
+}
+.myprofile-list .inner .tab-content .con4 li>div>div.info{
+    display: table;
+    height:80px;
+    width:calc(100% - 80px);
+}
+.myprofile-list .inner .tab-content .con4 li>div>div.info>div{
+    display: table-cell;
+    vertical-align:middle;
+    padding:0 62px 0 8px;
+}
+.myprofile-list .inner .tab-content .con4 li>div>div.info>div>div{
+}
+.myprofile-list .inner .tab-content .con4 li>div>div.btn-delete{
+    position: absolute;
+    right:0;
+    top:50%;
+    transform:translateY(-50%);
+}
+.myprofile-list .inner .tab-content .con4 li>div>div.btn-delete a{
+    display: block;
+    padding:2px 10px;
+    border-radius:5px;
+    border:2px solid #3c97f9;
+    color:#3c97f9;
+}
 
 
 
@@ -177,14 +300,7 @@
 /* tablet */
 @media screen and (min-width: 940px) {
 
-    /* .myprofile-head .inner{
-        padding:0 20px;
-    } */
-    /* .myprofile-head .btn-set{
-        padding:32px 20px 0 0;
-        text-align: right;
-    } */
-
+    /* myprofile-head */
     .myprofile-head .personal-info::after{
         display: block;
         content:'';
@@ -217,14 +333,38 @@
         font-size:18px;
     }
 
-
-
+    /* personal-list */
     .myprofile-head .personal-list li span{
         display: inline-block;
     }
     .myprofile-head .personal-list li span.number{
-        font-size:32px;
+        font-size:38px;
     }
+    
+
+    .myprofile-list .inner .tab-content .con2 li{
+        float: left;
+        width:25%;
+    }
+    /*이미지 크기 제어를 위한 background image*/
+    .myprofile-list .inner .tab-content .con2 li>div{
+        padding:4px 10px;
+    
+    }
+    .myprofile-list .inner .tab-content .con2 li>div a{
+        display: block;
+        text-align: center;
+    }
+    .myprofile-list .inner .tab-content .con2 li>div a .img{
+        width:100%;
+        height:300px;
+    }
+    .myprofile-list .inner .tab-content .con2 li>div a p{
+        font-size:16px;
+        width:100%;
+    }
+    
+
 }
 
 /* pc */

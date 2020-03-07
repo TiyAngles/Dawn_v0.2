@@ -1,0 +1,185 @@
+@charset "utf-8";
+button {
+  width: 0;
+  height: 0;
+  border: 0;
+  line-height: 0;
+  transition: 0;
+}
+
+/* 임의 버튼 */
+
+.alert-btn button {
+  width: 50%;
+  height: 100px;
+  margin: 20px auto;
+  border: 1px solid #000;
+}
+.alert-btn button:nth-child(1) {
+  background: #ffc62e;
+}
+.alert-btn button:nth-child(2) {
+  background: #6ac510;
+}
+.alert-btn button:nth-child(3) {
+  background: #ff2e2e;
+}
+.alert-btn button:nth-child(4) {
+  background: #2e8bff;
+}
+/* 임의 버튼 */
+
+/* alert */
+html {
+  position: relative;
+}
+.alert-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  margin: 0 auto;
+  display: none;
+  background: rgba(85, 85, 85, 0.5);
+}
+.alert-content {
+  width: 90%;
+  margin: 0 auto;
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  border: 5px solid;
+  border-radius: 30px;
+  text-align: center;
+  background: #fff;
+}
+.alert-content .alert-icon {
+  font-size: 100px;
+}
+.inner .alert-content h2 {
+  padding-top: 10px;
+}
+.alert-content p + p {
+  margin-bottom: 20px;
+}
+.alert-content button {
+  width: 100%;
+  height: 70px;
+  border-radius: 0 0 24px 24px;
+}
+.alert-content button span {
+  padding: 15px 100px 20px;
+  border-radius: 30px;
+  background: #fff;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.login-error .alert-content {
+  border-color: #ffc62e;
+}
+.login-error .alert-icon .fa-exclamation-triangle {
+  color: #ffc62e;
+}
+.login-error h2 {
+  color: #ffc62e;
+}
+.login-error button {
+  background: #ffc62e;
+}
+.login-error button span {
+  color: #ffc62e;
+}
+.login-error button span:hover {
+  background: #be941f;
+  color: #fff;
+}
+.login-success .alert-content {
+  border-color: #6ac510;
+}
+.login-success .alert-icon .fa-check-circle {
+  color: #6ac510;
+}
+.login-success h2 {
+  color: #6ac510;
+}
+.login-success button {
+  background: #6ac510;
+}
+.login-success button span {
+  color: #6ac510;
+}
+.login-success button span:hover {
+  background: #4e910b;
+  color: #fff;
+}
+.signin-error .alert-content {
+  border-color: #ff2e2e;
+}
+.signin-error .alert-icon .fa-exclamation-triangle {
+  color: #ff2e2e;
+}
+.signin-error h2 {
+  color: #ff2e2e;
+}
+.signin-error button {
+  background: #ff2e2e;
+}
+.signin-error button span {
+  color: #ff2e2e;
+}
+.signin-error button span:hover {
+  background: #9b1b1b;
+  color: #fff;
+}
+.signin-success .alert-content {
+  border-color: #2e8bff;
+}
+.signin-success .alert-icon .fa-check-circle {
+  color: #2e8bff;
+}
+.signin-success h2 {
+  color: #2e8bff;
+}
+.signin-success button {
+  background: #2e8bff;
+}
+.signin-success button span {
+  color: #2e8bff;
+}
+.signin-success button span:hover {
+  background: #1e5fad;
+  color: #fff;
+}
+
+.login-error,
+.login-success,
+.signin-error,
+.signin-success {
+  display: none;
+}
+.login-error.on,
+.login-success.on,
+.signin-error.on,
+.signin-success.on {
+  display: block;
+}
+.alert-container.on {
+  display: block;
+}
+
+@media screen and (min-width: 460px) {
+  .alert-content {
+    width: 450px;
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 940px) {
+  .alert-content {
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 50%);
+  }
+}

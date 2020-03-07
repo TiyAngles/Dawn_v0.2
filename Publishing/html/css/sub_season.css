@@ -17,15 +17,6 @@
   width: 80%;
   margin: 0 0 0 5%;
 }
-.reco-slide {
-  /* background: yellow; */
-}
-.reco-slide .swiper-slide {
-  /* background: red; */
-}
-.reco-slide .swiper-slide .inner {
-  /* background: blue; */
-}
 .reco-slide .swiper-slide .inner {
   height: 440px;
   background-image: url("../img/sub/slider/reco_slider_1.jpg");
@@ -138,7 +129,6 @@
 .travel-list ul > li {
   width: 90%;
   margin: 0 auto;
-  /* margin: 2.5% 5%; */
 }
 .travel-list ul > li .travel-img {
   width: 100%;
@@ -149,15 +139,12 @@
   background-size: cover;
 }
 .travel-list ul li ol {
-  /* margin: 25px 0 0 0; */
 }
 .travel-list ul li ol li {
   font-size: 16px;
-  /* margin: 0 0 15px 0; */
   line-height: 26px;
 }
 .travel-list ul li ol li:nth-child(1) {
-  /* margin: 0 0 25px 0; */
   font-size: 18px;
 }
 .travel-list hr {
@@ -171,8 +158,8 @@
   background-color: #b5b5b5;
 }
 /* edit-btn */
-.edit-btn .pc {
-  display: none;
+.edit-btn {
+  margin-top: 10px;
 }
 .edit-btn button {
   width: 0;
@@ -181,31 +168,12 @@
   line-height: 0;
   transition: 0;
 }
-.edit-btn .mob button {
-  position: fixed;
-  right: 20px;
-  bottom: 20px;
-  padding: 40px;
-  background: linear-gradient(90deg, #d161ff, #623ee8);
-  border-radius: 50%;
-  z-index: 10;
-}
-
-.edit-btn .mob .fa-edit {
-  position: fixed;
-  right: 35px;
-  bottom: 42px;
-  font-size: 40px;
-  color: #fff;
-  z-index: 10;
-}
-
-.edit-btn .pc::after {
+.edit-btn::after {
   display: block;
   content: "";
   clear: both;
 }
-.edit-btn .pc {
+.edit-btn .inner {
   width: 100px;
   height: 50px;
   line-height: 50px;
@@ -213,7 +181,7 @@
   background: linear-gradient(90deg, #d161ff, #623ee8);
   border-radius: 25px;
 }
-.edit-btn .pc button {
+.edit-btn .inner button {
   width: 94px;
   height: 44px;
   margin: 3px;
@@ -221,17 +189,16 @@
   border-radius: 25px;
   background: #fff;
 }
-.edit-btn .pc button:hover {
+.edit-btn .inner button:hover {
   color: #623ee8;
   font-weight: bold;
-}
-.edit-btn .pc .fa-edit {
 }
 
 /* page */
 .page {
+  display: block;
   text-align: center;
-  margin: 20px 0;
+  margin-bottom: 10px;
 }
 .page ul li {
   display: inline-block;
@@ -281,15 +248,6 @@
   }
   .travel-list ul li ol li:nth-child(1) {
     margin: 0 0 25px 0;
-  }
-  .edit-btn {
-    margin-top: 10px;
-  }
-  .edit-btn .mob {
-    display: none;
-  }
-  .edit-btn .pc {
-    display: block;
   }
 }
 @media screen and (min-width: 1200px) {

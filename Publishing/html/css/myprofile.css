@@ -441,7 +441,11 @@
         width:100%;
     }
     
-
+    .edit.myprofile-head .personal-info .info::before{
+        position: absolute;
+        top:70px;
+        /* transform:translateY(-50%); */
+    }
 }
 
 /* pc */

@@ -30,7 +30,7 @@
 
 /* personal-info */
 .myprofile-head .personal-info{
-    padding:20px 0;
+    padding:60px 0 20px;
 }
 
 .myprofile-head .personal-info .img{
@@ -70,7 +70,7 @@
     display: block;
 }
 .myprofile-head .personal-list li span.number{
-    font-size:62px;
+    font-size:32px;
     letter-spacing:-0.017em;''
 }
 .myprofile-head .personal-list li a{
@@ -100,6 +100,14 @@
     float: left;
     width:25%;
 }
+.myprofile-list .inner .tab-list li a.on{
+    /* background: #3c97f9; */
+    border:1px solid #3c97f9;
+    color:#3c97f9;
+}
+
+
+
 .myprofile-list .inner .tab-list li a{
     display: block;
     line-height:60px;
@@ -307,7 +315,7 @@
         clear:both;
     }
     .myprofile-head .personal-info{
-        padding:20px 20px 0;
+        padding:60px 20px 0;
     }
     .myprofile-head .personal-info .img{
         float: left;

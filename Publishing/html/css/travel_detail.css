@@ -1,0 +1,332 @@
+@charset "utf-8";
+/* visual  */
+.so .container-inner {
+  width: 95%;
+  margin: 0 auto;
+}
+.so .w100 {
+  width: 100%;
+}
+.so .container-inner h2,
+.so .container-inner h3,
+.so .container-inner h4,
+.so .container-inner p,
+.so .container-inner li,
+.so .container-inner .user-data span {
+  color: #3c3c3c;
+}
+/* travel-photo */
+.so .travel-photo {
+  border-radius: 25px;
+  overflow: hidden;
+}
+.so .travel-photo > .inner {
+  margin-top: 10px;
+}
+.so .travel-photo .swiper-wrapper .swiper-slide {
+  position: relative;
+  width: 100%;
+  height: 440px;
+}
+.so .travel-photo .swiper-slide .inner {
+  height: 100%;
+  background-image: url("https://cdn.pixabay.com/photo/2020/03/05/09/25/free-and-edited-4903883__340.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+  border-radius: 25px;
+}
+
+/* travel-intro */
+.so .travel-info {
+  margin: 20px auto;
+  padding: 20px 15px;
+  border: 2px solid #ccc;
+  border-top: 3px solid #282828;
+}
+.travel-intro .inner::after {
+  display: block;
+  content: "";
+  clear: both;
+}
+/* user */
+.so .user a::after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+.so .user a .profile-img {
+  float: left;
+  width: 50px;
+  height: 50px;
+  margin: 10px 10px 0 10px;
+  border-radius: 50%;
+  background: #000;
+}
+.so .user a .user-data {
+  float: left;
+}
+
+.so .user a .user-data h4 {
+  margin-top: 15px;
+  font-size: 18px;
+  line-height: 20px;
+}
+.so .icon {
+  text-align: right;
+}
+.so .icon a .fa-map-pin {
+  color: #818181;
+  font-size: 35px;
+  padding: 5px;
+  transform: translate(-20px, 3px) rotate(35deg);
+}
+.so .icon a .fa-map-pin:hover {
+  color: #2e8bff;
+}
+.so .icon a .fa-star {
+  color: #818181;
+  font-size: 30px;
+  padding: 5px;
+}
+.so .icon a .fa-star:hover {
+  color: #f2d91f;
+}
+
+/* introduction */
+.so .introduction h2 {
+  padding: 30px 0;
+}
+.so .introduction h3 {
+  font-size: 20px;
+  padding: 20px 0;
+}
+/* more-info */
+.so .more-info h4 {
+  font-size: 18px;
+  padding: 20px 0 20px;
+}
+.so .more-info h4::before {
+  content: "[";
+}
+.so .more-info h4::after {
+  content: "]";
+}
+.so .more-info ul li {
+  margin-bottom: 10px;
+}
+.so .more-info ul li a {
+  color: #3c3c3c;
+}
+.so .map iframe {
+  width: 100%;
+  height: 300px;
+}
+
+/* edit-btn */
+.so .button {
+  margin-top: 10px;
+}
+.so .button button {
+  width: 0;
+  height: 0;
+  border: 0;
+  line-height: 0;
+  transition: 0;
+}
+.so .button .inner::after {
+  display: block;
+  content: "";
+  clear: both;
+}
+.so .button .inner .main-btn {
+  width: 50%;
+  float: left;
+}
+.so .button .inner .edit-btn {
+  width: 50%;
+  float: right;
+}
+.so .button .inner .btn {
+  width: 150px;
+  height: 50px;
+  line-height: 50px;
+  background: linear-gradient(90deg, #d161ff, #623ee8);
+  border-radius: 25px;
+}
+.so .button .inner .btn button {
+  width: 144px;
+  height: 44px;
+  margin: 3px;
+  line-height: 40px;
+  border-radius: 25px;
+  background: #fff;
+}
+.so .button .inner .btn button:hover {
+  color: #fff;
+  background: transparent;
+}
+/* comment */
+.so .comment-content {
+  margin-top: 20px;
+  padding: 20px 15px;
+  border: 2px solid #ccc;
+}
+.so .comment h3 {
+  padding: 20px 0;
+}
+.so .comment-field::after {
+  display: block;
+  content: "";
+  clear: both;
+}
+.so .comment-field .profile-img {
+  float: left;
+  width: 40px;
+  height: 40px;
+  margin: 10px 10px 0 10px;
+  border-radius: 50%;
+  background: #000;
+}
+.so .comment-field .comment-form {
+  float: left;
+  height: auto;
+  width: calc(100% - 60px);
+}
+.so .comment-field .comment-form form {
+  position: relative;
+  width: 100%;
+  line-height: 0;
+}
+.so .comment-field .comment-form form input[id="field"] {
+  width: calc(100% - 20%);
+  height: 50px;
+  border-bottom: 1px solid #555;
+  padding: 10px;
+}
+.so .comment-field .comment-form form input[value="작성"] {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 20%;
+  height: 40px;
+  background: #c0dcff;
+  border-radius: 20px;
+  text-align: center;
+  color: #2e8bff;
+}
+hr {
+  display: block;
+  width: 100%;
+  height: 2px;
+  margin: 20px 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  background-color: #b5b5b5;
+}
+/* comment-box */
+
+.so .comment-box .comment-list li {
+  border-bottom: 2px solid #ccc;
+  margin-bottom: 10px;
+}
+.so .comment-box .comment-list li .profile-img {
+  width: 40px;
+  height: 40px;
+  margin: 10px 10px 0 10px;
+  border-radius: 50%;
+  background: #000;
+}
+
+.so .comment-box .comment-list li .user-data h4 {
+  margin-top: 10px;
+  font-size: 16px;
+}
+.so .comment-box .comment-list li p {
+  width: 90%;
+  margin: 10px auto;
+  text-align: justify;
+}
+/* page */
+.so .page {
+  display: block;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.so .page ul li {
+  display: inline-block;
+}
+.so .page ul li a {
+  display: inline-block;
+  font-size: 16px;
+  padding: 10px;
+}
+.so .page ul li a:focus {
+  color: #2e8bff;
+  font-size: 18px;
+}
+
+@media screen and (min-width: 940px) {
+  .so .travel-photo .swiper-wrapper .swiper-slide {
+    width: 70%;
+  }
+  .so .swiper-pagination-fraction,
+  .so .swiper-pagination-custom,
+  .so .swiper-container-horizontal > .swiper-pagination-bullets {
+    bottom: 10px;
+    left: -40px;
+    text-align: right;
+    width: 100%;
+  }
+  .so .swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    border-radius: 100%;
+    background: #000;
+    opacity: 0.2;
+  }
+
+  .so .swiper-pagination-bullet-active {
+    opacity: 1;
+    background: #2e8bff;
+  }
+
+  .so .travel-intro .inner::after {
+    display: block;
+    content: "";
+    clear: both;
+  }
+  /* user */
+  .so .travel-intro .user {
+    float: left;
+    width: 70%;
+  }
+  .so .travel-intro .icon {
+    float: right;
+    width: 30%;
+  }
+
+  .so .icon a .fa-map-pin {
+    transform: translate(-20px, 3px) rotate(35deg);
+  }
+  .so .comment-field .comment-form form input[id="field"] {
+    width: calc(100% - 150px);
+  }
+  .so .comment-field .comment-form form input[value="작성"] {
+    width: 150px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .so .container-inner {
+    width: 1200px;
+  }
+  .so .w100 {
+    width: 95%;
+    margin: 0 auto;
+  }
+  .so .travel-photo .swiper-wrapper .swiper-slide {
+    width: 50%;
+  }
+}

@@ -1,11 +1,10 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-
 import Logo from "./Logo";
 import SearchBox from "./SerachBox";
 import BtnOpen from "./BtnOpen";
 import Nav from "./Nav";
-
+import "./style.css";
 export default function Header() {
   const [showNav, setShowNav] = useState(false);
   const handleNavSlide = () => {

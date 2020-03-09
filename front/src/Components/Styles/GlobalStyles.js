@@ -58,6 +58,7 @@ button:-moz-focusring{outline:none;}
 
 /*chromeframe*/
 .chromeframe{margin:0.2em 0;background:#ccc;color:#000;padding:0.2em 0;}
+
 `;
 
 export default GlobalStyles;

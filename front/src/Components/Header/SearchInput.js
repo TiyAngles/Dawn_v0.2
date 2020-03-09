@@ -4,7 +4,7 @@ import styled from "styled-components";
 export default function SearchInput({ showInput }) {
   return (
     <Container showInput={showInput}>
-      <label for="i123456"></label>
+      <label htmlFor="i123456"></label>
       <input type="text" id="i123456" />
     </Container>
   );

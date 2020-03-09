@@ -13,7 +13,7 @@ export default function SerachBox() {
   return (
     <Container onClick={toggleInput}>
       <a>
-        <span class="">
+        <span className="">
           <FontAwesomeIcon icon={faSearch} />
         </span>
       </a>

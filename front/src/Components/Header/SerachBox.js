@@ -13,7 +13,7 @@ export default function SerachBox() {
   return (
     <Container onClick={toggleInput}>
       <a>
-        <span class="">
+        <span className="">
           <FontAwesomeIcon icon={faSearch} />
         </span>
       </a>
@@ -29,6 +29,11 @@ const Container = styled.div`
   cursor: pointer;
   a {
     height: 60px;
+    @media screen and (min-width: 940px) {
+      position: absolute;
+      right: 0;
+      height: 80px;
+    }
     span {
       display: block;
       width: 60px;
@@ -36,6 +41,10 @@ const Container = styled.div`
       text-align: center;
       line-height: 60px;
       color: #3c97f9;
+      @media screen and (min-width: 940px) {
+        height: 80px;
+        line-height: 80px;
+      }
     }
   }
   label {
@@ -52,5 +61,9 @@ const Container = styled.div`
       line-height: 60px;
       font-size: 22px;
     }
+  }
+  @media screen and (min-width: 940px) {
+    height: 100%;
+    right: 510px;
   }
 `;

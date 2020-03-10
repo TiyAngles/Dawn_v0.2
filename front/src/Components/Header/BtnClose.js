@@ -1,23 +1,17 @@
 import React from "react";
 import styled from "styled-components";
 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faTimes, faBars } from "@fortawesome/free-solid-svg-icons";
-
 export default function BtnClose({ showNav }) {
-  return (
-    <BtnClose href="#" showNav={showNav} onClick={}>
-      <FontAwesomeIcon icon={faTimes} style={{ color: "black" }} />
-    </BtnClose>
-  );
+  return <BtnClose href="#" showNav={showNav}></BtnClose>;
 }
 
 const BtnClose = styled.a`
-  z-index: 30;
-  position: absolute;
-  display: block;
-  left: ${props => (props.showNav ? "20px" : "100%")};
-  top: 60px;
-  font-size: 22px;
-  color: #fff;
+z-index: 30;
+position: absolute;
+display: block;
+left: 20px;
+top: 60px;
+font-size: 22px;
+color: #fff;
+  // left: ${props => (props.showNav ? "20px" : "100%")}; //animation
 `;

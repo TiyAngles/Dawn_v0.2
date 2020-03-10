@@ -22,10 +22,18 @@ const Container = styled.h1`
     width: 100px;
     height: 60px;
     padding: 0 5px;
+    @media screen and (min-width: 940px) {
+      width: 200px;
+      height: 80px;
+      padding: 0 20px;
+    }
     img {
       position: absolute;
       top: 50%;
       transform: translateY(-50%);
+      @media screen and (min-width: 940px) {
+        width: 130px;
+      }
     }
   }
 `;

@@ -4,7 +4,7 @@ import styled from "styled-components";
 export default function SearchInput({ showInput }) {
   return (
     <Container showInput={showInput}>
-      <label for="i123456"></label>
+      <label htmlFor="i123456"></label>
       <input type="text" id="i123456" />
     </Container>
   );
@@ -31,5 +31,14 @@ const Container = styled.div`
     height: 60px;
     padding: 0 20px;
     border: 2px solid #3c97f9;
+    @media screen and (min-width: 940px) {
+      height: 40px;
+    }
+  }
+  @media screen and (min-width: 940px) {
+    position: static;
+    opacity: 1;
+    width: 340px;
+    padding-top: 20px;
   }
 `;

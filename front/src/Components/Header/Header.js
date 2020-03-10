@@ -1,11 +1,10 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-
 import Logo from "./Logo";
 import SearchBox from "./SerachBox";
 import BtnOpen from "./BtnOpen";
 import Nav from "./Nav";
-
+import "./style.css";
 export default function Header() {
   const [showNav, setShowNav] = useState(false);
   const handleNavSlide = () => {
@@ -43,4 +42,7 @@ const HeaderInner = styled.div`
   position: relative;
   box-sizing: border-box;
   border-bottom: 1px solid #ccc;
+  @media screen and (min-width: 940px) {
+    height: 80px;
+  }
 `;

@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"
+    />
+    <meta name="keywords" content="traveler 샘플페이지" />
+    <meta name="description" content="작성자:문현규,곽민상,위소현" />
+    <title>TRAVELER</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/swiper.css" />
+    <link rel="stylesheet" href="css/travel_detail.css" />
+    <script
+      src="https://kit.fontawesome.com/164552570a.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/common.js"></script>
+    <script src="js/jquery-1.12.3.min.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/swiper.js"></script>
+    <script src="js/travel_detail.js"></script>
+    <!-- <script src="js/slidetoggle.js"></script> -->
+  </head>
+  <body class="so">
+    <!--header-->
+    <header>
+      <div class="header-inner">
+        <!--logo-->
+        <h1 id="logo">
+          <a href="#">
+            <img src="img/logo.png" alt="logo" />
+          </a>
+        </h1>
+        <!--//logo-->
+        <div id="searchBox">
+          <a>
+            <span class="">
+              <i class="fas fa-search"></i>
+            </span>
+          </a>
+
+          <div id="searchInput">
+            <label for="i123456"></label>
+            <input type="text" id="i123456" />
+          </div>
+        </div>
+        <!--btnOpen-->
+        <a id="btnOpen" href="#">
+          <span>
+            <i class="fas fa-bars"></i>
+          </span>
+        </a>
+        <!--//btnOpen-->
+        <nav class="list-nav">
+          <a id="btnClose" href="#">
+            <span>
+              <i class="fas fa-times"></i>
+            </span>
+          </a>
+          <div id="dimmed"></div>
+          <div class="menu-wrapper">
+            <div id="gnb">
+              <ul class="gnb-inner">
+                <li class="gnb-list">
+                  <a href="#" class="depth1"
+                    ><span><i class="fas fa-th-large"></i></span>THEME</a
+                  >
+                  <ul class="open-menu">
+                    <li><a href="#">기차여행</a></li>
+                    <li><a href="#">맛집탐방</a></li>
+                    <li><a href="#">축제</a></li>
+                    <li><a href="#">액티비티</a></li>
+                    <li><a href="#">데이트</a></li>
+                  </ul>
+                </li>
+                <li class="gnb-list">
+                  <a href="#" class="depth1"
+                    ><span><i class="fas fa-snowflake"></i></span>AREA</a
+                  >
+                  <ul class="open-menu">
+                    <li><a href="#">서울/경기</a></li>
+                    <li><a href="#">강원도</a></li>
+                    <li><a href="#">충청도</a></li>
+                    <li><a href="#">경상도</a></li>
+                    <li><a href="#">전라도</a></li>
+                    <li><a href="#">제주도</a></li>
+                    <li><a href="#">독도</a></li>
+                  </ul>
+                </li>
+                <li class="gnb-list">
+                  <a href="#" class="depth1"
+                    ><span><i class="fas fa-compass"></i></span>SEASON</a
+                  >
+                  <ul class="open-menu">
+                    <li><a href="#">산뜻한봄</a></li>
+                    <li><a href="#">시원한여름</a></li>
+                    <li><a href="#">맛있는가을</a></li>
+                    <li><a href="#">따뜻한겨울</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <div id="rnb">
+              <ul>
+                <li><a href="#" class="on">LOGIN</a></li>
+                <li><a href="#">JOIN US</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <!---->
+      </div>
+    </header>
+    <!--//header-->
+    <!--container-->
+    <div class="so" id="container">
+      <!--container-inner-->
+      <div class="container-inner w100">
+        <!-- travel-photo-->
+        <div class="travel-photo">
+          <div class="inner">
+            <!-- swiper -->
+            <div class="swiper-container">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="inner"></div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="inner"></div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="inner"></div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="inner"></div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="inner"></div>
+                </div>
+              </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-pagination"></div>
+            </div>
+            <!--// swiper -->
+          </div>
+        </div>
+        <!--// travel-photo-->
+      </div>
+      <!--//container-inner-->
+
+      <!--container-inner-->
+      <div class="container-inner travel-info">
+        <!--travel-info-->
+        <div class="travel-intro">
+          <div class="inner">
+            <div class="user">
+              <a href="#">
+                <div class="profile-img"></div>
+                <div class="user-data">
+                  <h4>홍길동홍길동홍길동</h4>
+                  <span>2020. 03. 08</span>
+                </div>
+              </a>
+            </div>
+            <div class="icon">
+              <a href="#" class="pin">
+                <i class="fas fa-map-pin"></i>
+              </a>
+              <a href="#"><i class="fas fa-star"></i></a>
+            </div>
+          </div>
+          <div class="inner">
+            <div class="introduction">
+              <h2>여수 돌산대교 & 해상 케이블카</h2>
+              <h3>돌산공원의 야경을 즐겨보세요!</h3>
+              <p>
+                돌산공원에서 오동도 입구 자산공원까지 1.5km 바다 위를
+                가로질러가는 여수 해상 케이블카입니다.<br />케이블카에서
+                바라보는 여수 앞바다의 풍경은 어느 때 타셔도 좋은 풍경을 볼 수
+                있어요.
+                <br />
+                <br />
+                돌산대교, 여수앞바다, 여수항, 장군도의 풍경을 볼 수 있는 곳이라
+                바람쐬러 나오기도, 산책하기도 너무좋은 곳 입니다.<br />친구 혹은
+                애인, 가족과 뜻깊은 추억을 만들어보세요.
+              </p>
+            </div>
+          </div>
+          <div class="inner">
+            <div class="more-info">
+              <h4>상세정보</h4>
+              <ul>
+                <li>여수 해상 케이블카 돌산 탑승장</li>
+                <li>
+                  <strong>주소</strong> : 전라남도 여수시 돌산읍 돌산로 3600-1
+                </li>
+                <li><strong>연락처</strong> : 061-664-7301</li>
+                <li>
+                  <strong>영업시간</strong> : 연중무휴 <br />
+                  평일 오전 10:00 ~ 오후 9:00<br />토요일 오전 10:00 ~오후
+                  9:30<br />
+                  일요일 오전 10:00 ~ 오후 9:00<br />(공휴일은 시간이 변동될 수
+                  있습니다.)
+                </li>
+                <li>
+                  <strong>가격</strong> : 왕복(대인) 15000원,
+                  편도(대인)12000원<br />(자세한 가격은 홈페이지를
+                  참조해주세요.)
+                </li>
+                <li>
+                  <a href="#"
+                    ><strong>홈페이지</strong> : http://yeosucablecar.com/</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- map -->
+          <div class="map">
+            <div class="inner">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3278.993255311716!2d127.73938331557588!3d34.73056438912534!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x356dd920e8b2a773%3A0xf3a9228fd778a463!2z7Jes7IiY7ZW07IOB7LyA7J2067iU7Lm0IOuPjOyCsO2DkeyKueyepQ!5e0!3m2!1sko!2skr!4v1583597923796!5m2!1sko!2skr"
+              ></iframe>
+            </div>
+          </div>
+          <!-- //map -->
+        </div>
+        <!--//travel-info-->
+      </div>
+      <!--//container-inner-->
+      <!--container-inner-->
+      <div class="container-inner">
+        <!-- edit-btn -->
+        <div class="button">
+          <div class="inner">
+            <div class="main-btn btn">
+              <button>목록</button>
+            </div>
+            <div class="edit-btn btn">
+              <button>글쓰기 <i class="far fa-edit"></i></button>
+            </div>
+          </div>
+        </div>
+
+        <!--//edit-btn -->
+      </div>
+      <!--//container-inner-->
+      <!--container-inner-->
+      <div class="container-inner comment-content">
+        <!-- comment -->
+        <div class="comment">
+          <div class="inner">
+            <h3>후기</h3>
+            <div class="comment-field">
+              <div class="profile-img"></div>
+              <div class="comment-form">
+                <form action="#">
+                  <label for="field"></label>
+                  <input type="text" id="field" />
+                  <input type="submit" value="작성" />
+                </form>
+              </div>
+            </div>
+            <hr />
+          </div>
+        </div>
+        <!-- //comment -->
+        <!-- comment -->
+        <div class="comment-box">
+          <div class="inner">
+            <ul class="comment-list">
+              <li>
+                <div class="user">
+                  <a href="#">
+                    <div class="profile-img"></div>
+                    <div class="user-data">
+                      <h4>홍길동홍길동홍길동</h4>
+                      <span>2020. 03. 08</span>
+                    </div>
+                  </a>
+                </div>
+                <p>
+                  직원들도 너무 친절했고 예쁜 야경을 볼 수 있어서 좋았습니다.
+                  구글 지도에 나와있는 시간이랑 다를 수 있어서 홈페이지를 한번
+                  더 보고 방문하시는 것을 추천드립니다.
+                </p>
+              </li>
+              <li>
+                <div class="user">
+                  <a href="#">
+                    <div class="profile-img"></div>
+                    <div class="user-data">
+                      <h4>홍길동홍길동홍길동</h4>
+                      <span>2020. 03. 08</span>
+                    </div>
+                  </a>
+                </div>
+                <p>
+                  직원들도 너무 친절했고 예쁜 야경을 볼 수 있어서 좋았습니다.
+                  구글 지도에 나와있는 시간이랑 다를 수 있어서 홈페이지를 한번
+                  더 보고 방문하시는 것을 추천드립니다.
+                </p>
+              </li>
+              <li>
+                <div class="user">
+                  <a href="#">
+                    <div class="profile-img"></div>
+                    <div class="user-data">
+                      <h4>홍길동홍길동홍길동</h4>
+                      <span>2020. 03. 08</span>
+                    </div>
+                  </a>
+                </div>
+                <p>
+                  직원들도 너무 친절했고 예쁜 야경을 볼 수 있어서 좋았습니다.
+                  구글 지도에 나와있는 시간이랑 다를 수 있어서 홈페이지를 한번
+                  더 보고 방문하시는 것을 추천드립니다.
+                </p>
+              </li>
+              <li>
+                <div class="user">
+                  <a href="#">
+                    <div class="profile-img"></div>
+                    <div class="user-data">
+                      <h4>홍길동홍길동홍길동</h4>
+                      <span>2020. 03. 08</span>
+                    </div>
+                  </a>
+                </div>
+                <p>
+                  직원들도 너무 친절했고 예쁜 야경을 볼 수 있어서 좋았습니다.
+                  구글 지도에 나와있는 시간이랑 다를 수 있어서 홈페이지를 한번
+                  더 보고 방문하시는 것을 추천드립니다.
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- //comment -->
+        <!-- page -->
+        <div class="page">
+          <div class="inner">
+            <ul>
+              <li><a href="#">이전</a></li>
+              <li><a href="#">1</a></li>
+              <li><a href="#">2</a></li>
+              <li><a href="#">3</a></li>
+              <li><a href="#">4</a></li>
+              <li><a href="#">다음</a></li>
+            </ul>
+          </div>
+        </div>
+        <!-- //page -->
+      </div>
+      <!-- page -->
+      <!--//container-inner-->
+    </div>
+    <!--//container-->
+    <!--footer-->
+    <div id="footer">
+      <div class="footer-inner">
+        <div class="footer-top">
+          <div class="">
+            <h2><a href="#">Tiyangle.co</a></h2>
+            <ul id="instagram-source">
+              <li><a href="#">1</a></li>
+              <li><a href="#">2</a></li>
+              <li><a href="#">3</a></li>
+            </ul>
+            <p>Follow us on <a href="#">tiyangle.co</a></p>
+          </div>
+          <div class="">
+            <h3>leave a message</h3>
+            <ul>
+              <li><a href="#">dawn@tiyangle.co</a></li>
+              <li><a href="tel:000-0000-0000">(+82) 000-0000-0000</a></li>
+            </ul>
+          </div>
+          <div class="">
+            <h3>info</h3>
+            <ul>
+              <li>
+                <a href="#"
+                  ><span>T</span>erms <span>O</span>f <span>S</span>ervice terms
+                  of use</a
+                >
+              </li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Inquiry Board</a></li>
+            </ul>
+          </div>
+          <div class="">
+            <h3>maker</h3>
+            <ul>
+              <li>
+                <span>PM</span>
+                <a href="https://github.com/vapvin">문현규</a>
+              </li>
+              <li>
+                <span>PUB & DESIGN</span>
+                <a href="https://github.com/qkaxhfms"
+                  ><span>P.L</span> 곽민상</a
+                >
+                <a href="https://github.com/sohyun0"><span>P.A</span> 위소현</a>
+              </li>
+              <li>
+                <span>FRONT-END</span>
+                <a href="https://github.com/kangdonghune">강동훈</a>
+                <a href="https://github.com/spacedawn96">웅</a>
+                <a href="https://github.com/peppermint100">페퍼민트</a>
+              </li>
+              <li>
+                <span>BACK-END</span>
+                <a href="https://github.com/pyeeun"><span>P.L</span> 예니</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <div class="footer-sns">
+            <ul>
+              <li>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-google"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-google-drive"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-github"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-trello"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-description">
+            <p>
+              &copy;<span>Traveler</span>. designed and Developed by tiyangle
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--//footer-->
+  </body>
+</html>

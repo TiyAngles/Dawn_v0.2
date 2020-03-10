@@ -52,7 +52,7 @@ export default function Gnb() {
     }
   };
   return (
-    <Container>
+    <Container listState={listState}>
       <GnbInner>
         <GnbList
           detail={theme}
@@ -73,12 +73,19 @@ export default function Gnb() {
 const Container = styled.div`
   top: 0;
   padding: 40px 20px 0 20px;
+  @media screen and (min-width: 940px) {
+    float: left;
+    top: auto;
+    padding: 0;
+  }
 `;
 
 const GnbInner = styled.ul`
   &::after {
-    display: block;
-    content: "";
-    clear: both;
+    @media screen and (min-width: 940px) {
+      display: block;
+      content: "";
+      clear: both;
+    }
   }
 `;

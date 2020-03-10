@@ -268,6 +268,11 @@ nav {
 }
 
 /* tablet */
+@media screen and (min-width: 923px) {
+  #dimmed {
+    display: none;
+  }
+}
 @media screen and (min-width: 940px) {
   /* header */
   .header-inner {
@@ -294,7 +299,7 @@ nav {
   /*serachbox*/
   #searchBox {
     height: 100%;
-    right: 520px;
+    right: 460px;
   }
   #searchBox a {
     position: absolute;

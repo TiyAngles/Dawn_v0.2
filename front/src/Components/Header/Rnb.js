@@ -25,50 +25,100 @@ export default function Rnb() {
     </Container>
   );
 }
-const ON = css`
-  a {
-    display: block;
-    text-align: center;
-    background: #fff;
-    color: #fff;
-    border: 1px solid transparent;
-    background: linear-gradient(0.25turn, #d061fe, #3c97f9);
-  }
-`;
 
 const Container = styled.div`
+  &::after {
+    display: block;
+    content: "";
+    clear: both;
+  }
+
   z-index: 30;
   position: absolute;
   right: 0;
   bottom: 0;
-  border-top: 1.2px solid #3c97f9;
-  a {
-    display: block;
-    text-align: center;
-    background: #fff;
-    box-sizing: border-box;
-    color: #3c97f9;
-    background: #fff;
-    height: 100%;
+  border-top: 1px solid #3c97f9;
+  ul {
   }
   li {
     float: left;
     display: block;
     width: 50%;
     line-height: 40px;
-    height: 100%;
-    ${props =>
-      props.selected === "join"
-        ? `&:last-child{
-      ${ON};
-    }`
-        : `&:first-child{
-      ${ON};
-    }`}
+    &:first-child {
+      a {
+        color: #fff;
+        background: linear-gradient(0.25turn, #d061fe, #3c97f9);
+      }
+    }
   }
-  &::after {
+  a {
     display: block;
-    content: "";
-    clear: both;
+    text-align: center;
+    background: #fff;
+    box-sizing: border-box;
+  }
+
+  @media screen and (min-width: 940px) {
+    position: relative;
+    padding-left: 12px;
+    float: left;
+    right: auto;
+    bottom: auto;
+    border-top: none;
+    &::before {
+      position: absolute;
+      top: 50%;
+      transform: translate(-700%, -40%);
+      display: block;
+      content: "";
+      width: 1px;
+      height: 14px;
+      background: #333;
+    }
+    &::after {
+      display: block;
+      content: "";
+      clear: both;
+    }
+    li {
+      width: auto;
+      line-height: 79.9px;
+      padding: 0 12px;
+      font-size: 14px;
+      &:first-child {
+        a {
+          color: #3c97f9;
+          background: #fff;
+        }
+      }
+    }
+    a {
+      background: #fff;
+      color: #444;
+    }
   }
 `;
+
+// const ON = css`
+//   a {
+//     display: block;
+//     text-align: center;
+//     background: #fff;
+//     color: #fff;
+//     border: 1px solid transparent;
+//     background: linear-gradient(0.25turn, #d061fe, #3c97f9);
+//     @media screen and (min-width: 940px) {
+//       color: #3c97f9;
+//       background: #fff;
+//     }
+//   }
+// `;
+// ${props =>
+//   props.selected === "join"
+//     ? `&:last-child{
+//   ${ON};
+// }`
+//     : `&:first-child{
+//   ${ON};
+// }`}

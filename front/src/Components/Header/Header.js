@@ -42,4 +42,7 @@ const HeaderInner = styled.div`
   position: relative;
   box-sizing: border-box;
   border-bottom: 1px solid #ccc;
+  @media screen and (min-width: 940px) {
+    height: 80px;
+  }
 `;

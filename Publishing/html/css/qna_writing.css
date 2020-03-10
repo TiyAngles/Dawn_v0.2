@@ -162,6 +162,14 @@
   content: " | ";
 }
 
+.so .bbs-empty-list p {
+  text-align: center;
+  font-size: 36px;
+  color: #ccc;
+}
+.so .so .bbs-empty-list {
+  display: none;
+}
 .so .button .inner .main-btn {
   float: right;
   width: 100px;
@@ -169,6 +177,7 @@
   line-height: 50px;
   background: linear-gradient(90deg, #d161ff, #623ee8);
   border-radius: 25px;
+  margin-bottom: 10px;
 }
 .so .button .inner .main-btn button {
   width: 94px;
@@ -177,7 +186,6 @@
   line-height: 40px;
   border-radius: 25px;
   background: transparent;
-
   color: #fff;
 }
 

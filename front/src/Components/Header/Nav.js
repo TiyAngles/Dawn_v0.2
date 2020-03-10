@@ -30,6 +30,14 @@ const Container = styled.nav`
   left: ${props => (props.showNav ? "0" : "100%")};
   width: 100%;
   height: 100vh;
+  @media screen and (min-width: 940px) {
+    float: right;
+    z-index: 30;
+    position: static;
+    left: auto;
+    width: auto;
+    height: auto;
+  }
 `;
 
 const BtnClose = styled.a`

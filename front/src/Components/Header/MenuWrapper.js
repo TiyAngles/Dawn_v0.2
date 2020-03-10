@@ -24,5 +24,23 @@ const Container = styled.nav`
     position: absolute;
     right: 0;
     width: 100%;
+    @media screen and (min-width: 940px) {
+      position: static;
+      right: auto;
+      width: auto;
+    }
+  }
+  @media screen and (min-width: 940px) {
+    &::after {
+      display: block;
+      content: "";
+      clear: both;
+    }
+    position: static;
+    top: auto;
+    right: auto;
+    width: auto;
+    height: auto;
+    background: transparent;
   }
 `;

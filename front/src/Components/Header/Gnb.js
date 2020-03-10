@@ -73,6 +73,19 @@ export default function Gnb() {
 const Container = styled.div`
   top: 0;
   padding: 40px 20px 0 20px;
+  @media screen and (min-width: 940px) {
+    float: left;
+    top: auto;
+    padding: 0;
+  }
 `;
 
-const GnbInner = styled.ul``;
+const GnbInner = styled.ul`
+  &::after {
+    @media screen and (min-width: 940px) {
+      display: block;
+      content: "";
+      clear: both;
+    }
+  }
+`;

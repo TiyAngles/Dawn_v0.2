@@ -29,4 +29,8 @@ const Container = styled.a`
   line-height: 60px;
   font-size: 24px;
   color: #3c97f9;
+
+  @media screen and (min-width: 940px) {
+    display: none;
+  }
 `;

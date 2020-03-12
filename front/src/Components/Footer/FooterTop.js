@@ -159,26 +159,34 @@ export default function FooterTop() {
         <ul>
           <li>
             <span>PM</span>
-            <a href="https://github.com/vapvin">문현규</a>
+            <a href="https://github.com/vapvin" target="_blank">
+              문현규
+            </a>
           </li>
           <li>
             <span>PUB & DESIGN</span>
-            <a href="https://github.com/qkaxhfms">
+            <a href="https://github.com/qkaxhfms" target="_blank">
               <span>P.L</span> 곽민상
             </a>
-            <a href="https://github.com/sohyun0">
+            <a href="https://github.com/sohyun0" target="_blank">
               <span>P.A</span> 위소현
             </a>
           </li>
           <li>
             <span>FRONT-END</span>
-            <a href="https://github.com/kangdonghune">강동훈</a>
-            <a href="https://github.com/spacedawn96">웅</a>
-            <a href="https://github.com/peppermint100">페퍼민트</a>
+            <a href="https://github.com/kangdonghune" target="_blank">
+              강동훈
+            </a>
+            <a href="https://github.com/spacedawn96" target="_blank">
+              웅
+            </a>
+            <a href="https://github.com/peppermint100" target="_blank">
+              페퍼민트
+            </a>
           </li>
           <li>
             <span>BACK-END</span>
-            <a href="https://github.com/pyeeun">
+            <a href="https://github.com/pyeeun" target="_blank">
               <span>P.L</span> 예니
             </a>
           </li>

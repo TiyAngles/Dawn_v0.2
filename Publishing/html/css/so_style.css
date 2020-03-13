@@ -1,0 +1,399 @@
+@charset "utf-8";
+/* 공통스타일 */
+
+/* font-color */
+/* 주로 사용하는 텍스트태그 기본색상을 지정*/
+.so .container-inner h2, .so .container-inner h3,
+.so .container-inner h4, .so .container-inner p,
+.so .container-inner li .so .container-inner{color:#3c3c3c}
+.so .container-inner span{font-size: 14px;}
+
+/* container-inner */
+/* 컨테이너 양옆 살짝 띄우기위해서 설정 */
+.so .container-inner{width:90%;margin:0 auto}
+.so .detail{width:95%;margin:0 auto;}
+.so .w100-detail {width:100%;}
+
+/*button reset*/
+.so button{width:0;height:0;border:0;line-height:0;transition:0}
+
+/*hr reset*/
+.so  hr{display:block;width:100%;height:2px;margin:20px 0;padding:0;border:0;outline:0;background-color:#b5b5b5}
+
+/* pin-icon */
+.so .pin .fa-map-pin{display:inline-block;color:#fff;font-size:35px;padding:10px;transform:translate(-15px,-3px) rotate(35deg)}
+.so .pin .fa-map-pin:hover{color: #2e8bff;}
+
+/* star-icon */
+.so .star .fa-star{color:#818181;font-size:30px;padding:5px;}
+.so .star .fa-star:hover{color:#f2d91f}
+
+/* search-bar */
+/*검색바 틀역할*/
+.so .search-bar{position:relative;margin:0 auto;background:#fff;border-radius:20px;border:2px solid #c0dcff;padding:8px 20px}
+/*검색바 검색영역*/
+.so .search-bar input[id="searchBar"]{width:85%;height:44px;padding:0;font-size:16px}
+/*검색바 아이콘영역*/
+/*테두리에 생각치않은 흰색라인이 생겨서 크기를 늘리고 앱솔루트로 흰색라인을 없앤후 오버플로우 히든으로 밀려난 부분을 없앰*/
+.so .search-bar label[for="searchBar"]{overflow:hidden;position:absolute;top:0;right:-1px;display:block;width:15%;height:60px;line-height:60px;background-color:#c0dcff;text-align:center;border-radius:0 16px 16px 0}
+/*검색바 아이콘*/
+.so .search-bar label[for="searchBar"] .fa-search{color:#fff;font-size:20px}
+
+/* edit-btn */
+/*기존 버튼과 양식동일*/
+/* 겉에 큰버튼을만들어 그라데이션색상을 넣어준후 작은버튼으로 그라데이션 선표현 -보더3픽셀을 버튼의 크기로 보더크기설정.*/
+.so .edit-btn{margin-top:10px;}
+.so .edit-btn button{width:0;height:0;border:0;line-height:0;transition:0}
+.so .edit-btn .inner::after{display:block;content:"";clear:both}
+.so .edit-btn .inner .btn{width:90px;height:40px;line-height:40px;float:right;background:linear-gradient(90deg,#d161ff,#623ee8);border-radius:25px}
+.so .edit-btn .inner .btn button{width:84px;height:34px;margin:3px;line-height:30px;border-radius:25px;background:#fff; font-size: 14px;}
+.so .edit-btn .inner .btn button:hover{color:#fff;background:transparent;}
+.so .edit-btn .inner .main-btn button{background:transparent; color: #fff;}
+.so .edit-btn .inner .main-btn button:hover{background:#fff; color: #000;}
+
+/* page */
+/*페이지네이션*/
+.so .page{display:block;text-align:center;margin-bottom:10px}
+/* li요소를 옆으로 배치하기 위하여 인라인블록을 사용 */
+.so .page ul li{display:inline-block}
+.so .page ul li a{display:inline-block;font-size:16px;padding:10px}
+/* 현재페이지를 보여주는 색상입니다 */
+.so .page ul li a:focus{color:#2e8bff;font-size:18px}
+
+/* user */
+/* user 프로필/ 작성자 데이터 레이아웃*/
+.so .profile-img{width:40px;height:40px;margin:10px 10px 0 10px;border-radius:50%;background:#e0fd8f;}
+.so .user a::after{content:" ";display:block;clear:both;}
+/* 유저 프로필칸 */
+.so .user .profile-img{float:left;width:50px;height:50px;margin:10px 10px 0 10px;border-radius:50%;background:#fff8a1;}
+/* 유저 정보, 작성한시간 */
+.so .user .user-data{float:left;}
+.so .user .user-data h4{margin-top:10px;font-size:18px;line-height:20px;}
+.so .user .user-data span{display:inline-block;margin-right:10px;color:#757575}
+
+
+/*---------- sub_season ----------*/
+
+/* visual  */
+/* 헤더 바로밑에 탑배너 이미지 */
+.so .visual{height:300px;background-image:url("../img/sub/season_bg.JPG");background-repeat:no-repeat;background-position:50% 50%;background-size:100%}
+
+/* recommed */
+/* reco-swiper */
+/* 스와이퍼보여지는 개수를 auto로 설정하여 width값설정 */
+.so .reco-slide .swiper-wrapper .swiper-slide{position:relative;width:80%;margin:0 0 0 5%}
+/* 슬라이더이미지 */
+.so .reco-slide .swiper-slide .inner{height:440px;background-image:url("../img/sub/slider/reco_slider_1.jpg");background-repeat:no-repeat;background-position:50% 50%;background-size:cover;border-radius:25px}
+/* 슬라이더 상단아이콘영역 아이콘을 오른쪽으로 배치하기 위하여 text-align사용.*/
+.so .reco-slide .swiper-slide .top{width:100%;height:40px;background-color:rgba(0,0,0,.3);background:linear-gradient(rgba(38,38,38,.5) 15%,rgba(115,115,115,.3) 70%,rgba(160,160,160,.2) 100%);border-radius:25px 25px 0 0;text-align:right}
+.so .reco-slide .swiper-slide .pin .fa-map-pin{font-size: 30px;}
+/* bottom 영역을 잡기위하여 포지션을 사용*/
+.so .reco-slide  .swiper-slide .bottom{position:absolute;bottom:0;left:0;width:100%;height:150px;background-color:rgba(0,0,0,.5);background:linear-gradient(-360deg,rgba(38,38,38,1) 15%,rgba(115,115,115,.7) 90%,rgba(160,160,160,.2) 100%);border-radius:0 0 25px 25px}
+.so .reco-slide  .swiper-slide .bottom::after{content:"";display:block;clear:both}
+/* 타이틀과 장소 안내영역 */
+.so .reco-slide  .swiper-slide .bottom h3{padding:15px 0 0 10px;font-size:24px;color:#fff}
+.so .reco-slide  .swiper-slide .bottom h4{padding:10px 0 0 10px;color:#ebebeb;font-size:16px}
+/* 슬라이더 위에 올라오는 댓글 한줄의 프로필사진 영역 플롯으로 사진과 채팅 정렬*/
+/* 사진영역 */
+.so .reco-slide  .swiper-slide .bottom .profile-img{float:left;}
+/* 채팅영역 */
+.so .reco-slide  .swiper-slide .bottom .chat{float:left; width:75%; margin:10px 0 0 0;font-size:14px}
+.so .reco-slide  .swiper-slide .bottom .chat p{color:#fff}
+.so .reco-slide  .swiper-slide .bottom .chat span{margin-left:5px color: #f5f5f5;}
+.so .reco-slide  .swiper-slide .bottom .star {position:absolute;right:0;top:5px;display:inline-block;}
+.so .reco-slide  .swiper-slide .bottom .star .fa-star {color: #fff;}
+ 
+
+/* travel-menu */
+/* travel-menu-swiper */
+/* 메뉴는 간격조정해서 글자 한두개 보이게해서 슬라이드 임을 나타내도록 간격조정 */
+.so .travel-menu{margin: 20px 0 15px; border-bottom: 3px solid #ccc }
+.so .travel-menu .swiper-slide{width: 30%;text-align:center}
+.so .travel-menu .swiper-slide a{display: inline-block;  font-size:30px;font-weight:bold;color:#3c3c3c;}
+/* 슬라이드 메뉴해당위치에 왔을때 색상변화 */
+.so .travel-menu .swiper-slide a:hover{color:#2e8bff}
+
+
+/* travel-list  */
+/* 해당 메뉴 목록영역 */
+.so .travel-list ul>li{width:90%;margin:0 auto}
+/* 메뉴에 삽입된 이미지 */
+.so .travel-list ul>li .travel-img{width:100%;height:200px;background:#ccc;background-image:url("../img/sub/slider/reco_slider_1.jpg");background-position:50% 50%;background-size:cover}
+/* 해당 목록 간단 정보 */
+.so .travel-list ul li ol li{font-size:16px;line-height:26px}
+.so .travel-list ul li ol li:nth-child(1){font-size:18px}
+.so .travel-list ul li hr:last-child {margin: 20px 0 10px;}
+
+
+/* ---------- travel_detail ----------*/
+
+/* travel-photo */
+/* 제일상단 유저가 올린 사진 swiper 영역*/
+.so .travel-photo>.inner{margin-top:10px;}
+.so .travel-photo .swiper-wrapper .swiper-slide{position:relative;width:100%;height:440px;}
+.so .travel-photo .swiper-slide .inner{height:100%;background-image:url("https://cdn.pixabay.com/photo/2020/03/05/09/25/free-and-edited-4903883__340.jpg");background-repeat:no-repeat;background-position:50% 50%;background-size:cover;border-radius:25px;}
+
+/* travel-intro */
+/* 슬라이더와 게시글 구분선 */
+.so .travel-info{margin:20px auto;padding:20px 15px;border:2px solid #ccc;border-top:3px solid #282828;}
+.so .travel-intro .inner::after{display:block;content:"";clear:both;}
+
+/* 텍스트위치로 아이콘위치 왼쪽에 배치 */
+.so .travel-intro .icon{text-align:right;}
+/*  아이콘스타일 틀어져잇는 형태로 rotate적용/ 위치간격을맞추기위해 translate사용  */
+.so .travel-intro .icon a .fa-map-pin{color:#818181;transform:translate(-10px,3px) rotate(35deg);}
+
+/* introduction */
+.so .introduction h2{padding:30px 0;}
+.so .introduction h3{font-size:20px;padding:20px 0;}
+
+/* more-info */
+/* 상세정보 입력 */
+/*상세정보칸을 감싸는 []를 비포,애프터로 넣음*/
+.so .more-info h4{font-size:18px;padding:20px 0 20px;}
+.so .more-info h4::before{content:"[";}
+.so .more-info h4::after{content:"]";}
+/*해당 리스트간 간격*/
+.so .more-info ul li{margin-bottom:10px;}
+.so .more-info ul li a{color:#3c3c3c;}
+/*구글맵 아이프레임으로 끌어왔습니다*/
+.so .map iframe{width:100%;height:300px;}
+
+/* edit-btn */
+/*버튼 레이아웃*/
+.so .edit-btn .inner .edit-btn{float:left; margin: 0;}
+
+/*comment*/
+/*후기 작성란*/
+.so .comment-content{margin-top:20px;padding:20px 15px;border:2px solid #ccc;}
+.so .comment h3{padding:20px 0;}
+.so .comment-field::after{display:block;content:"";clear:both;}
+/*유저 프로필사진배치*/
+.so .comment-field .profile-img{float:left;}
+/*작성란 크기와 레이아웃배치 */
+.so .comment-field .comment-form{float:left;height:auto;width:calc(100% - 70px);}
+.so .comment-field .comment-form form{position:relative;width:100%;line-height:0;}
+.so .comment-field .comment-form form input[id="field"]{width:calc(100% - 25%);height:50px;border-bottom:1px solid #555;padding:10px;}
+/*작성란의 작성버튼*/
+/*작성란위에 올리기위해서 앱솔루트사용*/
+.so .comment-field .comment-form form input[value="작성"]{position:absolute;top:0;right:0;width:25%;height:40px;background:#c0dcff;border-radius:20px;text-align:center;color:#2e8bff;}
+
+/*후기남긴리스트*/
+.so .comment-box .comment-list li{border-bottom:2px solid #ccc;margin-bottom:10px;}
+.so .comment-box .comment-list li .user-data h4{font-size:16px;}
+/*텍스트를 꽉차게 놔두면 답답해서 90으로 설정*/
+.so .comment-box .comment-list li p{width:90%;margin:10px auto;text-align:justify;}
+
+
+/* ---------- qna ----------*/
+
+/* notice */
+/*기존hr스타일제거후 색상크기변경*/
+.so .notice hr{;background-color:#555555}
+/*댓글 리스트 경계선*/
+.so .notice-inner li{border-bottom:1px solid #ccc}
+/*텍스트링크 간격조정*/
+.so .notice-inner li a{display:block;margin:10px 0 10px 10px}
+.so .notice-data{margin-top:10px}
+/*작성자와 작성일 구분선*/
+.so .notice-data span:last-child::before{content:" | "}
+
+/* bbs-list */
+/*댓글 리스트 경계선*/
+.so .bbs-list-inner li{border-bottom:1px solid #ccc}
+/*텍스트링크 간격조정*/
+.so .bbs-list-inner li a{display:block;position:relative;margin:10px 0 10px 10px}
+/*게시물 번호 중앙배치*/
+.so .bbs-list-inner li a em{position:absolute;top:50%;left:0;transform:translateY(-50%);font-weight:bold}
+.so .bbs-list-text{margin-left:30px}
+.so .bbs-list-data{margin-top:10px}
+/*작성자와 작성일 구분선*/
+.so .bbs-list-data span:last-child::before{content:" | "}
+
+
+/*bbs-content*/
+/*문의 제목영역*/
+.so .bbs-content h3{padding-top:20px}
+/*hr라인 색상다른것은 line 클래스 지정했습니다*/
+.so .line{background:#dfdfdf}
+.so .bbs-content .user a .user-data h4{margin-top:8px;font-size:18px;line-height:30px}
+.so .bbs-content .user a .user-data span{display:inline-block;margin-right:10px;color:#757575}
+
+/*button*/
+/*qna 기존버튼스타일링동일 크기만 작아짐*/
+.so .edit-btn .inner .bbs-btn{float:left}
+.so .edit-btn .inner .del-btn{float:right}
+.so .edit-btn .inner .modify-btn{float:right;margin-right:5%}
+
+/*답글이 없을시에 하단 밑줄생성과 안내텍스트 */
+.so .bbs-empty-list p{text-align:center;font-size:36px;color:#ccc}
+.so .bbs-empty-list{display:none}
+/*목록버튼*/
+.so .edit-btn .inner .main-btn{float:right;margin-bottom: 10px;}
+
+/* ---------- alert----------*/
+
+/* 임의 버튼 */
+.so .alert-btn button{width:50%;height:100px;margin:20px auto;border:1px solid #000}
+.so .alert-btn button:nth-child(1){background:#ffc62e}
+.so .alert-btn button:nth-child(2){background:#6ac510}
+.so .alert-btn button:nth-child(3){background:#ff2e2e}
+.so .alert-btn button:nth-child(4){background:#2e8bff}
+/*임의 버튼의 높이값이 흔들리는것 -> 
+알럿창 자체의 높이값은 변화없음 반응형으로 폭의 고정값만 달라짐*/
+
+/* alert */
+/*알럿창 뒤의 회색배경을띄우기 위해 기준점을 잡음*/
+html{position:relative}
+
+/*알럿창 뒤의 회색배경 전체를 가득 채우기 위해html 자체를 채움*/
+.so .alert-container{position:absolute;top:0;left:0;width:100%;height:100vh;margin:0 auto;display:none;background:rgba(85,85,85,.5)}
+/*중앙에 알럿창 뜨게 배치*/
+.so .alert-content{width:90%;margin:0 auto;position:absolute;top:0%;left:50%;transform:translate(-50%,50%);border:5px solid;border-radius:30px;text-align:center;background:#fff}
+/*알럿 아이콘 크기*/
+.so .alert-content .alert-icon{font-size:100px}
+.so .inner .alert-content h2{padding-top:10px}
+/* 맨밑단에만 간격을 주기위함 */
+.so .alert-content p + p{margin-bottom:20px}
+/*알럿확인버튼*/
+.so .alert-content button{width:100%;height:70px;border-radius:0 0 24px 24px}
+.so .alert-content button span{padding:15px 100px 20px;border-radius:30px;background:#fff;font-size:18px;font-weight:bold}
+/*로그인에러*/
+/*알럿창 border-color*/
+.so .login-error .alert-content{border-color:#ffc62e}
+/*아이콘 컬러*/
+.so .login-error .alert-icon .fa-exclamation-triangle{color:#ffc62e}
+/*에러메세지 컬러*/
+.so .login-error h2{color:#ffc62e}
+/*버튼배경컬러*/
+.so .login-error button{background:#ffc62e}
+/*확인텍스트*/
+.so .login-error button span{color:#ffc62e}
+/*호버시 텍스트와 버튼색상변경*/
+.so .login-error button span:hover{background:#be941f;color:#fff}
+/*이하 색상만다르고 모든코드동일*/
+/*로그인성공*/
+.so .login-success .alert-content{border-color:#6ac510}
+.so .login-success .alert-icon .fa-check-circle{color:#6ac510}
+.so .login-success h2{color:#6ac510}
+.so .login-success button{background:#6ac510}
+.so .login-success button span{color:#6ac510}
+.so .login-success button span:hover{background:#4e910b;color:#fff}
+
+/*회원가입에러*/
+.so .signin-error .alert-content{border-color:#ff2e2e}
+.so .signin-error .alert-icon .fa-exclamation-triangle{color:#ff2e2e}
+.so .signin-error h2{color:#ff2e2e}.so .signin-error button{background:#ff2e2e}
+.so .signin-error button span{color:#ff2e2e}
+.so .signin-error button span:hover{background:#9b1b1b;color:#fff}
+
+/*회원가입성공*/
+.so .signin-success .alert-content{border-color:#2e8bff}
+.so .signin-success .alert-icon .fa-check-circle{color:#2e8bff}
+.so .signin-success h2{color:#2e8bff}
+.so .signin-success button{background:#2e8bff}
+.so .signin-success button span{color:#2e8bff}
+.so .signin-success button span:hover{background:#1e5fad;color:#fff}
+
+/*버튼누르기전 알럿창 숨김*/
+.so .login-error,.so .login-success,
+.so .signin-error,.so .signin-success{display:none}
+/*버튼클릭시 알럿창보이기*/
+.so .login-error.on,.so .login-success.on,
+.so .signin-error.on,.so .signin-success.on{display:block}
+/*알럿창 뿐만아니라 어디를 눌러도 꺼지도록 설정*/
+.so .alert-container.on{display:block}
+
+/*반응형 (해당넓이 이상 넘어가면 너무 커져버려서 적당하다고 생각하는 사이즈로 맞췄습니다)*/
+@media screen and (min-width:460px){
+  .so .alert-content{width:450px;margin:0 auto}
+}
+
+@media screen and (min-width:940px){
+    /* 공통스타일 반응형 */
+    /*검색바 크기조정*/
+    .so .search-bar{float:right;width:500px;margin-bottom:20px;padding:5px 20px}
+    .so .search-bar input[id="searchBar"]{height:40px}
+    .so .search-bar label[for="searchBar"]{height:50px;line-height:50px}
+
+    /*---------- sub_season ----------/
+    /* pc화면에서 넓은 이미지로 교체 */
+    .so .visual{height:440px;background-image:url("../img/sub/season_bg_pc2.JPG")}
+    /* 슬라이더 영역의 크기*/
+    .so .reco-slide .swiper-wrapper .swiper-slide{width:40%}
+    .so .travel-menu .swiper-slide{width: 25%;}
+    .so .travel-menu .swiper-slide a{padding:10px 20px}
+    .so .travel-list ul>li{width:100%;margin:2.5% 0}
+    /* 리스트형태를 만들기 위하여 플롯을 이용해 배치 */
+    .so .travel-list ul>li ::after{content:"";display:block;clear:both}
+    .so .travel-list ul>li .travel-img{float:left;width:25%;margin:0 2.5% 2.5% 0}
+    .so .travel-list ul>li .travel-img>a{width:100%}
+    .so .travel-list ul li ol{float:left;width:70%;margin:0}
+    .so .travel-list ul li ol li:nth-child(1){margin:0 0 25px 0}
+
+    /*---------- travel_detail ----------*/
+    /*    swiper 넓이설정*/
+  .so .travel-photo .swiper-wrapper .swiper-slide{width:70%}
+  /*    중앙에 있던 슬라이드 페이지네이션 버튼을 오른쪽으로이동*/
+    .so .swiper-pagination-fraction,.so .swiper-pagination-custom,.so .swiper-container-horizontal>.swiper-pagination-bullets{bottom:10px;left:-40px;text-align:right;width:100%}
+  /*    페이지네이션 버튼크기*/
+    .so .swiper-pagination-bullet{width:10px;height:10px;display:inline-block;border-radius:100%;background:#000;opacity:.2}
+  /*   해당 페이지에 왔을때 페이지 백그라운드 컬러변경*/
+    .so .swiper-pagination-bullet-active{opacity:1;background:#2e8bff}
+    .so .travel-intro .inner::after{display:block;content:"";clear:both}
+  /*    기존 2단으로 되어있던 유저정보와 아이콘을 한줄로 레이아웃잡음*/
+    .so .travel-intro .user{float:left;width:70%}
+    .so .travel-intro .icon{float:right;width:30%}
+  /*    한줄레이아웃으로 인해 transform 수치변경*/
+    .so .icon a .fa-map-pin{transform:translate(-20px,3px) rotate(35deg)}
+  /*    후기작성칸 크기변경*/
+    .so .comment-field .comment-form form input[id="field"]{width:calc(100% - 150px)}
+    .so .comment-field .comment-form form input[value="작성"]{width:150px}
+
+    /* ---------- qna ----------*/
+    /*    상단의 검색바를 중앙에서 오른쪽으로 이동*/
+    .so .bbs-qna .inner::after{display:block;content:"";clear:both}
+    .so .bbs-qna .inner h2{padding-bottom:10px}
+    /*게시판 리스트 제목과 작성자 분리 레이아웃 (하단동일)*/
+    .so .notice-inner a::after{display:block;clear:both;content:""}
+    .so .notice-inner p{float:left;width:70%}
+    .so .notice-inner .notice-data{float:right;text-align:center;padding-right:10px;width:30%}
+    /*제목과 작성자 분리전 간격없앰*/
+    .so .notice-data{margin-top:0}
+
+    /* bbs-list */
+    /*위항목 동일하지만 번호가 컨텐츠가 추가되어 있어서 별개로 작성함*/
+    .so .bbs-list-text::after{display:block;clear:both;content:""}
+    .so .bbs-list-text p{float:left;width:70%}
+    .so .bbs-list-text .bbs-list-data{float:right;text-align:center;padding-right:10px;width:30%}
+    .so .bbs-list-data{margin-top:0}
+
+    /* ---------- qna list----------*/
+    /* 해당 html 변경 */
+    /*    버튼크기 고정 보더3픽셀 유지*/
+    .so .button .inner .btn{width:150px}
+    .so .button .inner .btn button{width:144px}
+    .so .button .inner .modify-btn{margin-right:2%}
+    .so .button .inner .main-btn{margin-bottom:20px}
+    /* 해당 html 변경 */
+
+}
+@media screen and (min-width:1200px){
+    /* 공통스타일 반응형 */
+    .so .container-inner{width:1200px}
+
+    /*---------- sub_season ----------*/
+    /* 마지막 컨텐츠가 살짝만 보이는 구도여서 스와이퍼 겉에radius를 주어서 오른쪽 끝부분이 부드럽게 표현. 
+    나머지 부분은 오버플로우로 없앰*/
+    .so .reco-slide{border-radius:25px 15px 15px 25px;overflow:hidden}
+    /* 슬라이더 영역의 크기*/
+    .so .reco-slide .swiper-wrapper .swiper-slide{width:33%}
+    .so .travel-menu .swiper-slide a{padding:10px 30px}
+
+    /*---------- travel_detail ----------*/
+    /* 마지막 컨텐츠가 살짝만 보이는 구도여서 스와이퍼 겉에radius를 주어서 오른쪽 끝부분이 부드럽게 표현. 
+    나머지 부분은 오버플로우로 없앰*/
+    .so .travel-photo{border-radius:0;overflow:visible}
+    .so .travel-photo .swiper-wrapper .swiper-slide{width:49.5%}
+
+}

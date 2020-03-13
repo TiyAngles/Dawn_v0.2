@@ -123,6 +123,10 @@
 .so .travel-list ul li ol li{font-size:16px;line-height:26px}
 .so .travel-list ul li ol li:nth-child(1){font-size:18px}
 .so .travel-list ul li hr:last-child {margin: 20px 0 10px;}
+/* 페이지영역 */
+.so .travel-content .page{margin-bottom:0}
+/* 하단 글쓰기영역 */
+.so .travel-content .edit-btn {margin: 0 0 10px;}
 
 
 /* ---------- travel_detail ----------*/

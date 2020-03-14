@@ -5,4 +5,13 @@
 @import url("all.css");
 @import url("layout.css");
 @import url("container.css");
-/*@import url("footer.css"); */
+
+/*common*/
+a {
+    text-decoration: none;
+    color: #000;
+  }
+body {
+    font: 400 16px/1.37 "Roboto Condensed", "Noto Sans KR", "Nanum Gothic",sans-serif;
+    letter-spacing: 1.012px;
+}

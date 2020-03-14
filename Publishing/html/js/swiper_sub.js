@@ -4,7 +4,7 @@ $(document).ready(function() {
     slidesPerView: "auto"
   });
   var swiper = new Swiper(".tra-menu", {
-    slidesPerView: 4,
-    spaceBetween: 10
+    slidesPerView: "auto",
+    slidesPerGroup : 1
   });
 });

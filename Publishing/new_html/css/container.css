@@ -1,15 +1,6 @@
 @charset 'utf-8';
 /*container*/
 
-/*container*/
-
-#container{margin-top:60px;}
-.container-inner{}
-
-/*container text*/
-.container-inner .inner h2{padding:45px 20px 20px;}
-.container-inner .inner h3{padding:45px 0 20px;}
-
 /* slider */
 .slider-wrapper{position: relative;}
 .slider-custom{}
@@ -158,8 +149,6 @@
 /* tablet */
 @media screen and (min-width: 940px) {
 
-    /* container */
-    #container{margin-top:80px;}
 
     /* slider-popular */
     .slider-popular.slider-wrapper{width:100%;margin:0 auto;}
@@ -196,9 +185,5 @@
 /* pc */
 @media screen and (min-width: 1200px) {
 
-
-    /* container-inner */
-    .container-inner{width:1200px;margin:0 auto;}
-    .container-inner.w100{width:100%;}
 }
 

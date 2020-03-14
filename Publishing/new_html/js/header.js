@@ -4,6 +4,7 @@ $(document).ready(function() {
         $('nav').stop().animate({"left":"0"});
         $('#searchInput').removeClass('on');
     });
+
     $('#btnClose').on('click',function(){
         $('nav').stop().animate({"left":"100%"});
     });

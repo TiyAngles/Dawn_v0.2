@@ -165,7 +165,7 @@
     .navi a{float: initial;margin-right:0;margin-bottom:6px;}
     .search-visual{bottom:145px;left:50%;transform:translateX(-50%);width:500px;}
     .search-visual label{top:19px;font-size:30px;}
-    .search-visual input[type="text"]{padding:12px 60px;height:80px;}
+    /* .search-visual input[type="text"]{padding:12px 60px;height:80px;} */
 
     /*main-like*/
     .main-like .like>div li {width:80px;height:80px;}

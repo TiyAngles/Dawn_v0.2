@@ -8,7 +8,13 @@
 .so .user-btn a:hover {background: #2e8bff; color: #fff;}
 .so .mg-btn {margin-bottom: 20px;}
 /*hr라인 색상다른것은 line 클래스 지정했습니다*/
+
 .so .line{background:#dfdfdf;}
+/* 텍스트 간격조절 */
+.so .text-guide {text-align: center;}
+.so .text-guide p {margin-top: 10px; font-weight: bold; letter-spacing: -0.5px;}
+.so .text-guide p:nth-child(1) {margin-top: 20px;}
+.so .text-guide p:nth-child(3) {margin-top: 5px;}
 
 /* ----------alert---------- */
 /*회원탈퇴*/
@@ -51,14 +57,13 @@
 
 
 /* ----------sign-up-email---------- */
-/* 텍스트 간격조절 */
-.so .sign-up-email .sign-up-welcome {text-align: center;}
-.so .sign-up-email .sign-up-welcome p {margin-top: 10px; font-weight: bold; letter-spacing: -0.5px;}
-.so .sign-up-email .sign-up-welcome p:nth-child(1) {margin-top: 20px;}
-.so .sign-up-email .sign-up-welcome p:nth-child(3) {margin-top: 5px;}
 .so .sign-up-email .email-send ul{margin: 0 5%}
 .so .sign-up-email .email-send ul li{margin-top: 10px; font-size: 14px;letter-spacing: -0.5px; line-height: 24px;}
 
+/* ----------sign-up-email-success ---------- */
+.so .sign-up-email-success hr {margin: 30px 0;}
+.so .sign-up-email-success .text-guide p:nth-child(1){margin-top: 40px;}
+.so .sign-up-email-success .email-send-success {text-align: center; letter-spacing: -0.5px; line-height: 24px;} 
 
 
 

@@ -205,6 +205,7 @@ Message {
 - [x] ~03.06 alert 창 작성 (반응형)-Sohyun
 - [x] ~03.08 상세페이지 작성 (반응형)-Sohyun
 - [x] ~03.11 문의 게시판 문의 글 작성(반응형)-Sohyun
+- [x] ~03.13 css 작업물 하나로 통합하기 -Sohyun
 
 ---
 
@@ -258,6 +259,6 @@ Message {
 - 2020 03 07 마이페이지 스크립트 구문 제작 (민상)
 - 2020 03 08 상세페이지 제작
 - 2020 03 10 문의 내역 페이지 제작
-- 2020 03 13 HTML 파일 통합 new_html 파일 생성(민상)
+- 2020 03 13 HTML 파일 통합 new_html 파일 생성(민상) ,so_style.css 정리(소현)
 - 2020 03 14 main page 생성 및 all.css 파일 생성(민상)
 - 2020 03 15 modal창 html 파일 생성, modal(sign_up login) sub page(myprofile myprofile_edit) 파일 통합 (민상)

@@ -64,6 +64,6 @@ const Container = styled.div`
   }
   @media screen and (min-width: 940px) {
     height: 100%;
-    right: 510px;
+    right: 500px;
   }
 `;

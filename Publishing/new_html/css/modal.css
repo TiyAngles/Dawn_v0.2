@@ -1,0 +1,307 @@
+@charset 'utf-8';
+
+/*modal-container*/
+.modal-container{
+    /* display: none; */
+    z-index:1000;
+    position: fixed;
+    left:0;
+    top:0;
+    width:100%;
+    height:100vh;
+    background:rgba(0,0,0,0.75);
+}
+/* 기본형 */
+.modal-container .modal{
+    position: absolute;
+    top:5%;
+    left:2.5%;
+    width:95%;
+    height:90%;
+    background:#fff;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.3);
+    overflow-y:scroll;
+}
+/* 짧은 모달 */
+.modal-container .modal.min{
+    top:50%;
+    transform:translateY(-50%);
+    height:auto;
+    background:#fff;
+}
+
+/* modal-inner */
+.modal-container .modal-inner{
+    padding:30px 20px;
+}
+
+/* btnClase */
+.modal-container .btnClose{
+    position: absolute;
+    right:0;
+    top:0;
+}
+.modal-container .btnClose a{
+    display: block;
+    width:60px;
+    height:60px;
+    text-align: center;
+    line-height:60px;
+    font-size:22px;
+}
+.modal-container .btnClose a:hover{
+    color:#3c97f9;
+}
+
+/* modal-container button */
+.modal-container button{
+    width:100%;
+    display:block;
+    line-height:40px;
+    text-align:center;
+    transition:0.5s;
+    box-sizing:border-box;
+}
+
+/* modal-inner h2*/
+.modal-inner>h2{
+    font-size:32px;
+    margin-bottom:20px;
+    text-align: center;
+    vertical-align:middle;
+}
+.modal-inner>h2 a{
+    display: inline-block;
+}
+
+.modal-inner>h2 a img{
+    width:120px;
+}
+
+/* modal-container form */
+
+.form-list p{
+    margin:14px 0 8px;
+}
+/* form-login */
+.form-login{
+    text-align:right;margin-top:8px;
+}
+.form-login>a{
+    margin-left:8px;
+    color:#777;
+    font-size:12px;
+}
+
+/* form-check */
+.form-check {
+    position: relative;
+    font-size:12px;
+    margin:24px 0 8px;
+    color:#777;
+}
+.form-check input[type="checkbox"] {
+     /* 실제 체크박스는 화면에서 숨김 */
+     position: absolute;
+     width: 1px;
+     height: 1px;
+     padding: 0;
+     margin: -1px;
+     overflow: hidden;
+     clip:rect(0,0,0,0);
+     border: 0 ;
+}
+.form-check input[type="checkbox"] + label {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+.form-check input[type="checkbox"] + label:before {
+    /* 가짜 체크박스 */ 
+    content: '\f00c';
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    font-size:12px;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    line-height: 22px;
+    color: #ccc;
+    margin: -2px 8px 0 0;
+    text-align: center;
+    vertical-align: middle;
+    background: #fafafa;
+    border: 1px solid #cacece;
+    border-radius : 10px;
+    box-shadow: 0px 1px 2px rgba(0,0,0,0.05),
+    inset 0px -15px 10px -12px rgba(0,0,0,0.05);
+} 
+.form-check input[type="checkbox"] + label:active:before,
+.form-check input[type="checkbox"]:checked + label:active:before {
+    box-shadow: 0 1px 2px rgba(0,0,0,0.05),
+    inset 0px 1px 3px rgba(0,0,0,0.1);
+}
+.form-check input[type="checkbox"]:checked + label:before {
+    color: #3c97f9;
+    text-shadow: 1px 1px #fff;
+    background: #fff;
+    border-color: #3c97f9;
+    box-shadow: 0px 1px 2px rgba(0,0,0,0.05),
+    inset 0px -15px 10px -12px rgba(0,0,0,0.05),
+    inset 15px 10px -12px rgba(255,255,255,0.1);
+}
+
+
+/* form-check-2 */
+.form-check-2 {
+    position: relative;
+    font-size:12px;
+    margin:4px 0 8px;
+    color:#333;
+}
+.form-check-2 input[type="checkbox"] {
+     /* 실제 체크박스는 화면에서 숨김 */
+     position: absolute;
+     width: 1px;
+     height: 1px;
+     padding: 0;
+     margin: -1px;
+     overflow: hidden;
+     clip:rect(0,0,0,0);
+     border: 0 ;
+}
+.form-check-2 input[type="checkbox"] + label {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+.form-check-2 input[type="checkbox"] + label:before {
+    /* 가짜 체크박스 */ 
+    content: '\f00c';
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    font-size:8px;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    line-height: 16px;
+    color: #ccc;
+    margin: -2px 8px 0 0;
+    text-align: center;
+    vertical-align: middle;
+    background: #fafafa;
+    border: 1px solid #cacece;
+    border-radius : 10px;
+    box-shadow: 0px 1px 2px rgba(0,0,0,0.05),
+    inset 0px -15px 10px -12px rgba(0,0,0,0.05);
+} 
+
+.form-check-2 input[type="checkbox"] + label:active:before,
+.form-check-2 input[type="checkbox"]:checked + label:active:before {
+    box-shadow: 0 1px 2px rgba(0,0,0,0.05),
+    inset 0px 1px 3px rgba(0,0,0,0.1);
+}
+.form-check-2 input[type="checkbox"]:checked + label:before {
+    color: #3c97f9;
+    text-shadow: 1px 1px #fff;
+    background: #fff;
+    border-color: #3c97f9;
+    box-shadow: 0px 1px 2px rgba(0,0,0,0.05),
+    inset 0px -15px 10px -12px rgba(0,0,0,0.05),
+    inset 15px 10px -12px rgba(255,255,255,0.1);
+}
+
+
+/* btn-blue */
+.btn-blue > button{
+    background:#2e8bff;color:#fff;
+}
+
+/* modal-container btn */
+.btn-social > button{
+    position: relative;
+    padding:0 0 0 42px;
+}
+.btn-social > button::before{
+    position: absolute;
+    left:0;
+    top:0;
+    content:'';
+    display: block;
+    width:42px;
+    height:42px;
+    background:Red;
+}
+.btn-social > button:first-of-type{
+    border:1px solid #f7e600;
+}
+.btn-social > button:first-of-type::before{
+    content: '\f075';
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    font-size:22px;
+    text-decoration: inherit;
+    background:#f7e600;
+}
+.btn-social > button:last-of-type{
+    border:1px solid #2db400;
+}
+.btn-social > button:last-of-type::before{
+    content: 'N';
+    font-family:'Nanum Gothic';
+    font-style: normal;
+    font-weight: bold;
+    font-size:22px;
+    text-decoration: inherit;
+    background:#2db400;
+    color:#fff;
+}
+
+
+
+/* modal-container ad-question */
+.ad-question{
+    margin:14px 0;
+    font-size:12px;
+    color:#777;
+}
+.ad-question a{
+    position: relative;
+    display: block;
+    color:#777;
+}
+.ad-question span{
+    position: absolute;
+    top:-4px;
+    display: inline-block;
+    font-size:12px;
+    right:0;
+    padding:3px 8px;
+    color:#3c97f9;
+    border:1px solid #3c97f9;
+    border-radius:7px;
+}
+
+/* form-gender */
+.form-gender{margin-top:12px;}
+.form-gender::after{display: block;content:'';clear:both;}
+.form-gender>div{float: left;}
+.form-gender>div:first-of-type{margin-right:10px;}
+.form-gender>div:last-of-type{display: flex;}
+.form-gender>div>div:first-of-type{margin-right:10px;}
+
+/* form-desciption */
+.form-description{
+    color:#777;
+    font-size:12px;
+}

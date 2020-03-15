@@ -11,6 +11,7 @@
     height:100vh;
     background:rgba(0,0,0,0.75);
 }
+/* 기본형 */
 .modal-container .modal{
     position: absolute;
     top:5%;
@@ -20,6 +21,15 @@
     background:#fff;
     box-shadow: 2px 2px 2px rgba(0,0,0,0.3);
 }
+/* 짧은 모달 */
+.modal-container .modal.min{
+    top:50%;
+    transform:translateY(-50%);
+    height:auto;
+    background:#fff;
+}
+
+/* modal-inner */
 .modal-container .modal-inner{
     padding:30px 20px;
 }

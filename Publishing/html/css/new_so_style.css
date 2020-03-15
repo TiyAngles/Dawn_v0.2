@@ -1,0 +1,25 @@
+@charset "utf-8";
+/* ----------alert---------- */
+/*회원탈퇴*/
+.so .account-delete-alert .alert-content{border-color:#ff2e2e;}
+.so .account-delete-alert .alert-icon .fa-question-circle{color:#ff2e2e;}
+.so .account-delete-alert h2{color:#ff2e2e;}
+.so .account-delete-alert button{background:#ff2e2e;}
+.so .account-delete-alert button span{color:#ff2e2e;}
+.so .account-delete-alert button span:hover{background:#9b1b1b;color:#fff;}
+
+/* 회원전용 */
+.so .user-service .alert-content{border-color:#ffc62e;}
+.so .user-service .alert-icon .fa-exclamation-triangle{color:#ffc62e;}
+.so .user-service h2{color:#ffc62e;}
+.so .user-service button{background:#ffc62e;}
+.so .user-service button span{color:#ffc62e;}
+.so .user-service button span:hover{background:#be941f;color:#fff;}
+
+/* span글씨 변경 */
+.so .container-inner .alert-container p span {color: #2e8bff; font-weight: bold; font-size: 20px;}
+
+/*버튼누르기전 알럿창 숨김*/
+ .account-delete-alert, .user-service {display:none;}
+/*버튼클릭시 알럿창보이기*/
+.account-delete-alert.on, .user-service.on {display:block;}

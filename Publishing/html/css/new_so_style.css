@@ -1,4 +1,13 @@
 @charset "utf-8";
+    /* 공통스타일 */
+.so .account-delete .inner hr {margin-bottom: 0;}
+.so .account-delete .inner {height: 80%;}
+.so .account-delete-content {display: table; height: 100%; margin: 0 auto;}
+.so .account-delete-content .account-delete-text {display: table-cell; vertical-align:middle;}
+.so .user-btn a {display: block; width: 200px; height: 60px; margin: 0 auto; margin-top: 20px; line-height: 56px; text-align: center; border: 2px solid #2e8bff; border-radius: 15px;}
+.so .user-btn a:hover {background: #2e8bff; color: #fff;}
+
+
 /* ----------alert---------- */
 /*회원탈퇴*/
 .so .account-delete-alert .alert-content{border-color:#ff2e2e;}
@@ -20,6 +29,31 @@
 .so .container-inner .alert-container p span {color: #2e8bff; font-weight: bold; font-size: 20px;}
 
 /*버튼누르기전 알럿창 숨김*/
- .account-delete-alert, .user-service {display:none;}
+.so .account-delete-alert, .so .user-service {display:none;}
 /*버튼클릭시 알럿창보이기*/
-.account-delete-alert.on, .user-service.on {display:block;}
+.so .account-delete-alert.on, .so .user-service.on {display:block;}
+
+/* ----------account-delete---------- */
+/* 페이지를 꽉차게 보이기 위해서 height값설정  */
+.so .account-delete {height: 90vh;}
+.so .account-delete h2{padding-bottom: 0;}
+.so .account-delete p {text-align: center; margin-top: 5px;}
+.so .account-delete p:nth-of-type(2) {margin-top: 20px;}
+.so .account-delete p span {color: #2e8bff; font-weight: bold; font-size: 20px;}
+
+@media screen and (min-width:940px){
+    /* 공통스타일 */
+/* 로그인관련 버튼디자인 */
+.so .user-btn::after{display: block;clear: both;content: "";}
+.so .user-btn .user-btn-l {float: left; margin-right: 30px;}
+.so .user-btn .user-btn-r {float: right;}
+
+/* ----------account-delete---------- */
+/* 페이지를 꽉차게 보이기 위해서 height값설정 // 푸터밑에 빈공간없애기 위하여 마진사용 */
+.so .account-delete {height: 51vh;margin-bottom: 33px;}
+}
+@media screen and (min-width:1200px){
+    /* ----------account-delete---------- */
+.so .account-delete {margin-bottom: 19px;}
+
+}

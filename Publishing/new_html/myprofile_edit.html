@@ -4,10 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
-    <meta name="keywords" content="traveler 샘플페이지">
-    <meta name="description" content="작성자:문현규,곽민상,위소현">
-    <title>TRAVELER</title>
-    <link rel="stylesheet" href="css/reset.css">
+    <meta name="keywords" content="traveler_myprofile_edit_page">
+    <meta name="description" content="traveler myprofile edit page">
+    <title>traveler_myprofile_edit_page</title>
     <link rel="stylesheet" href="css/style.css">
     <script src="https://kit.fontawesome.com/164552570a.js" crossorigin="anonymous"></script>
     <script src="js/common.js"></script>
@@ -133,80 +132,60 @@
         </div>
         <!--//container-inner-->
         <!--container-inner-->
-        <div class="container-inner">
+        <div class="container-inner content">
             <!--myprofile-->
-            <div class="myprofile-edit">
+            <div class="myprofile-edit">                
                 <div class="inner">
-                    <div class="form-wrap">
-                        <!--form-list-->
-                        <div class="form-list btn-change">
-                            <div class="form-row">
-                                <div class="form-col">
-                                    <div class="form">
-                                        <label for="edit_email_1">이메일</label>
-                                        <input type="text" id="edit_email_1" name="username">
-                                    </div>
-                                </div>
-                                <div class="form-col blank">
-                                    <span>@</span>
-                                </div>
-                                <div class="form-col">
-                                    <div class="form">
-                                        <label for="edit_email_2"></label>
-                                        <input type="text" id="edit_email_2" name="username">
-                                    </div>
-                                </div>
-                            </div>
-                            <p class="please_confirm">인증되지 않은 이메일입니다.</p>                        
-                            <div class="btn-send">
-                                <button>변경</button>
-                            </div>
-                        </div>
-                        <!--//form-list-->
-                        <!--form-list-->
+                    <form action="">
                         <div class="form-list">
+                            <p>이메일</p>
                             <div class="form-row">
                                 <div class="form-col">
-                                    <div class="form">
-                                        <label for="edit_current_password">현재 비밀번호</label>
-                                        <input type="text" id="name_abc" name="edit_current_password_1">
-                                    </div>
+                                    <label for="myprofile_edit_email_1"></label>
+                                    <input type="text" id="myprofile_edit_email_1">
+                                </div>
+                                <div class="form-col blank">-</div>
+                                <div class="form-col">
+                                    <label for="myprofile_edit_email_2"></label>
+                                    <input type="text" id="myprofile_edit_email_2">
                                 </div>
                             </div>
-                            <p class="please_confirm">현재 비밀번호가 일치 하지 않습니다.</p>
+                            <p class="please_confirm">이메일이 일치 하지 않습니다.</p>
                         </div>
-                        <!--//form-list-->
-                        <!--form-list-->
                         <div class="form-list">
+                            <p>현재 비밀번호</p>
                             <div class="form-row">
                                 <div class="form-col">
-                                    <div class="form">
-                                        <label for="edit_new_password_1">비밀번호</label>
-                                        <input type="text" id="name_abc" name="edit_new_password_1">
-                                    </div>
+                                    <label for="myprofile_edit_current_password_1"></label>
+                                    <input type="text" id="myprofile_edit_current_password_1">
                                 </div>
                             </div>
                             <p class="please_confirm">비밀번호가 일치 하지 않습니다.</p>
                         </div>
-                        <!--//form-list-->
-                        <!--form-list-->
                         <div class="form-list">
+                            <p>비밀번호</p>
                             <div class="form-row">
                                 <div class="form-col">
-                                    <div class="form">
-                                        <label for="edit_new_password_2">비밀번호 확인</label>
-                                        <input type="text" id="name_abc" name="edit_new_password_2">
-                                    </div>
+                                    <label for="myprofile_edit_password_1"></label>
+                                    <input type="text" id="myprofile_edit_password_1">
                                 </div>
                             </div>
                             <p class="please_confirm">비밀번호가 일치 하지 않습니다.</p>
                         </div>
-                        <!--//form-list-->
-
-                    </div>
-                    <div class="btn-change">
-                        <button>변경</button>
-                    </div>
+                        <div class="form-list">
+                            <p>비밀번호 확인</p>
+                            <div class="form-row">
+                                <div class="form-col">
+                                    <label for="myprofile_edit_check_password_1"></label>
+                                    <input type="text" id="myprofile_edit_check_password_1">
+                                </div>
+                            </div>
+                            <p class="please_confirm">비밀번호가 일치 하지 않습니다.</p>
+                        </div>
+                        <div class="btn-blue">
+                            <button>변경</button>
+                        </div>
+                    </form>
                 </div>
             </div>
             <!--//myprofile-->

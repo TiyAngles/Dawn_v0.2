@@ -1,12 +1,14 @@
 @charset "utf-8";
-    /* 공통스타일 */
-.so .account-delete .inner hr {margin-bottom: 0;}
-.so .account-delete .inner {height: 80%;}
-.so .account-delete-content {display: table; height: 100%; margin: 0 auto;}
-.so .account-delete-content .account-delete-text {display: table-cell; vertical-align:middle;}
+/* 공통스타일 */
+/* 타이틀 텍스트 */
+.so .title-text h2{padding-bottom: 0;}
+.so .title-text hr {margin-bottom: 0;}
+/* 로그인관련 버튼디자인 */
 .so .user-btn a {display: block; width: 200px; height: 60px; margin: 0 auto; margin-top: 20px; line-height: 56px; text-align: center; border: 2px solid #2e8bff; border-radius: 15px;}
 .so .user-btn a:hover {background: #2e8bff; color: #fff;}
-
+.so .mg-btn {margin-bottom: 20px;}
+/*hr라인 색상다른것은 line 클래스 지정했습니다*/
+.so .line{background:#dfdfdf;}
 
 /* ----------alert---------- */
 /*회원탈퇴*/
@@ -36,24 +38,82 @@
 /* ----------account-delete---------- */
 /* 페이지를 꽉차게 보이기 위해서 height값설정  */
 .so .account-delete {height: 90vh;}
-.so .account-delete h2{padding-bottom: 0;}
 .so .account-delete p {text-align: center; margin-top: 5px;}
 .so .account-delete p:nth-of-type(2) {margin-top: 20px;}
 .so .account-delete p span {color: #2e8bff; font-weight: bold; font-size: 20px;}
 
+/* 해당컨텐츠를 중앙으로 배치하기 위함  */
+.so .account-delete .inner {height: 80%;}
+.so .account-delete-content {display: table;  width: 100%; height: 100%; margin: 0 auto;}
+.so .account-delete-content .account-delete-text {display: table-cell; vertical-align:middle;}
+.so .account-delete-content .account-delete-text hr {display: none;}
+.so .account-delete .account-delete-text .user-btn .user-btn-l {margin-top: 40px;}
+
+
+/* ----------sign-up-email---------- */
+/* 텍스트 간격조절 */
+.so .sign-up-email .sign-up-welcome {text-align: center;}
+.so .sign-up-email .sign-up-welcome p {margin-top: 10px; font-weight: bold; letter-spacing: -0.5px;}
+.so .sign-up-email .sign-up-welcome p:nth-child(1) {margin-top: 20px;}
+.so .sign-up-email .sign-up-welcome p:nth-child(3) {margin-top: 5px;}
+.so .sign-up-email .email-send ul{margin: 0 5%}
+.so .sign-up-email .email-send ul li{margin-top: 10px; font-size: 14px;letter-spacing: -0.5px; line-height: 24px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ----------sign-up-email---------- */
+/* ----------sign-up-email---------- */
+/* ----------sign-up-email---------- */
+/* ----------sign-up-email---------- */
+/* ----------sign-up-email---------- */
+
+
+
+
+
+
 @media screen and (min-width:940px){
-    /* 공통스타일 */
-/* 로그인관련 버튼디자인 */
-.so .user-btn::after{display: block;clear: both;content: "";}
+/* 공통스타일 */
+/* 로그인관련 버튼레이아웃 */
+.so .user-btn::after{display: block; clear: both; content:" ";}
+.so .user-btn a {margin-top: 0;}
 .so .user-btn .user-btn-l {float: left; margin-right: 30px;}
 .so .user-btn .user-btn-r {float: right;}
+/* 양옆마진조절 */
+.so .mg-btn{margin: 0 23% 20px;}
 
 /* ----------account-delete---------- */
 /* 페이지를 꽉차게 보이기 위해서 height값설정 // 푸터밑에 빈공간없애기 위하여 마진사용 */
 .so .account-delete {height: 51vh;margin-bottom: 33px;}
+.so .account-delete-content .account-delete-text hr {display: block; margin: 40px 0;}
+.so .account-delete .account-delete-text .user-btn .user-btn-l {margin-top: 0;}
+
+
+/* ----------sign-up-email---------- */
+/* 텍스트 간격조절 */
+.so .sign-up-email .sign-up-welcome p {margin-top: 10px;}
+.so .sign-up-email .sign-up-welcome p:nth-child(1) {margin-top: 40px;}
+.so .sign-up-email .email-send ul li{font-size: 16px;;}
+
 }
 @media screen and (min-width:1200px){
+    /* 공통스타일 */
+    /* 양옆마진조절 */
+    .so .mg-btn{margin: 0 30% 20px;}
+
     /* ----------account-delete---------- */
-.so .account-delete {margin-bottom: 19px;}
+    .so .account-delete {margin-bottom: 19px;}
+
+
 
 }

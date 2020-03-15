@@ -16,3 +16,17 @@ body {
     font: 400 16px/1.37 "Roboto Condensed", "Noto Sans KR", "Nanum Gothic",sans-serif;
     letter-spacing: 1.012px;
 }
+
+/* scrollbar */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-track {
+  background-color: rgb(46, 139, 255,0.3);
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: rgb(46, 139, 255);
+  border-radius: 10px;
+}

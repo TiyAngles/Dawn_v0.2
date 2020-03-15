@@ -220,9 +220,13 @@
     inset 15px 10px -12px rgba(255,255,255,0.1);
 }
 
-/* modal-container btn */
-.btn-agree > button{background:#2e8bff;color:#fff;}
 
+/* btn-blue */
+.btn-blue > button{
+    background:#2e8bff;color:#fff;
+}
+
+/* modal-container btn */
 .btn-social > button{
     position: relative;
     padding:0 0 0 42px;
@@ -301,4 +305,3 @@
     color:#777;
     font-size:12px;
 }
-

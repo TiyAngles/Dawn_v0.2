@@ -262,3 +262,4 @@ Message {
 - 2020 03 13 HTML 파일 통합 new_html 파일 생성(민상) ,so_style.css 정리(소현)
 - 2020 03 14 main page 생성 및 all.css 파일 생성(민상)
 - 2020 03 15 modal창 html 파일 생성, modal(sign_up login) sub page(myprofile myprofile_edit) 파일 통합 (민상)
+- 2020 03 15 alert-message 4개 파일 통합완료 (로그인실패,로그인성공,회원가입실패,회원가입성공) (민상)

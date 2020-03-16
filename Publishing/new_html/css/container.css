@@ -653,22 +653,18 @@
 
 
 /*--------------------------------------------------------------------------*/
-/*alert창*/
 
+/*alert창*/
 .modal-inner.alert-message{
     padding:0;
 }
-
 .alert-message{
-    /* background:yellow; */
     text-align: center;
 }
 .alert-message .alert-ico{
-    /* background:green; */
     margin-top:60px;
     font-size:80px;
 }
-
 .alert-message h2{
     font-size:21px;
     margin:20px 0 12px;
@@ -683,9 +679,30 @@
 
 
 /* alert-message fail */
-.alert-message .fail .alert-ico{
+.alert-message .login-fail .alert-ico{
     color:#ffc62e
 }
-.alert-message .fail .btn-check button{
-    background-color:#ffc62e
+.alert-message .login-fail .btn-check button{
+    background-color:#ffc62e    
+}
+/* alert-message success */
+.alert-message .login-success .alert-ico{
+    color:#6ac510
+}
+.alert-message .login-success .btn-check button{
+    background-color:#6ac510    
+}
+/* alert-message sign-up-fail */
+.alert-message .sign-up-fail .alert-ico{
+    color:#ff2e2e
+}
+.alert-message .sign-up-fail .btn-check button{
+    background-color:#ff2e2e;
+}
+/* alert-message sign-up-success */
+.alert-message .sign-up-success .alert-ico{
+    color:#2e8bff;
+}
+.alert-message .sign-up-success .btn-check button{
+    background-color:#2e8bff    
 }

@@ -735,7 +735,6 @@
 .sub-page-head.theme .inner{
     background-image:url('../img/sub/head/sub_head_theme.png')
 }
-
 .sub-page-head .inner {
     color:#fff;
     padding:20px 20px 60px;
@@ -763,11 +762,53 @@
     color:rgba(46, 139, 255,1);
 }
 
-.sub-page-list{
-    /* background:yellow; */
+/* swiper-slide */
+.sub-page-slider{
+    margin-bottom:40px;
+}
+.sub-page-slider h2{
+    font-size:32px;
 }
 
+.sub-page-slider .profile-img{width:40px;height:40px;margin:10px 10px 0 10px;border-radius:50%;background:#e0fd8f;}
+
+/* 스와이퍼보여지는 개수를 auto로 설정하여 width값설정 */
+.sub-page-slider .reco-slide .swiper-wrapper .swiper-slide{position:relative;width:80%;margin:0 0 0 5%;}
+/* 슬라이더이미지 */
+.sub-page-slider .reco-slide .swiper-slide .inner{height:440px;background-image:url("../img/slider/visual_slider_img_1.jpg");background-repeat:no-repeat;background-position:50% 50%;background-size:cover;border-radius:25px;}
+/* 슬라이더 상단아이콘영역 아이콘을 오른쪽으로 배치하기 위하여 text-align사용.*/
+.sub-page-slider .reco-slide .swiper-slide .top{width:100%;height:40px;background-color:rgba(0,0,0,.3);background:linear-gradient(rgba(38,38,38,.5) 15%,rgba(115,115,115,.3) 70%,rgba(160,160,160,.2) 100%);border-radius:25px 25px 0 0;text-align:right;}
+.sub-page-slider .reco-slide .swiper-slide .pin .fa-map-pin{font-size: 30px;}
+/* bottom 영역을 잡기위하여 포지션을 사용*/
+.sub-page-slider .reco-slide .swiper-slide .bottom{position:absolute;bottom:0;left:0;width:100%;height:150px;background-color:rgba(0,0,0,.5);background:linear-gradient(-360deg,rgba(38,38,38,1) 15%,rgba(115,115,115,.7) 90%,rgba(160,160,160,.2) 100%);border-radius:0 0 25px 25px;}
+.sub-page-slider .reco-slide .swiper-slide .bottom::after{content:"";display:block;clear:both;}
+/* 타이틀과 장소 안내영역 */
+.sub-page-slider .reco-slide .swiper-slide .bottom h3{padding:15px 0 0 10px;font-size:24px;color:#fff;}
+.sub-page-slider .reco-slide .swiper-slide .bottom h4{padding:10px 0 0 10px;color:#ebebeb;font-size:16px;}
+/* 슬라이더 위에 올라오는 댓글 한줄의 프로필사진 영역 플롯으로 사진과 채팅 정렬*/
+/* 사진영역 */
+.sub-page-slider .reco-slide .swiper-slide .bottom .profile-img{float:left;}
+/* 채팅영역 */
+.sub-page-slider .reco-slide .swiper-slide .bottom .chat{float:left; width:75%; margin:10px 0 0 0;font-size:14px;}
+.sub-page-slider .reco-slide .swiper-slide .bottom .chat p{color:#fff;}
+.sub-page-slider .reco-slide .swiper-slide .bottom .chat span{margin-left:5px; color: #f5f5f5;}
+.sub-page-slider .reco-slide .swiper-slide .bottom .star {position:absolute;right:0;top:5px;display:inline-block;}
+.sub-page-slider .reco-slide .swiper-slide .bottom .star .fa-star {color: #fff;}
+/* pin-icon */
+.sub-page-slider .pin .fa-map-pin{display:inline-block;color:#fff;font-size:35px;padding:10px;transform:translate(-15px,-3px) rotate(35deg);}
+.sub-page-slider .pin .fa-map-pin:hover{color: #2e8bff;}
+
+/* star-icon */
+.sub-page-slider .star .fa-star{color:#818181;font-size:30px;padding:5px;}
+.sub-page-slider .star .fa-star:hover{color:#f2d91f;}
+
+/* swiper-slide */
+
 /* tab-list */
+.sub-page-list{
+    padding:0 10px;
+}
+
 .sub-page-list .inner .tab-list{
     border-bottom:1px solid #ccc;
 }
@@ -781,25 +822,22 @@
     float: left;
     width:25%;
 }
-
-
 .sub-page-list .inner .tab-list li a.on{
     /* background: #3c97f9; */
     border:1px solid #3c97f9;
     color:#3c97f9;
 }
-
 .sub-page-list .inner .tab-list li a{
     display: block;
     line-height:60px;
     text-align: center;
 }
-
 /* tab-content */
 .sub-page-list .inner .tab-content{
     position: relative;
     height:1200px;
     overflow-y:scroll;
+    margin:10px 0;
 }
 .sub-page-list .inner .tab-content>div.on{
     display:block;
@@ -812,78 +850,104 @@
     left:0;
     top:0;
 }
-
-/* tab-contnt con1 */
-/* 활동로그 */
-.sub-page-list .inner .tab-content .con1{
+.sub-page-list .inner .tab-content .con{
 }
-.sub-page-list .inner .tab-content .con1 li{
+.sub-page-list .inner .tab-content .con li{
     margin:4px 0;
     border-bottom:1px solid #ccc;
 }
-.sub-page-list .inner .tab-content .con1 li div{
+.sub-page-list .inner .tab-content .con li:last-of-type{
+    border-bottom:none;
 }
-.sub-page-list .inner .tab-content .con1 li div>a::after{
+.sub-page-list .inner .tab-content .con li div{
+}
+.sub-page-list .inner .tab-content .con li div>a::after{
     display: block;
     content:'';
     clear:both;
 }
-.sub-page-list .inner .tab-content .con1 li div a{
+.sub-page-list .inner .tab-content .con li div a{
     padding:10px 0;
     display: block;
 }
-.sub-page-list .inner .tab-content .con1 li div a>div{
+.sub-page-list .inner .tab-content .con li div a>div{
     float:left;
 }
-
-
-.sub-page-list .inner .tab-content .con1 li div a>div:first-of-type{
+.sub-page-list .inner .tab-content .con li div a>div:first-of-type{
     width:100%;
 
 }
-.sub-page-list .inner .tab-content .con1 li div a>div:first-of-type img{
+.sub-page-list .inner .tab-content .con li div a>div:first-of-type img{
     width:100%;
     
 }
-.sub-page-list .inner .tab-content .con1 li div a>div:last-of-type{
+.sub-page-list .inner .tab-content .con li div a>div:last-of-type{
     width:100%;
     padding:20px 0;
     font-size:18px;
 }
-.sub-page-list .inner .tab-content .con1 li div a>div:last-of-type>p{
+.sub-page-list .inner .tab-content .con li div a>div:last-of-type>p{
 }
-.sub-page-list .inner .tab-content .con1 li div a>div:last-of-type>div{
+.sub-page-list .inner .tab-content .con li div a>div:last-of-type>div{
     margin-top:12px;
 }
-.sub-page-list .inner .tab-content .con1 li div a>div:last-of-type>div>p{
+.sub-page-list .inner .tab-content .con li div a>div:last-of-type>div>p{
     font-size:22px;
     font-weight:bold;
 }
-.sub-page-list .inner .tab-content .con1 li div a>div:last-of-type>div p span:first-of-type{
+.sub-page-list .inner .tab-content .con li div a>div:last-of-type>div p span:first-of-type{
     font-weight:bold;
 }
+.sub-page-list .inner .tab-pager{
+    text-align: center;
+    margin-top:80px;
+}
+.sub-page-list .inner .tab-pager li{
+    display: inline-block;
+}
+.sub-page-list .inner .tab-pager li a{
+    padding:10px;
+}
+.btn-sub-wrapper{
+    text-align: right;
+    margin:40px 0 60px;
+}
+.btn-sub-wrapper button{
+    display:inline-block;
+    padding:0 40px;
+    line-height:40px;
+    text-align:center;
+    transition:0.5s;
+    box-sizing:border-box;
+}
+
 
 /* tablet */
 @media screen and (min-width: 940px) {
 
-    /* myprofile-head */
-    .sub-page-list .inner .tab-content .con1 li div a>div:first-of-type{
+    .sub-page-slider .reco-slide .swiper-wrapper .swiper-slide{width:33%;}
+
+
+
+    /* sub-page-list */
+    .sub-page-list{padding:0}
+    .sub-page-list .inner .tab-content .con li div a>div:first-of-type{
         width:240px;
     
     }
-    .sub-page-list .inner .tab-content .con1 li div a>div:first-of-type img{
+    .sub-page-list .inner .tab-content .con li div a>div:first-of-type img{
         height:240px;
     }
-    .sub-page-list .inner .tab-content .con1 li div a>div:last-of-type{
+    .sub-page-list .inner .tab-content .con li div a>div:last-of-type{
         width:calc(100% - 240px);
         height:240px;
         padding-left:15px;
         display: table;
     }
-    .sub-page-list .inner .tab-content .con1 li div a>div:last-of-type>div{
+    .sub-page-list .inner .tab-content .con li div a>div:last-of-type>div{
         display: table-cell;
         vertical-align: middle;
     }
-    .sub-page-list .inner .tab-content .con1 li div a>div:last-of-type>div>div{
+    .sub-page-list .inner .tab-content .con li div a>div:last-of-type>div>div{
     }
 }

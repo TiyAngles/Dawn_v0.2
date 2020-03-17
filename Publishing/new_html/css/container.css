@@ -706,3 +706,184 @@
 .alert-message .sign-up-success .btn-check button{
     background-color:#2e8bff    
 }
+
+/*-----------------------------------------------------------------------*/
+/*sub-page*/
+.sub-page-head{
+    background:green;
+
+}
+.sub-page-head .inner{
+    position:relative;
+    padding:20px 0 60px;
+    background:blue;
+    background-attachment:fixed;
+    background-position:center center;
+    background-size:cover;
+    
+}
+.sub-page-head .inner::before{
+    content:'';
+    position: absolute;
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.3);
+    
+}
+.sub-page-head.theme .inner{
+    background-image:url('../img/sub/head/sub_head_theme.png')
+}
+
+.sub-page-head .inner {
+    color:#fff;
+    padding:20px 20px 60px;
+    
+}
+.sub-page-head .inner>div{
+    position: relative;
+    z-index:2;
+}
+.sub-page-head .inner h2{
+    font-size:32px;
+    padding:45px 0 12px;
+    
+}
+.sub-page-head .inner p {
+    color:#ccc;
+    font-size:22px;
+    
+}
+.sub-page-head .title{
+    font-size:32px;
+    /* text-shadow: rgba(255,255,255,1) 1px 2px 2px; */
+}
+.sub-page-head.theme .title{
+    color:rgba(46, 139, 255,1);
+}
+
+.sub-page-list{
+    /* background:yellow; */
+}
+
+/* tab-list */
+.sub-page-list .inner .tab-list{
+    border-bottom:1px solid #ccc;
+}
+.sub-page-list .inner .tab-list ul::after{
+    display: block;
+    content:'';
+    clear:both;
+}
+.sub-page-list .inner .tab-list ul{}
+.sub-page-list .inner .tab-list li{
+    float: left;
+    width:25%;
+}
+
+
+.sub-page-list .inner .tab-list li a.on{
+    /* background: #3c97f9; */
+    border:1px solid #3c97f9;
+    color:#3c97f9;
+}
+
+.sub-page-list .inner .tab-list li a{
+    display: block;
+    line-height:60px;
+    text-align: center;
+}
+
+/* tab-content */
+.sub-page-list .inner .tab-content{
+    position: relative;
+    height:1200px;
+    overflow-y:scroll;
+}
+.sub-page-list .inner .tab-content>div.on{
+    display:block;
+}
+.sub-page-list .inner .tab-content>div{
+    display: none;
+    position: absolute;
+    width:100%;
+    padding:12px 10px;
+    left:0;
+    top:0;
+}
+
+/* tab-contnt con1 */
+/* 활동로그 */
+.sub-page-list .inner .tab-content .con1{
+}
+.sub-page-list .inner .tab-content .con1 li{
+    margin:4px 0;
+    border-bottom:1px solid #ccc;
+}
+.sub-page-list .inner .tab-content .con1 li div{
+}
+.sub-page-list .inner .tab-content .con1 li div>a::after{
+    display: block;
+    content:'';
+    clear:both;
+}
+.sub-page-list .inner .tab-content .con1 li div a{
+    padding:10px 0;
+    display: block;
+}
+.sub-page-list .inner .tab-content .con1 li div a>div{
+    float:left;
+}
+
+
+.sub-page-list .inner .tab-content .con1 li div a>div:first-of-type{
+    width:100%;
+
+}
+.sub-page-list .inner .tab-content .con1 li div a>div:first-of-type img{
+    width:100%;
+    
+}
+.sub-page-list .inner .tab-content .con1 li div a>div:last-of-type{
+    width:100%;
+    padding:20px 0;
+    font-size:18px;
+}
+.sub-page-list .inner .tab-content .con1 li div a>div:last-of-type>p{
+}
+.sub-page-list .inner .tab-content .con1 li div a>div:last-of-type>div{
+    margin-top:12px;
+}
+.sub-page-list .inner .tab-content .con1 li div a>div:last-of-type>div>p{
+    font-size:22px;
+    font-weight:bold;
+}
+.sub-page-list .inner .tab-content .con1 li div a>div:last-of-type>div p span:first-of-type{
+    font-weight:bold;
+}
+
+/* tablet */
+@media screen and (min-width: 940px) {
+
+    /* myprofile-head */
+    .sub-page-list .inner .tab-content .con1 li div a>div:first-of-type{
+        width:240px;
+    
+    }
+    .sub-page-list .inner .tab-content .con1 li div a>div:first-of-type img{
+        height:240px;
+    }
+    .sub-page-list .inner .tab-content .con1 li div a>div:last-of-type{
+        width:calc(100% - 240px);
+        height:240px;
+        padding-left:15px;
+        display: table;
+    }
+    .sub-page-list .inner .tab-content .con1 li div a>div:last-of-type>div{
+        display: table-cell;
+        vertical-align: middle;
+    }
+    .sub-page-list .inner .tab-content .con1 li div a>div:last-of-type>div>div{
+    }
+}

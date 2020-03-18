@@ -88,11 +88,11 @@
     font-size:24px;
     line-height:42px;
     text-align: center;
-    color:#3c97f9;
+    color:#2e8bff;
 }
 .search-visual input[type="text"]{
     border-radius:20px;
-    border:1px solid #3c97f9;
+    border:1px solid #2e8bff;
     padding-left:60px;
     width:calc(100% - 70px);
     height:60px;
@@ -114,7 +114,7 @@
 .main-travel .inner>div{padding:0 20px;}
 .main-travel .inner>div>ul::after{display: block;content:'';clear:both;}
 .main-travel .inner>div>ul{}
-.main-travel .inner>div>ul>li{float: left;transition:0.5s;padding:40px 30px;margin:1%;background:#3c97f9;box-shadow: 2px 2px 2px rgba(0,0,0,0.3);width:31.333333%;text-align: center;}
+.main-travel .inner>div>ul>li{float: left;transition:0.5s;padding:40px 30px;margin:1%;background:#2e8bff;box-shadow: 2px 2px 2px rgba(0,0,0,0.3);width:31.333333%;text-align: center;}
 
 .main-travel .inner>div>ul>li:hover{background:#2064b8;margin-left:2px;margin-top:2px;}
 .main-travel .inner>div>ul>li>a{
@@ -158,7 +158,7 @@
     width:100%;
     height:100%;
     border-radius:100%;
-    background: linear-gradient(0.25turn, #d061fe, #3c97f9);
+    background: linear-gradient(0.25turn, #d061fe, #2e8bff);
 }
 .btn-qna:hover::before{
     transform:rotate(180deg);
@@ -290,7 +290,7 @@
     float: left;
     width:25%;
     padding:20px 0;
-    background:#3c97f9;
+    background:#2e8bff;
 }
 .myprofile-head .personal-list li span{
     display: block;
@@ -360,9 +360,9 @@
 
 
 .myprofile-list .inner .tab-list li a.on{
-    /* background: #3c97f9; */
-    border:1px solid #3c97f9;
-    color:#3c97f9;
+    /* background: #2e8bff; */
+    border:1px solid #2e8bff;
+    color:#2e8bff;
 }
 
 .myprofile-list .inner .tab-list li a{
@@ -430,7 +430,7 @@
 .myprofile-list .inner .tab-content .con2 li{
     float: left;
     width:50%;
-    /* border:1px solid #3c97f9; */
+    /* border:1px solid #2e8bff; */
 }
 /*이미지 크기 제어를 위한 background image*/
 .myprofile-list .inner .tab-content .con2 li>div{
@@ -502,8 +502,8 @@
     display: block;
     padding:2px 10px;
     border-radius:5px;
-    border:2px solid #3c97f9;
-    color:#3c97f9;
+    border:2px solid #2e8bff;
+    color:#2e8bff;
 }
 
 
@@ -553,8 +553,8 @@
     display: block;
     padding:2px 10px;
     border-radius:5px;
-    border:2px solid #3c97f9;
-    color:#3c97f9;
+    border:2px solid #2e8bff;
+    color:#2e8bff;
 }
 
 /*myprofile-edit*/
@@ -823,9 +823,9 @@
     width:25%;
 }
 .sub-page-list .inner .tab-list li a.on{
-    /* background: #3c97f9; */
-    border:1px solid #3c97f9;
-    color:#3c97f9;
+    /* background: #2e8bff; */
+    border:1px solid #2e8bff;
+    color:#2e8bff;
 }
 .sub-page-list .inner .tab-list li a{
     display: block;
@@ -912,8 +912,11 @@
     text-align: right;
     margin:40px 0 60px;
 }
-.btn-sub-wrapper button{
+.btn-sub-wrapper>div{
     display:inline-block;
+    margin-left:4px;
+}
+.btn-sub-wrapper button{
     padding:0 40px;
     line-height:40px;
     text-align:center;
@@ -950,4 +953,257 @@
     }
     .sub-page-list .inner .tab-content .con li div a>div:last-of-type>div>div{
     }
+}
+
+/*-----------------------------------------------------------------*/
+/*sub-page-detail*/
+.sub-page-detail-head{
+    margin:40px 0;
+    height:440px;
+}
+
+.sub-page-detail-head .swiper-container {
+    width: 100%;
+    height: 100%;
+}
+  
+.sub-page-detail-head .swiper-slide {
+    width: 90%;
+}  
+.sub-page-detail-head .swiper-slide .content{
+    position: relative;
+    height:100%;
+}
+.sub-page-detail-head .swiper-slide .img{
+    height:100%;
+    background:no-repeat center center;
+    background-size:cover;
+}
+
+.sub-page-detail-head .swiper-pagination {
+    width:auto;
+    bottom:auto;
+    left:20px;
+    top:20px;
+}
+.sub-page-detail-head .swiper-pagination-bullet.swiper-pagination-bullet {
+    background-color:#fff;
+    opacity:1;
+}
+.sub-page-detail-head .swiper-pagination-bullet.swiper-pagination-bullet-active{
+    background:#2e8bff;
+}
+/* 이미지 삽입 예시-1 */
+.sub-page-detail-head .swiper-slide.slider-background-image-1 .img{
+    background-image:url('../img/sub-detail/sub_detail_slider_img_1.jpg');
+}
+/* 이미지 삽입 예시-2 */
+.sub-page-detail-head .swiper-slide.slider-background-image-2 .img{
+    background-image:url('../img/sub-detail/sub_detail_slider_img_2.jpg');
+}
+
+
+.sub-page-detail-head .swiper-slide .img::before{
+    position: absolute;
+    left:0;
+    top:0;
+    content:'';
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.35);
+}
+.sub-page-detail-head .swiper-slide .text{
+    position: absolute;
+    bottom:40px;
+    left:20px;
+}
+.sub-page-detail-head .swiper-slide .text h3{
+    font-size:28px;
+    color:#fff;
+}
+.sub-page-detail-head .swiper-slide .text p{
+    font-size:22px;
+    line-height:34px;
+    margin-top:8px;
+    color:#ccc;
+}
+
+.sub-page-detail-list{
+}
+.sub-page-detail-list .tab-content{
+}
+.sub-page-detail-list .tab-content-inner{
+    position: relative;
+}
+
+.sub-page-detail-list .tab-content-inner .tab-content-pin{
+    position: absolute;
+    right:0;
+    top:40px;
+}
+.sub-page-detail-list .tab-content-inner .tab-content-pin a{
+    display: inline-block;
+    font-size:22px;
+    color:#333;
+}
+.sub-page-detail-list .tab-content-head::after{
+    display: block;
+    content:'';
+    clear:both;
+}
+.sub-page-detail-list .tab-content-head{
+    padding:40px 0 28px;
+}
+.sub-page-detail-list .tab-content-head>div{
+    float:left;
+}
+
+.sub-page-detail-list .tab-content-head>div.img{
+    width:80px;
+    height:80px;
+    background-color:#ccc;
+    border-radius:100%;
+}
+.sub-page-detail-list .tab-content-head>div.info{
+    margin-left:20px;
+}
+.sub-page-detail-list .tab-content-head>div.info p{
+    margin-top:10px;
+    font-size:22px;
+    font-weight:bold;
+
+}
+.sub-page-detail-list .tab-content-head>div.info span{
+    display: inline-block;
+    margin-top:4px;
+    color:#454545;
+}
+.sub-page-detail-list .tab-content-inner h3{
+    font-size:24px;
+}
+.sub-page-detail-list .tab-content-inner .tab-content-body .info,
+.sub-page-detail-list .tab-content-inner .tab-content-detail .info{
+    border-top:1px solid #ccc;
+    padding:14px 0;
+    font-size:18px;
+    line-height:24px;
+}
+.sub-page-detail-list .tab-content-inner .info dt{
+    font-size:20px;
+    font-weight:bold;
+    margin-bottom:12px;
+}
+.sub-page-detail-list .tab-content-inner .info li{
+    margin:4px 0;
+}
+.sub-page-detail-list .tab-content-inner .info span{
+    display: inline-block;
+    font-weight:bold;
+}
+.sub-page-detail-list .tab-content-inner .info span+p{
+    display: inline-block;
+}
+.sub-page-detail-list .tab-content-inner .info .map{
+    margin-top:60px;
+    height:400px;
+    filter: grayscale(100%);
+    transition:0.5s;
+}
+.sub-page-detail-list .tab-content-inner .info .map:hover{
+    filter: grayscale(0%);
+}
+.sub-page-detail-list .tab-content-inner .info .map iframe{
+    width:100%;
+    height:100%;
+    background
+}
+
+
+
+.sub-page-chat{
+}
+.sub-page-chat h3{
+    font-size:24px;
+}
+.sub-page-chat .form-list.form-info{
+    /* font-size:24px; */
+    padding:30px 0 20px;
+}
+
+.sub-page-chat .form-list.form-info .name{
+    /* font-size:24px; */
+    width:40px;
+    height:40px;
+    background:#ccc;
+    border-radius:100%;
+    margin-right:14px;
+}
+
+.sub-page-chat .form-list.form-info .btn-write button{
+    color:#fff;
+    background-color:#2e8bff;
+}
+
+.sub-page-chat button {
+    display: inline-block;
+    padding: 0 40px;
+    line-height: 40px;
+    text-align: center;
+    transition: 0.5s;
+    box-sizing: border-box;
+}
+
+.sub-page-chat .page-content-body .page-content-wrapper{
+    height:800px;
+    overflow-y:scroll;
+}
+
+
+.sub-page-chat .page-content-body .page-content-inner{
+    padding:20px 0;
+}
+.sub-page-chat .page-content-inner-head::after{
+    display: block;
+    content:'';
+    clear:both;
+}
+.sub-page-chat .page-content-inner-head{
+    padding:20px 0 8px;
+}
+.sub-page-chat .page-content-inner-head>div{
+    float:left;
+}
+
+.sub-page-chat .page-content-inner-head>div.img{
+    width:40px;
+    height:40px;
+    background-color:#ccc;
+    border-radius:100%;
+    overflow:hidden;
+}
+.sub-page-chat .page-content-inner-head>div.info{
+    margin-left:20px;
+}
+.sub-page-chat .page-content-inner-head>div.info p{
+    /* margin-top:0px; */
+    font-size:22px;
+    font-weight:bold;
+
+}
+.sub-page-chat .page-content-inner-head>div.info span{
+    display: inline-block;
+    margin-top:1px;
+    color:#454545;
+}
+
+
+.sub-page-chat .inner .tab-pager{
+    text-align: center;
+    margin:80px 0 60px;
+}
+.sub-page-chat .inner .tab-pager li{
+    display: inline-block;
+}
+.sub-page-chat .inner .tab-pager li a{
+    padding:10px;
 }

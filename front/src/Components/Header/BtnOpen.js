@@ -28,7 +28,7 @@ const Container = styled.a`
   text-align: center;
   line-height: 60px;
   font-size: 24px;
-  color: #3c97f9;
+  color: #2e8bff;
 
   @media screen and (min-width: 940px) {
     display: none;

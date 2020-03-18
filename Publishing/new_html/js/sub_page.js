@@ -14,7 +14,8 @@ $(document).ready(function(){
         $('.tab-content>div').eq(i).addClass('on');
     });
 
-    var swiper = new Swiper(".swiper-container", {
+    //위소현
+    var swiper = new Swiper(".swiper-container.reco-slide", {
         loop: true,
         slidesPerView: "auto",
         spaceBetween: 10,
@@ -29,4 +30,15 @@ $(document).ready(function(){
           clickable: true
         }
       });
+
+    //곽민상
+    var swiper = new Swiper('.sub-page-detail-head .swiper-container', {
+      slidesPerView: 'auto',
+      spaceBetween: 30,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+    });
+
 });

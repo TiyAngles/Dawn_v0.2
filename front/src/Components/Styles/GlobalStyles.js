@@ -57,7 +57,7 @@ button:-moz-focusring{outline:none;}
 ::-webkit-file-upload-button{padding:0;border:0;background:none;}
 
 /*chromeframe*/
-.chromeframe{margin:0.2em 0;background:#ccc;color:#000;padding:0.2em 0;}
+.chromeframe{margin:0.2em 0;background:#ccc;color:#222;padding:0.2em 0;}
 
 `;
 

@@ -337,7 +337,7 @@
   height: 8px;
   display: inline-block;
   border-radius: 100%;
-  background: #000;
+  background: #222;
   opacity: 0.2;
 }
 button.swiper-pagination-bullet {
@@ -471,14 +471,14 @@ button.swiper-pagination-bullet {
   background: #ffffff;
 }
 .swiper-pagination-black .swiper-pagination-bullet-active {
-  background: #000000;
+  background: #222000;
 }
 .swiper-pagination-progressbar.swiper-pagination-black {
   background: rgba(0, 0, 0, 0.25);
 }
 .swiper-pagination-progressbar.swiper-pagination-black
   .swiper-pagination-progressbar-fill {
-  background: #000000;
+  background: #222000;
 }
 .swiper-pagination-lock {
   display: none;
@@ -665,7 +665,7 @@ button.swiper-pagination-bullet {
   bottom: 0px;
   width: 100%;
   height: 100%;
-  background: #000;
+  background: #222;
   opacity: 0.6;
   -webkit-filter: blur(50px);
   filter: blur(50px);

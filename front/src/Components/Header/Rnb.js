@@ -37,7 +37,7 @@ const Container = styled.div`
   position: absolute;
   right: 0;
   bottom: 0;
-  border-top: 1px solid #3c97f9;
+  border-top: 1px solid #2e8bff;
   ul {
   }
   li {
@@ -48,7 +48,7 @@ const Container = styled.div`
     &:first-child {
       a {
         color: #fff;
-        background: linear-gradient(0.25turn, #d061fe, #3c97f9);
+        background: linear-gradient(0.25turn, #d061fe, #2e8bff);
       }
     }
   }
@@ -88,7 +88,7 @@ const Container = styled.div`
       font-size: 14px;
       &:first-child {
         a {
-          color: #3c97f9;
+          color: #2e8bff;
           background: #fff;
         }
       }
@@ -107,9 +107,9 @@ const Container = styled.div`
 //     background: #fff;
 //     color: #fff;
 //     border: 1px solid transparent;
-//     background: linear-gradient(0.25turn, #d061fe, #3c97f9);
+//     background: linear-gradient(0.25turn, #d061fe, #2e8bff);
 //     @media screen and (min-width: 940px) {
-//       color: #3c97f9;
+//       color: #2e8bff;
 //       background: #fff;
 //     }
 //   }

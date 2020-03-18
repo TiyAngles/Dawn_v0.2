@@ -30,7 +30,7 @@ const Container = styled.div`
     width: 100%;
     height: 60px;
     padding: 0 20px;
-    border: 2px solid #3c97f9;
+    border: 2px solid #2e8bff;
     @media screen and (min-width: 940px) {
       height: 40px;
     }

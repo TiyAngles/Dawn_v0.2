@@ -40,7 +40,7 @@ const Container = styled.div`
       height: 60px;
       text-align: center;
       line-height: 60px;
-      color: #3c97f9;
+      color: #2e8bff;
       @media screen and (min-width: 940px) {
         height: 80px;
         line-height: 80px;

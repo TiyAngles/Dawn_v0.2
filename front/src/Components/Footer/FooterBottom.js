@@ -13,7 +13,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 const Container = styled.div`
   margin-top: 24px;
   padding: 32px 20px 22px;
-  background-color: #3c97f9;
+  background-color: #2e8bff;
   color: #ccc;
   &::after {
     display: block;

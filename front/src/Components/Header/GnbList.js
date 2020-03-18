@@ -47,7 +47,7 @@ const Container = styled.li`
       background: red;
       border-radius: 50%;
       box-sizing: border-box;
-      background: linear-gradient(0.25turn, #d061fe, #3c97f9);
+      background: linear-gradient(0.25turn, #d061fe, #2e8bff);
       color: #fff;
       @media screen and (min-width: 940px) {
         display: none;
@@ -73,7 +73,7 @@ const Menu = styled.a`
     width: 80%;
     content: "";
     height: 2px;
-    background: linear-gradient(0.25turn, #d061fe, #3c97f9);
+    background: linear-gradient(0.25turn, #d061fe, #2e8bff);
     @media screen and (min-width: 940px) {
       display: none;
     }
@@ -107,7 +107,7 @@ const MenuDetail = styled.ul`
       width: 20px;
       height: 20px;
       line-height: 20px;
-      color: #3c97f9;
+      color: #2e8bff;
       font-family: "FontAwesome";
       font-weight: 900;
       content: "\f054";

@@ -88,11 +88,11 @@
     font-size:24px;
     line-height:42px;
     text-align: center;
-    color:#3c97f9;
+    color:#2e8bff;
 }
 .search-visual input[type="text"]{
     border-radius:20px;
-    border:1px solid #3c97f9;
+    border:1px solid #2e8bff;
     padding-left:60px;
     width:calc(100% - 70px);
     height:60px;
@@ -114,7 +114,7 @@
 .main-travel .inner>div{padding:0 20px;}
 .main-travel .inner>div>ul::after{display: block;content:'';clear:both;}
 .main-travel .inner>div>ul{}
-.main-travel .inner>div>ul>li{float: left;transition:0.5s;padding:40px 30px;margin:1%;background:#3c97f9;box-shadow: 2px 2px 2px rgba(0,0,0,0.3);width:31.333333%;text-align: center;}
+.main-travel .inner>div>ul>li{float: left;transition:0.5s;padding:40px 30px;margin:1%;background:#2e8bff;box-shadow: 2px 2px 2px rgba(0,0,0,0.3);width:31.333333%;text-align: center;}
 
 .main-travel .inner>div>ul>li:hover{background:#2064b8;margin-left:2px;margin-top:2px;}
 .main-travel .inner>div>ul>li>a{
@@ -158,7 +158,7 @@
     width:100%;
     height:100%;
     border-radius:100%;
-    background: linear-gradient(0.25turn, #d061fe, #3c97f9);
+    background: linear-gradient(0.25turn, #d061fe, #2e8bff);
 }
 .btn-qna:hover::before{
     transform:rotate(180deg);
@@ -290,7 +290,7 @@
     float: left;
     width:25%;
     padding:20px 0;
-    background:#3c97f9;
+    background:#2e8bff;
 }
 .myprofile-head .personal-list li span{
     display: block;
@@ -360,9 +360,9 @@
 
 
 .myprofile-list .inner .tab-list li a.on{
-    /* background: #3c97f9; */
-    border:1px solid #3c97f9;
-    color:#3c97f9;
+    /* background: #2e8bff; */
+    border:1px solid #2e8bff;
+    color:#2e8bff;
 }
 
 .myprofile-list .inner .tab-list li a{
@@ -430,7 +430,7 @@
 .myprofile-list .inner .tab-content .con2 li{
     float: left;
     width:50%;
-    /* border:1px solid #3c97f9; */
+    /* border:1px solid #2e8bff; */
 }
 /*이미지 크기 제어를 위한 background image*/
 .myprofile-list .inner .tab-content .con2 li>div{
@@ -502,8 +502,8 @@
     display: block;
     padding:2px 10px;
     border-radius:5px;
-    border:2px solid #3c97f9;
-    color:#3c97f9;
+    border:2px solid #2e8bff;
+    color:#2e8bff;
 }
 
 
@@ -553,8 +553,8 @@
     display: block;
     padding:2px 10px;
     border-radius:5px;
-    border:2px solid #3c97f9;
-    color:#3c97f9;
+    border:2px solid #2e8bff;
+    color:#2e8bff;
 }
 
 /*myprofile-edit*/
@@ -823,9 +823,9 @@
     width:25%;
 }
 .sub-page-list .inner .tab-list li a.on{
-    /* background: #3c97f9; */
-    border:1px solid #3c97f9;
-    color:#3c97f9;
+    /* background: #2e8bff; */
+    border:1px solid #2e8bff;
+    color:#2e8bff;
 }
 .sub-page-list .inner .tab-list li a{
     display: block;
@@ -991,7 +991,7 @@
     opacity:1;
 }
 .sub-page-detail-head .swiper-pagination-bullet.swiper-pagination-bullet-active{
-    background:#3c97f9;
+    background:#2e8bff;
 }
 /* 이미지 삽입 예시-1 */
 .sub-page-detail-head .swiper-slide.slider-background-image-1 .img{
@@ -1141,7 +1141,7 @@
 
 .sub-page-chat .form-list.form-info .btn-write button{
     color:#fff;
-    background-color:#3c97f9;
+    background-color:#2e8bff;
 }
 
 .sub-page-chat button {

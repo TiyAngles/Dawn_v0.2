@@ -264,4 +264,4 @@ Message {
 - 2020 03 15 modal창 html 파일 생성, modal(sign_up login) sub page(myprofile myprofile_edit) 파일 통합 (민상)
 - 2020 03 15 alert-message 4개 파일 통합완료 (로그인실패,로그인성공,회원가입실패,회원가입성공) (민상)
 - 2020 03 16 sub_page 파일 제작(theme 영역) (민상)
-- 2020 03 17 sub_page 상세 파일 제작(theme 영역) (민상)
+- 2020 03 17 sub_page 상세 파일 제작(theme 영역), 폰트 색상 통일 (민상)

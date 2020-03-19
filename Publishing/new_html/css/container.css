@@ -218,14 +218,16 @@
 
 /*-----------------------------------myprofile----------------------------------*/
 /* modal-container button */
-.container-inner.content button{
+
+/* .container-inner.content button{
     width:100%;
     display:block;
     line-height:40px;
     text-align:center;
     transition:0.5s;
     box-sizing:border-box;
-}
+} */
+
 /* myprofile-head */
 .myprofile-head{
     text-align: center;
@@ -672,41 +674,41 @@
 .alert-message p{
     color:#454545;
 }
-.alert-message .btn-check{
+.alert-message .btn-sub-wrapper{
     margin-top:50px;
 }
-
-
 
 /* alert-message fail */
 .alert-message .login-fail .alert-ico{
     color:#ffc62e
 }
-.alert-message .login-fail .btn-check button{
-    background-color:#ffc62e    
+.alert-message .login-fail button{
+    background-color:#ffc62e ;
 }
 /* alert-message success */
 .alert-message .login-success .alert-ico{
     color:#6ac510
 }
-.alert-message .login-success .btn-check button{
-    background-color:#6ac510    
+.alert-message .login-success button{
+    background-color:#6ac510 ;
 }
+
 /* alert-message sign-up-fail */
 .alert-message .sign-up-fail .alert-ico{
     color:#ff2e2e
 }
-.alert-message .sign-up-fail .btn-check button{
+.alert-message .sign-up-fail button{
     background-color:#ff2e2e;
 }
+
 /* alert-message sign-up-success */
 .alert-message .sign-up-success .alert-ico{
     color:#2e8bff;
 }
-.alert-message .sign-up-success .btn-check button{
-    background-color:#2e8bff    
-}
 
+.alert-message .sign-up-success button{
+    background-color:#2e8bff;
+}
 /*-----------------------------------------------------------------------*/
 /*sub-page*/
 .sub-page-head{
@@ -907,21 +909,6 @@
 }
 .sub-page-list .inner .tab-pager li a{
     padding:10px;
-}
-.btn-sub-wrapper{
-    text-align: right;
-    margin:40px 0 60px;
-}
-.btn-sub-wrapper>div{
-    display:inline-block;
-    margin-left:4px;
-}
-.btn-sub-wrapper button{
-    padding:0 40px;
-    line-height:40px;
-    text-align:center;
-    transition:0.5s;
-    box-sizing:border-box;
 }
 
 
@@ -1125,32 +1112,19 @@
 .sub-page-chat h3{
     font-size:24px;
 }
+
 .sub-page-chat .form-list.form-info{
-    /* font-size:24px; */
     padding:30px 0 20px;
 }
 
 .sub-page-chat .form-list.form-info .name{
-    /* font-size:24px; */
+    font-size:24px;
     width:40px;
     height:40px;
     background:#ccc;
     border-radius:100%;
     margin-right:14px;
-}
-
-.sub-page-chat .form-list.form-info .btn-write button{
-    color:#fff;
-    background-color:#2e8bff;
-}
-
-.sub-page-chat button {
-    display: inline-block;
-    padding: 0 40px;
-    line-height: 40px;
-    text-align: center;
-    transition: 0.5s;
-    box-sizing: border-box;
+    color;transparent;
 }
 
 .sub-page-chat .page-content-body .page-content-wrapper{
@@ -1206,4 +1180,29 @@
 }
 .sub-page-chat .inner .tab-pager li a{
     padding:10px;
+}
+
+
+
+/* .bbs-list-wrapper */
+.bbs-list-wrapper {
+    margin-top:80px;
+}
+.bbs-list-wrapper .bbs-search{
+    margin:40px 0;
+}
+.bbs-list-wrapper .bbs-search::after{
+    display: block;
+    content:'';
+    clear:both;
+}
+.bbs-list-wrapper .bbs-search{
+}
+
+.bbs-list-wrapper .bbs-search > .form-list{
+    float: right;
+}
+
+.bo-btn-top{
+    margin-bottom:30px;
 }

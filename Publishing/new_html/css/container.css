@@ -1208,3 +1208,145 @@
     padding:10px;
 }
 
+
+
+/* .bbs-list-wrapper */
+.bbs-list-wrapper {
+    margin-top:80px;
+}
+.bbs-list-wrapper .bbs-search{
+    margin:40px 0;
+}
+.bbs-list-wrapper .bbs-search::after{
+    display: block;
+    content:'';
+    clear:both;
+}
+.bbs-list-wrapper .bbs-search{
+}
+
+.bbs-list-wrapper .bbs-search > .form-list{
+    float: right;
+}
+.form-row.btn input[type="text"]{
+    padding:0 80px 0 10px;
+    border:1px solid transparent;
+    border-bottom:1px solid #ccc;
+}
+.form-list .btn-result{
+
+}
+.form-list .btn-result button{
+    /* padding:0 20px; */
+    width:80px;
+    text-align: center;
+    line-height:40px;
+    background:#2e8bff;
+    color:#fff;
+}
+
+.bo-btn-top{
+    margin-bottom:30px;
+}
+
+
+.bbs-list{
+    
+}
+.bbs-list table{
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0 5px;
+    background: #fff;
+    border-top: 1px solid #ececec;
+    border-bottom: 1px solid #ececec;
+}
+.bbs-list tbody{
+}
+
+.bbs-list thead {
+
+}
+
+.bbs-list thead th {
+    padding: 20px 0;
+    font-weight: normal;
+    text-align: center;
+    border-bottom: 1px solid #ececec;
+    height: 40px;
+}
+
+.bbs-list .important{
+    display: inline-block;
+    background:#2e8bff;
+    color:#fff;
+    padding:2px 5px 3px;
+    margin:0 2px;
+}
+
+.bbs-list .fa-lock {
+    display: inline-block;
+    line-height: 14px;
+    width: 16px;
+    font-size: 0.833em;
+    color: #4f818c;
+    background: #cbe3e8;
+    text-align: center;
+    border-radius: 2px;
+    font-size: 12px;
+    border: 1px solid #cbe3e8;
+    vertical-align: middle;
+}
+
+.bbs-list td {
+    background:#fbfbfb;
+    color: #666;
+    padding: 10px 5px;
+    border-top: 1px solid #ecf0f1;
+    border-bottom: 1px solid #ecf0f1;
+    line-height: 1.4em;
+    height: 60px;
+    word-break: break-all;
+}
+.bbs-list td.td_num2{
+    text-align: center;
+}
+.bbs-list .td_name {
+    text-align: left;
+    padding: 10px 0;
+}
+.bbs-list .td_num {
+    text-align: center;
+}
+.bbs-list .td_name_use {
+    text-align: center;
+}
+.bbs-list .td_datetime {
+    text-align: center;
+}
+.bbs-list{
+    
+}
+
+.bo-list-pagination {
+    text-align: center;
+    margin:80px 0 120px;
+}
+.bo-list-pagination .pagination{
+    display: inline-block;
+}
+.pagination::after{
+    display: block;
+    content:'';
+    clear:both;
+}
+.pagination>a{
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+.pagination>a.active {
+    background-color: #2e8bff;
+    color: white;
+}

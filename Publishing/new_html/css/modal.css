@@ -53,15 +53,6 @@
     color:#2e8bff;
 }
 
-/* modal-container button */
-.modal-container button{
-    width:100%;
-    display:block;
-    line-height:40px;
-    text-align:center;
-    transition:0.5s;
-    box-sizing:border-box;
-}
 
 /* modal-inner h2*/
 .modal-inner>h2{
@@ -220,54 +211,19 @@
     inset 15px 10px -12px rgba(255,255,255,0.1);
 }
 
-
-/* btn-blue */
-.btn-blue > button{
-    background:#2e8bff;color:#fff;
-}
-
 /* modal-container btn */
-.btn-social > button{
+.btn-sub-wrapper.btn-social button{
     position: relative;
-    padding:0 0 0 42px;
 }
-.btn-social > button::before{
-    position: absolute;
-    left:0;
-    top:0;
-    content:'';
-    display: block;
-    width:42px;
-    height:42px;
-    background:Red;
-}
-.btn-social > button:first-of-type{
-    border:1px solid #f7e600;
-}
-.btn-social > button:first-of-type::before{
-    content: '\f075';
-    font-family: FontAwesome;
-    font-style: normal;
-    font-weight: normal;
-    font-size:22px;
-    text-decoration: inherit;
+.btn-sub-wrapper.btn-social .btn-basic:first-of-type button{
     background:#f7e600;
+    color:#454545;
+    margin-bottom:4px;
 }
-.btn-social > button:last-of-type{
-    border:1px solid #2db400;
-}
-.btn-social > button:last-of-type::before{
-    content: 'N';
-    font-family:'Nanum Gothic';
-    font-style: normal;
-    font-weight: bold;
-    font-size:22px;
-    text-decoration: inherit;
+.btn-sub-wrapper.btn-social .btn-basic:last-of-type button{
     background:#2db400;
     color:#fff;
 }
-
-
 
 /* modal-container ad-question */
 .ad-question{

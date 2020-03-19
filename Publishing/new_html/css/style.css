@@ -3,6 +3,7 @@
 
 /*devide css file*/
 @import url("all.css");
+@import url("content.css");
 @import url("layout.css");
 @import url("modal.css");
 @import url("container.css");

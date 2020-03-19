@@ -49,7 +49,7 @@
 .so .edit-btn .inner .btn button{width:84px;height:34px;margin:3px;line-height:30px;border-radius:25px;background:#fff; font-size: 14px;}
 .so .edit-btn .inner .btn button:hover{color:#fff;background:transparent;}
 .so .edit-btn .inner .main-btn button{background:transparent; color: #fff;}
-.so .edit-btn .inner .main-btn button:hover{background:#fff; color: #000;}
+.so .edit-btn .inner .main-btn button:hover{background:#fff; color: #222;}
 
 /* page */
 /*페이지네이션*/
@@ -238,7 +238,7 @@
 /* ---------- alert----------*/
 
 /* 임의 버튼 */
-.so .alert-btn button{width:50%;height:100px;margin:20px auto;border:1px solid #000;}
+.so .alert-btn button{width:50%;height:100px;margin:20px auto;border:1px solid #222;}
 .so .alert-btn button:nth-child(1){background:#ffc62e;}
 .so .alert-btn button:nth-child(2){background:#6ac510;}
 .so .alert-btn button:nth-child(3){background:#ff2e2e;}
@@ -342,7 +342,7 @@ html{position:relative;}
   /*    중앙에 있던 슬라이드 페이지네이션 버튼을 오른쪽으로이동*/
     .so .swiper-pagination-fraction,.so .swiper-pagination-custom,.so .swiper-container-horizontal>.swiper-pagination-bullets{bottom:10px;left:-40px;text-align:right;width:100%;}
   /*    페이지네이션 버튼크기*/
-    .so .swiper-pagination-bullet{width:10px;height:10px;display:inline-block;border-radius:100%;background:#000;opacity:.2;}
+    .so .swiper-pagination-bullet{width:10px;height:10px;display:inline-block;border-radius:100%;background:#222;opacity:.2;}
   /*   해당 페이지에 왔을때 페이지 백그라운드 컬러변경*/
     .so .swiper-pagination-bullet-active{opacity:1;background:#2e8bff;}
     .so .travel-intro .inner::after{display:block;content:"";clear:both;}

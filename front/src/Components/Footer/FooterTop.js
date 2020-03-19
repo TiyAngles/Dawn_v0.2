@@ -60,7 +60,7 @@ const FooterTopBox = styled.div`
   p {
     a {
       font-weight: bold;
-      color: #3c97f9;
+      color: #2e8bff;
     }
   }
   &:nth-of-type(1) > ul {

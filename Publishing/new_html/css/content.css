@@ -6,7 +6,7 @@ button{
     padding:0 40px;
     line-height:40px;
     text-align:center;
-    transition:0.5s;
+    /* transition:0.5s; */
     box-sizing:border-box;
 }
 .btn-basic > button{
@@ -14,6 +14,9 @@ button{
     color:#fff;
 }
 
+.btn-basic:hover > button{    
+    background: linear-gradient(0.25turn, #d061fe, #2e8bff);
+}
 /* sub-page-button */
 .btn-sub-wrapper::after{
     display: block;
@@ -41,6 +44,7 @@ button{
 }
 .btn-sub-wrapper.w100>div{
     display: block;
+    width:100%;
     margin-left:0;
 }
 .btn-sub-wrapper.w100>div button{

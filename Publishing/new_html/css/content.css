@@ -6,24 +6,42 @@ button{
     padding:0 40px;
     line-height:40px;
     text-align:center;
-    transition:0.5s;
+    /* transition:0.5s; */
     box-sizing:border-box;
 }
+
+/* button-animate */
 .btn-basic > button{
-    background:#2e8bff;
+    transition:0.5s;
+    background: linear-gradient(0.25turn, #d061fe , #2e8bff);
+    background-size:200% 200%;
+    background-position:0%;
     color:#fff;
+}
+.btn-basic:hover > button{    
+    background-position:70%;
 }
 
 /* sub-page-button */
+.btn-sub-wrapper::after{
+    display: block;
+    content:'';
+    clear:both;
+}
 .btn-sub-wrapper{
-    text-align: right;
+    /* text-align: right; */
     margin:40px 0 60px;
 }
 .btn-sub-wrapper>div{
+    float: right;
     display:inline-block;
     margin-left:4px;
 }
 
+.btn-sub-wrapper>div.fl{
+    float: left;
+    marginleft:0;
+}
 /* btn-sub-wrapper.w100 */
 .btn-sub-wrapper.w100{
     text-align: right;
@@ -31,6 +49,7 @@ button{
 }
 .btn-sub-wrapper.w100>div{
     display: block;
+    width:100%;
     margin-left:0;
 }
 .btn-sub-wrapper.w100>div button{
@@ -151,4 +170,91 @@ button{
 }
 .bbs-list .td_datetime {
     text-align: center;
+}
+
+.bo-v-info::after{
+    display: block;
+    content:'';
+    clear:both;
+}
+.bo-v-info {
+    border-bottom:1px solid #ccc;
+    margin-bottom:12px;
+}
+
+/* bo-v-con */
+.bo-v-atc{
+    min-height:200px;
+    height:auto;
+}
+.bo-v-con{
+    margin:20px 0;
+}
+.bo-v-con .inner{
+    font-size:12px;
+    line-height:18px;
+    padding:0;
+    word-break:break-all;
+}
+/* img 삽입 시 */
+.bo-v-atc .bo-v-img a{
+    display: block;
+}
+
+.profile-list{
+    float: left;
+    margin:20px 0 10px;
+}
+.profile-list .pf-img{
+    margin-right:10px;
+}
+.profile-list .pf-img img{
+    width:50px;
+    height:50px;
+    border-radius:50%;
+}
+.profile-info{
+    float: left;
+    margin:20px 0 10px;
+    padding:5px 0;
+}
+
+.profile-info span{
+    display: inline-block;
+    margin:0 10px 0 0;
+    font-weight:400;
+    font-size:12px;
+    color:#888;
+}
+
+.profile-info span.member{
+    display: block;
+    font-weight:700;
+    color:#000;
+}
+.profile-info span.comment{
+    display: block;
+}
+.profile-btn{
+    margin-top:30px;
+    /* background:green; */
+}
+.profile-btn button{
+    padding:0 10px;
+    line-height:26px;
+}
+
+.tab-content .list-item .bo-v-info{
+    margin-bottom:4px;
+}
+.tab-content .list-item .profile-list{
+    margin:20px 0;
+}
+
+.profile-info.textarea{
+    width:100%;
+}
+
+.tab-content .list-item .bo-v-info{
+    margin-bottom:4px;
 }

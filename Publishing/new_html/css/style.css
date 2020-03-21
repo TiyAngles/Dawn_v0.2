@@ -31,3 +31,47 @@ body {
   background-color: rgb(46, 139, 255);
   border-radius: 10px;
 }
+
+/* .not-pd{
+  padding:0 !important;
+} */
+/*
+
+임시 
+css 통합 후 삭제 될 영역입니다.
+유의해 주세요
+
+
+*/
+h1{
+  font-size:40px;
+
+}
+h2{
+  font-size:34px;
+  padding:45px 0 12px;
+}
+h3{
+  font-size:28px;
+  padding:45px 0 20px;
+}
+
+.fr{float:right}
+.fl{float:left;}
+
+.container-inner{
+  padding:0 20px;
+}
+
+.container-inner.npd{
+  padding:0;
+}
+
+@media screen and (min-width: 940px) {
+  
+  .container-inner{
+    padding:0;
+  }
+  
+}
+

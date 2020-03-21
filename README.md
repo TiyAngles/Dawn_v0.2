@@ -269,3 +269,6 @@ Message {
 - 2020 03 18 로그인관련 추가페이지 1차작성
 - 2020 03 17 sub_page 상세 파일 제작(theme 영역), 폰트 색상 통일 (민상)
 - 2020 03 18 게시판 파일 제작 (문의게시판), 버튼 통일, content css 제작 후 container.css 분리 (민상)
+- 2020 03 19 게시판 파일 제작 (문의게시판 상세), 버튼 호버 색상, content css애 게시판 본문영역 추가 (민상)
+
+- 2020 03 20 bbs_list_qna,bbs_list_qna_detail_myprofile_edit,myprofile,sub_page_theme,sub_page_detail index 파일 수정 및 css 전체수정(민상)

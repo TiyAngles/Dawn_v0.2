@@ -31,3 +31,49 @@ body {
   background-color: rgb(46, 139, 255);
   border-radius: 10px;
 }
+
+/* .not-pd{
+  padding:0 !important;
+} */
+/* 임시 */
+h1{
+  font-size:40px !important;
+
+}
+h2{
+  font-size:34px !important;
+  padding:45px 0 12px !important;
+}
+h3{
+  font-size:28px !important;
+  padding:45px 0 20px !important;
+}
+
+.fr{
+  float:right !important;
+}
+.fl{
+  float:left !important;
+}
+
+.container-inner{
+  padding:0 20px !important;
+}
+
+.container-inner.npd{
+  padding:0!important;
+}
+/* .sub-page-head{
+  margin:0 -20px;
+} */
+
+@media screen and (min-width: 940px) {
+  
+  .container-inner{
+    padding:0 !important;
+  }
+  /* .sub-page-head{
+    margin:0;
+  } */
+  
+}

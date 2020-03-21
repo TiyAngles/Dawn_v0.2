@@ -13,7 +13,7 @@ table{width:100%;border-collapse:collapse;border-spacing:0;table-layout:fixed;em
 caption{overflow:hidden;height:0;font-size:1px;line-height:0;}
 legend{border:0;padding:0;white-space:normal;*margin-left:-7px;}
 fieldset{border:0;margin:0;padding:0;}
-textarea{resize:vertical;vertical-align:top;overflow:auto;}
+textarea{resize:vertical;vertical-align:top;overflow:auto;width:100%}
 blockquote,q{quotes:none;}
 blockquote:before,blockquote:after,q:before,q:after{content:'';content:none;}
 a{text-decoration:none;}
@@ -76,7 +76,10 @@ form label{position: absolute;top:1px;left:10px;color:#ccc;font-size:12px;}
 /* form-row & form-col */
 .form-row{display: flex;flex-wrap:wrap;position: relative;}
 .form-col{flex:1;font-size:14px;line-height:40px;}
-.form-col.blank{flex:none;width:20px;text-align:center;}
+.form-col.blank{
+    flex:none;width:20px;text-align:center;
+    text-indent:6px;
+}
 .form-row{display: flex;flex-wrap:wrap;position: relative;}
 
 /* croos-bowsing */

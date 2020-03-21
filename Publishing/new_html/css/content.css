@@ -9,14 +9,19 @@ button{
     /* transition:0.5s; */
     box-sizing:border-box;
 }
+
+/* button-animate */
 .btn-basic > button{
-    background:#2e8bff;
+    transition:0.5s;
+    background: linear-gradient(0.25turn, #d061fe , #2e8bff);
+    background-size:200% 200%;
+    background-position:0%;
     color:#fff;
 }
-
 .btn-basic:hover > button{    
-    background: linear-gradient(0.25turn, #d061fe, #2e8bff);
+    background-position:70%;
 }
+
 /* sub-page-button */
 .btn-sub-wrapper::after{
     display: block;
@@ -226,4 +231,42 @@ button{
     display: block;
     font-weight:700;
     color:#000;
+}
+.profile-info span.comment{
+    display: block;
+}
+.profile-btn{
+    margin-top:30px;
+    /* background:green; */
+}
+.profile-btn button{
+    padding:0 10px;
+    line-height:26px;
+}
+
+/* li .bo-v-info + bo-v-info .profile-list,
+li .bo-v-info + bo-v-info .profile-info,
+li .bo-v-info + bo-v-info .profile-btn,{
+    margin:20px 0;
+} */
+
+/* li ~ li .bo-v-info .profile-list{
+    background:yellow;
+    margin:20px 0;
+} */
+.tab-content .list-item .bo-v-info{
+    margin-bottom:4px;
+}
+.tab-content .list-item .profile-list{
+    margin:20px 0;
+}
+
+.profile-info.textarea{
+    width:100%;
+    background:yellow;
+    /* width:calc(100% - 60px); */
+}
+
+.tab-content .list-item .bo-v-info{
+    margin-bottom:4px;
 }

@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
-    <meta name="keywords" content="traveler_myprofile_page">
-    <meta name="description" content="traveler myprofile page">
-    <title>sub_page_theme_detail</title>
+    <meta name="keywords" content="sub_page_theme_detail">
+    <meta name="description" content="sub_page_theme_detail">
+    <title>[c] sub_page_theme_detail</title>
     <link rel="stylesheet" href="css/swiper.css">
     <link rel="stylesheet" href="css/style.css">
     <script src="https://kit.fontawesome.com/164552570a.js" crossorigin="anonymous"></script>
@@ -15,7 +15,6 @@
     <script src="js/jquery-1.12.3.min.js"></script>
     <script src="js/header.js"></script>
     <script src="js/sub_page.js"></script>
-    <!-- <script src="js/slidetoggle.js"></script> -->
 </head>
 <body>
     <!--header-->
@@ -105,7 +104,7 @@
     <!--container-->
     <div id="container">
         <!--container-inner-->
-        <div class="container-inner w100">
+        <div class="container-inner w100 npd">
             <!--myprofile-->
             <div class="sub-page-head theme">
                 <div class="inner">
@@ -251,26 +250,37 @@
             <!--sub-page-detail-list-->
             <div class="sub-page-detail-list">
                 <div class="inner">
-                    <div class="tab-content">
-                        <div class="tab-content-inner">
-                            <div class="tab-content-pin">
-                                <a href="#">
-                                    <i class="fas fa-map-pin"></i>
-                                </a>
-                                <a href="#">
-                                    <i class="fas fa-star"></i>
-                                </a>
-                            </div>
-                            <div class="tab-content-head">
-                                <div class="img">
-                                    <img src="" alt="사용자 아이디">
+                    <div class="sub-page-detail">
+                        <div class="sub-page-detail-inner">
+                            <div class="sub-page-detail-con1">                                
+                                <div class="bo-v-info">
+                                    <div class="profile-list">
+                                        <div class="pf-img">
+                                            <img src="img/bbs/no_profile.png" alt="profile_img">
+                                        </div>
+                                    </div>
+                                    <div class="profile-info">
+                                        <span class="member">작성자</span>
+                                        <span class="sight">
+                                            <i class="fa fa-eye"></i>
+                                            <em>100</em>회
+                                        </span>
+                                        <span class="date">
+                                            <i class="fa fa-clock-o"></i>
+                                            <em>2020-02-06 00:00</em>
+                                        </span>
+                                    </div>
+                                    <div class="profile-info fr">
+                                        <span class="mark">                                            
+                                            <i class="fas fa-map-pin"></i>
+                                        </span>
+                                        <span class="star">                 
+                                            <i class="fas fa-star"></i>
+                                        </span>
+                                    </div>
                                 </div>
-                                <div class="info">
-                                    <p>홍길동홍길동</p>
-                                    <span>2020.03.08</span>
-                                </div>
                             </div>
-                            <div class="tab-content-body">
+                            <div class="sub-page-detail-con2">
                                 <h3>여수 돌산대교 & 해상 케이블카</h3>
                                 <div class="info">
                                     <dl>
@@ -280,7 +290,7 @@
                                     </dl>
                                 </div>
                             </div>
-                            <div class="tab-content-detail">
+                            <div class="sub-page-detail">
                                 <h3>상세정보</h3>
                                 <div class="info">
                                     <ul>
@@ -357,181 +367,345 @@
             <div class="sub-page-chat">
                 <div class="inner">
                     <h3>후기</h3>
-                    <div class="page-content-head">
-                        <div class="info">
-                            <div class="form-list form-info">
-                                <div class="form-row btn">
-                                    <div class="name">
-                                        <img src="" alt="회원">
+                    <div class="sub-chat-detail">
+                        <div class="sub-chat-detail-inner">
+                            <div class="sub-chat-detail-con1">
+                                <div class="bo-v-info">
+                                    <div class="profile-list">
+                                        <div class="pf-img">
+                                            <img src="img/bbs/no_profile.png" alt="profile_img">
+                                        </div>
                                     </div>
-                                    <div class="form-col">
-                                        <label for="signup_name_1"></label>
-                                        <input type="text" id="signup,gi_name_1">
+                                    <div class="profile-info">
+                                        <span class="member">작성자</span>
+                                        <span class="sight">
+                                            <i class="fa fa-eye"></i>
+                                            <em>999</em>회
+                                        </span>
+                                        <span class="date">
+                                            <i class="fa fa-clock-o"></i>
+                                            <em>2020-02-06 00:00</em>
+                                        </span>
                                     </div>
-                                    <div class="btn-search-wrapper">
-                                        <div class="btn-basic">
-                                            <button>글쓰기</button>
+                                    <div class="profile-btn fr">
+                                        <div class="btn-list-wrapper">
+                                            <div class="btn-basic">
+                                                <button>글쓰기</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bo-v-info">
+                                    <div class="profile-info textarea">
+                                        <div class="textarea">
+                                            <textarea name="" id="" cols="30" rows="10"></textarea>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="page-content-body">
-                        <div class="page-content-wrapper">
-                            <div class="page-content-inner">
-                                <div class="page-content-inner-head">
-                                    <div class="img">
-                                        <img src="" alt="사용자 아이디">
-                                    </div>
-                                    <div class="info">
-                                        <p>홍길동홍길동</p>
-                                        <span>2020.03.08</span>
-                                    </div>
-                                </div>
-                                <div class="page-content-info">
-                                    <p>직원들도 너무 친절했고 예쁜 야경을 볼 수 있어서 좋았습니다. 구글 지도에 나와있는 시간이랑 다를 수 있어서 홈페이지를 한번 더 보고 방문하시는 것을 추천드립니다.</p>
-                                </div>
-                            </div>
-                            <div class="page-content-inner">
-                                <div class="page-content-inner-head">
-                                    <div class="img">
-                                        <img src="" alt="사용자 아이디">
-                                    </div>
-                                    <div class="info">
-                                        <p>홍길동홍길동</p>
-                                        <span>2020.03.08</span>
-                                    </div>
-                                </div>
-                                <div class="page-content-info">
-                                    <p>직원들도 너무 친절했고 예쁜 야경을 볼 수 있어서 좋았습니다. 구글 지도에 나와있는 시간이랑 다를 수 있어서 홈페이지를 한번 더 보고 방문하시는 것을 추천드립니다.</p>
-                                </div>
-                            </div>
-                            <div class="page-content-inner">
-                                <div class="page-content-inner-head">
-                                    <div class="img">
-                                        <img src="" alt="사용자 아이디">
-                                    </div>
-                                    <div class="info">
-                                        <p>홍길동홍길동</p>
-                                        <span>2020.03.08</span>
-                                    </div>
-                                </div>
-                                <div class="page-content-info">
-                                    <p>직원들도 너무 친절했고 예쁜 야경을 볼 수 있어서 좋았습니다. 구글 지도에 나와있는 시간이랑 다를 수 있어서 홈페이지를 한번 더 보고 방문하시는 것을 추천드립니다.</p>
-                                </div>
-                            </div>
-                            <div class="page-content-inner">
-                                <div class="page-content-inner-head">
-                                    <div class="img">
-                                        <img src="" alt="사용자 아이디">
-                                    </div>
-                                    <div class="info">
-                                        <p>홍길동홍길동</p>
-                                        <span>2020.03.08</span>
-                                    </div>
-                                </div>
-                                <div class="page-content-info">
-                                    <p>직원들도 너무 친절했고 예쁜 야경을 볼 수 있어서 좋았습니다. 구글 지도에 나와있는 시간이랑 다를 수 있어서 홈페이지를 한번 더 보고 방문하시는 것을 추천드립니다.</p>
-                                </div>
-                            </div>
-                            <div class="page-content-inner">
-                                <div class="page-content-inner-head">
-                                    <div class="img">
-                                        <img src="" alt="사용자 아이디">
-                                    </div>
-                                    <div class="info">
-                                        <p>홍길동홍길동</p>
-                                        <span>2020.03.08</span>
-                                    </div>
-                                </div>
-                                <div class="page-content-info">
-                                    <p>직원들도 너무 친절했고 예쁜 야경을 볼 수 있어서 좋았습니다. 구글 지도에 나와있는 시간이랑 다를 수 있어서 홈페이지를 한번 더 보고 방문하시는 것을 추천드립니다.</p>
-                                </div>
-                            </div>
-                            <div class="page-content-inner">
-                                <div class="page-content-inner-head">
-                                    <div class="img">
-                                        <img src="" alt="사용자 아이디">
-                                    </div>
-                                    <div class="info">
-                                        <p>홍길동홍길동</p>
-                                        <span>2020.03.08</span>
-                                    </div>
-                                </div>
-                                <div class="page-content-info">
-                                    <p>직원들도 너무 친절했고 예쁜 야경을 볼 수 있어서 좋았습니다. 구글 지도에 나와있는 시간이랑 다를 수 있어서 홈페이지를 한번 더 보고 방문하시는 것을 추천드립니다.</p>
-                                </div>
-                            </div>
-                            <div class="page-content-inner">
-                                <div class="page-content-inner-head">
-                                    <div class="img">
-                                        <img src="" alt="사용자 아이디">
-                                    </div>
-                                    <div class="info">
-                                        <p>홍길동홍길동</p>
-                                        <span>2020.03.08</span>
-                                    </div>
-                                </div>
-                                <div class="page-content-info">
-                                    <p>직원들도 너무 친절했고 예쁜 야경을 볼 수 있어서 좋았습니다. 구글 지도에 나와있는 시간이랑 다를 수 있어서 홈페이지를 한번 더 보고 방문하시는 것을 추천드립니다.</p>
-                                </div>
-                            </div>
-                            <div class="page-content-inner">
-                                <div class="page-content-inner-head">
-                                    <div class="img">
-                                        <img src="" alt="사용자 아이디">
-                                    </div>
-                                    <div class="info">
-                                        <p>홍길동홍길동</p>
-                                        <span>2020.03.08</span>
-                                    </div>
-                                </div>
-                                <div class="page-content-info">
-                                    <p>직원들도 너무 친절했고 예쁜 야경을 볼 수 있어서 좋았습니다. 구글 지도에 나와있는 시간이랑 다를 수 있어서 홈페이지를 한번 더 보고 방문하시는 것을 추천드립니다.</p>
-                                </div>
-                            </div>
-                            <div class="page-content-inner">
-                                <div class="page-content-inner-head">
-                                    <div class="img">
-                                        <img src="" alt="사용자 아이디">
-                                    </div>
-                                    <div class="info">
-                                        <p>홍길동홍길동</p>
-                                        <span>2020.03.08</span>
-                                    </div>
-                                </div>
-                                <div class="page-content-info">
-                                    <p>직원들도 너무 친절했고 예쁜 야경을 볼 수 있어서 좋았습니다. 구글 지도에 나와있는 시간이랑 다를 수 있어서 홈페이지를 한번 더 보고 방문하시는 것을 추천드립니다.</p>
-                                </div>
-                            </div>
-                            <div class="page-content-inner">
-                                <div class="page-content-inner-head">
-                                    <div class="img">
-                                        <img src="" alt="사용자 아이디">
-                                    </div>
-                                    <div class="info">
-                                        <p>홍길동홍길동</p>
-                                        <span>2020.03.08</span>
-                                    </div>
-                                </div>
-                                <div class="page-content-info">
-                                    <p>직원들도 너무 친절했고 예쁜 야경을 볼 수 있어서 좋았습니다. 구글 지도에 나와있는 시간이랑 다를 수 있어서 홈페이지를 한번 더 보고 방문하시는 것을 추천드립니다.</p>
-                                </div>
-                            </div>
-                            <div class="page-content-inner">
-                                <div class="page-content-inner-head">
-                                    <div class="img">
-                                        <img src="" alt="사용자 아이디">
-                                    </div>
-                                    <div class="info">
-                                        <p>홍길동홍길동</p>
-                                        <span>2020.03.08</span>
-                                    </div>
-                                </div>
-                                <div class="page-content-info">
-                                    <p>직원들도 너무 친절했고 예쁜 야경을 볼 수 있어서 좋았습니다. 구글 지도에 나와있는 시간이랑 다를 수 있어서 홈페이지를 한번 더 보고 방문하시는 것을 추천드립니다.</p>
-                                </div>
+                            <div class="sub-chat-detail-con2">
+                                <ul>
+                                    <li>                                        
+                                        <div class="bo-v-info">
+                                            <div class="profile-list">
+                                                <div class="pf-img">
+                                                    <img src="img/bbs/no_profile.png" alt="profile_img">
+                                                </div>
+                                            </div>
+                                            <div class="profile-info">
+                                                <span class="member">홍길동</span>
+                                                <span class="sight">
+                                                    <i class="fa fa-eye"></i>
+                                                    <em>999</em>회
+                                                </span>
+                                                <span class="date">
+                                                    <i class="fa fa-clock-o"></i>
+                                                    <em>2020-02-06 00:00</em>
+                                                </span>
+                                                <span class="comment">
+                                                    직원들도 너무 친절했고 예쁜 야경을 볼 수 있어서 좋았습니다. 구글 지도에 나와있는 시간이랑 다를 수 있어서 홈페이지를 한번 더 보고 방문하시는 것을 추천드립니다.
+                                                </span>
+                                            </div>
+                                            <div class="profile-btn fr">
+                                                <div class="btn-list-wrapper">
+                                                    <div class="btn-basic">
+                                                        <button>삭제</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>                                        
+                                        <div class="bo-v-info">
+                                            <div class="profile-list">
+                                                <div class="pf-img">
+                                                    <img src="img/bbs/no_profile.png" alt="profile_img">
+                                                </div>
+                                            </div>
+                                            <div class="profile-info">
+                                                <span class="member">홍길동</span>
+                                                <span class="sight">
+                                                    <i class="fa fa-eye"></i>
+                                                    <em>999</em>회
+                                                </span>
+                                                <span class="date">
+                                                    <i class="fa fa-clock-o"></i>
+                                                    <em>2020-02-06 00:00</em>
+                                                </span>
+                                                <span class="comment">
+                                                    직원들도 너무 친절했고 예쁜 야경을 볼 수 있어서 좋았습니다. 구글 지도에 나와있는 시간이랑 다를 수 있어서 홈페이지를 한번 더 보고 방문하시는 것을 추천드립니다.
+                                                </span>
+                                            </div>
+                                            <div class="profile-btn fr">
+                                                <div class="btn-list-wrapper">
+                                                    <div class="btn-basic">
+                                                        <button>삭제</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>                                        
+                                        <div class="bo-v-info">
+                                            <div class="profile-list">
+                                                <div class="pf-img">
+                                                    <img src="img/bbs/no_profile.png" alt="profile_img">
+                                                </div>
+                                            </div>
+                                            <div class="profile-info">
+                                                <span class="member">홍길동</span>
+                                                <span class="sight">
+                                                    <i class="fa fa-eye"></i>
+                                                    <em>999</em>회
+                                                </span>
+                                                <span class="date">
+                                                    <i class="fa fa-clock-o"></i>
+                                                    <em>2020-02-06 00:00</em>
+                                                </span>
+                                                <span class="comment">
+                                                    직원들도 너무 친절했고 예쁜 야경을 볼 수 있어서 좋았습니다. 구글 지도에 나와있는 시간이랑 다를 수 있어서 홈페이지를 한번 더 보고 방문하시는 것을 추천드립니다.
+                                                </span>
+                                            </div>
+                                            <div class="profile-btn fr">
+                                                <div class="btn-list-wrapper">
+                                                    <div class="btn-basic">
+                                                        <button>삭제</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>                                        
+                                        <div class="bo-v-info">
+                                            <div class="profile-list">
+                                                <div class="pf-img">
+                                                    <img src="img/bbs/no_profile.png" alt="profile_img">
+                                                </div>
+                                            </div>
+                                            <div class="profile-info">
+                                                <span class="member">홍길동</span>
+                                                <span class="sight">
+                                                    <i class="fa fa-eye"></i>
+                                                    <em>999</em>회
+                                                </span>
+                                                <span class="date">
+                                                    <i class="fa fa-clock-o"></i>
+                                                    <em>2020-02-06 00:00</em>
+                                                </span>
+                                                <span class="comment">
+                                                    직원들도 너무 친절했고 예쁜 야경을 볼 수 있어서 좋았습니다. 구글 지도에 나와있는 시간이랑 다를 수 있어서 홈페이지를 한번 더 보고 방문하시는 것을 추천드립니다.
+                                                </span>
+                                            </div>
+                                            <div class="profile-btn fr">
+                                                <div class="btn-list-wrapper">
+                                                    <div class="btn-basic">
+                                                        <button>삭제</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>                                        
+                                        <div class="bo-v-info">
+                                            <div class="profile-list">
+                                                <div class="pf-img">
+                                                    <img src="img/bbs/no_profile.png" alt="profile_img">
+                                                </div>
+                                            </div>
+                                            <div class="profile-info">
+                                                <span class="member">홍길동</span>
+                                                <span class="sight">
+                                                    <i class="fa fa-eye"></i>
+                                                    <em>999</em>회
+                                                </span>
+                                                <span class="date">
+                                                    <i class="fa fa-clock-o"></i>
+                                                    <em>2020-02-06 00:00</em>
+                                                </span>
+                                                <span class="comment">
+                                                    직원들도 너무 친절했고 예쁜 야경을 볼 수 있어서 좋았습니다. 구글 지도에 나와있는 시간이랑 다를 수 있어서 홈페이지를 한번 더 보고 방문하시는 것을 추천드립니다.
+                                                </span>
+                                            </div>
+                                            <div class="profile-btn fr">
+                                                <div class="btn-list-wrapper">
+                                                    <div class="btn-basic">
+                                                        <button>삭제</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>                                        
+                                        <div class="bo-v-info">
+                                            <div class="profile-list">
+                                                <div class="pf-img">
+                                                    <img src="img/bbs/no_profile.png" alt="profile_img">
+                                                </div>
+                                            </div>
+                                            <div class="profile-info">
+                                                <span class="member">홍길동</span>
+                                                <span class="sight">
+                                                    <i class="fa fa-eye"></i>
+                                                    <em>999</em>회
+                                                </span>
+                                                <span class="date">
+                                                    <i class="fa fa-clock-o"></i>
+                                                    <em>2020-02-06 00:00</em>
+                                                </span>
+                                                <span class="comment">
+                                                    직원들도 너무 친절했고 예쁜 야경을 볼 수 있어서 좋았습니다. 구글 지도에 나와있는 시간이랑 다를 수 있어서 홈페이지를 한번 더 보고 방문하시는 것을 추천드립니다.
+                                                </span>
+                                            </div>
+                                            <div class="profile-btn fr">
+                                                <div class="btn-list-wrapper">
+                                                    <div class="btn-basic">
+                                                        <button>삭제</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>                                        
+                                        <div class="bo-v-info">
+                                            <div class="profile-list">
+                                                <div class="pf-img">
+                                                    <img src="img/bbs/no_profile.png" alt="profile_img">
+                                                </div>
+                                            </div>
+                                            <div class="profile-info">
+                                                <span class="member">홍길동</span>
+                                                <span class="sight">
+                                                    <i class="fa fa-eye"></i>
+                                                    <em>999</em>회
+                                                </span>
+                                                <span class="date">
+                                                    <i class="fa fa-clock-o"></i>
+                                                    <em>2020-02-06 00:00</em>
+                                                </span>
+                                                <span class="comment">
+                                                    직원들도 너무 친절했고 예쁜 야경을 볼 수 있어서 좋았습니다. 구글 지도에 나와있는 시간이랑 다를 수 있어서 홈페이지를 한번 더 보고 방문하시는 것을 추천드립니다.
+                                                </span>
+                                            </div>
+                                            <div class="profile-btn fr">
+                                                <div class="btn-list-wrapper">
+                                                    <div class="btn-basic">
+                                                        <button>삭제</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>                                        
+                                        <div class="bo-v-info">
+                                            <div class="profile-list">
+                                                <div class="pf-img">
+                                                    <img src="img/bbs/no_profile.png" alt="profile_img">
+                                                </div>
+                                            </div>
+                                            <div class="profile-info">
+                                                <span class="member">홍길동</span>
+                                                <span class="sight">
+                                                    <i class="fa fa-eye"></i>
+                                                    <em>999</em>회
+                                                </span>
+                                                <span class="date">
+                                                    <i class="fa fa-clock-o"></i>
+                                                    <em>2020-02-06 00:00</em>
+                                                </span>
+                                                <span class="comment">
+                                                    직원들도 너무 친절했고 예쁜 야경을 볼 수 있어서 좋았습니다. 구글 지도에 나와있는 시간이랑 다를 수 있어서 홈페이지를 한번 더 보고 방문하시는 것을 추천드립니다.
+                                                </span>
+                                            </div>
+                                            <div class="profile-btn fr">
+                                                <div class="btn-list-wrapper">
+                                                    <div class="btn-basic">
+                                                        <button>삭제</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>                                        
+                                        <div class="bo-v-info">
+                                            <div class="profile-list">
+                                                <div class="pf-img">
+                                                    <img src="img/bbs/no_profile.png" alt="profile_img">
+                                                </div>
+                                            </div>
+                                            <div class="profile-info">
+                                                <span class="member">홍길동</span>
+                                                <span class="sight">
+                                                    <i class="fa fa-eye"></i>
+                                                    <em>999</em>회
+                                                </span>
+                                                <span class="date">
+                                                    <i class="fa fa-clock-o"></i>
+                                                    <em>2020-02-06 00:00</em>
+                                                </span>
+                                                <span class="comment">
+                                                    직원들도 너무 친절했고 예쁜 야경을 볼 수 있어서 좋았습니다. 구글 지도에 나와있는 시간이랑 다를 수 있어서 홈페이지를 한번 더 보고 방문하시는 것을 추천드립니다.
+                                                </span>
+                                            </div>
+                                            <div class="profile-btn fr">
+                                                <div class="btn-list-wrapper">
+                                                    <div class="btn-basic">
+                                                        <button>삭제</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>                                        
+                                        <div class="bo-v-info">
+                                            <div class="profile-list">
+                                                <div class="pf-img">
+                                                    <img src="img/bbs/no_profile.png" alt="profile_img">
+                                                </div>
+                                            </div>
+                                            <div class="profile-info">
+                                                <span class="member">홍길동</span>
+                                                <span class="sight">
+                                                    <i class="fa fa-eye"></i>
+                                                    <em>999</em>회
+                                                </span>
+                                                <span class="date">
+                                                    <i class="fa fa-clock-o"></i>
+                                                    <em>2020-02-06 00:00</em>
+                                                </span>
+                                                <span class="comment">
+                                                    직원들도 너무 친절했고 예쁜 야경을 볼 수 있어서 좋았습니다. 구글 지도에 나와있는 시간이랑 다를 수 있어서 홈페이지를 한번 더 보고 방문하시는 것을 추천드립니다.
+                                                </span>
+                                            </div>
+                                            <div class="profile-btn fr">
+                                                <div class="btn-list-wrapper">
+                                                    <div class="btn-basic">
+                                                        <button>삭제</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
                     </div>

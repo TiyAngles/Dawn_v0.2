@@ -41,4 +41,13 @@ $(document).ready(function(){
       },
     });
 
+    //곽민상
+    var swiper = new Swiper('.sub-page-detail-head-origin .swiper-container', {
+      slidesPerView: 'auto',
+      spaceBetween: 30,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+    });
 });

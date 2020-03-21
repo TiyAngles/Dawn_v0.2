@@ -244,16 +244,6 @@ button{
     line-height:26px;
 }
 
-/* li .bo-v-info + bo-v-info .profile-list,
-li .bo-v-info + bo-v-info .profile-info,
-li .bo-v-info + bo-v-info .profile-btn,{
-    margin:20px 0;
-} */
-
-/* li ~ li .bo-v-info .profile-list{
-    background:yellow;
-    margin:20px 0;
-} */
 .tab-content .list-item .bo-v-info{
     margin-bottom:4px;
 }
@@ -263,8 +253,6 @@ li .bo-v-info + bo-v-info .profile-btn,{
 
 .profile-info.textarea{
     width:100%;
-    background:yellow;
-    /* width:calc(100% - 60px); */
 }
 
 .tab-content .list-item .bo-v-info{

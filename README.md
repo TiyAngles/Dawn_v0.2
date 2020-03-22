@@ -269,3 +269,4 @@ Message {
 - 2020 03 19 게시판 파일 제작 (문의게시판 상세), 버튼 호버 색상, content css애 게시판 본문영역 추가 (민상)
 
 - 2020 03 20 bbs_list_qna,bbs_list_qna_detail_myprofile_edit,myprofile,sub_page_theme,sub_page_detail index 파일 수정 및 css 전체수정(민상)
+- 2020 03 21 modal_login_fail,modal_login_success,modal_sign_up_fail,modal_sign_up_success,modal_login,modal_success 파일 수정 및 css 전체수정(민상)

@@ -9,40 +9,12 @@
 @import url("container.css");
 
 /*common*/
-a {
-    text-decoration: none;
-    color: #222;
-  }
 body {
     font: 400 16px/1.37 "Roboto Condensed", "Noto Sans KR", "Nanum Gothic",sans-serif;
     letter-spacing: 1.012px;
 }
+a {text-decoration: none; color: #222;}
 
-/* scrollbar */
-::-webkit-scrollbar {
-  width: 5px;
-  height: 5px;
-}
-::-webkit-scrollbar-track {
-  background-color: rgb(46, 139, 255,0.3);
-  border-radius: 10px;
-}
-::-webkit-scrollbar-thumb {
-  background-color: rgb(46, 139, 255);
-  border-radius: 10px;
-}
-
-/* .not-pd{
-  padding:0 !important;
-} */
-/*
-
-임시 
-css 통합 후 삭제 될 영역입니다.
-유의해 주세요
-
-
-*/
 h1{
   font-size:40px;
 
@@ -66,6 +38,21 @@ h3{
 .container-inner.npd{
   padding:0;
 }
+
+/* scrollbar */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-track {
+  background-color: rgb(46, 139, 255,0.3);
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: rgb(46, 139, 255);
+  border-radius: 10px;
+}
+
 
 @media screen and (min-width: 940px) {
   

@@ -36,7 +36,6 @@ button:-moz-focusring{outline:none;}
 input[type="text"],input[type="password"],input[type="tel"],input[type="search"],input[type="email"],
 input[type="time"],input[type="month"],input[type="data"],input[type="url"],input[type="price"],select{height:40px;padding:0 10px;caret-color:#222;},
 select{padding-right:21px;border-bottom:1px solid #ccc;
-    /* background:url(''); */
 -webkit-background-size:12px auto;
 background-size:12px auto;},
 textarea{
@@ -76,10 +75,7 @@ form label{position: absolute;top:1px;left:10px;color:#ccc;font-size:12px;}
 /* form-row & form-col */
 .form-row{display: flex;flex-wrap:wrap;position: relative;}
 .form-col{flex:1;font-size:14px;line-height:40px;}
-.form-col.blank{
-    flex:none;width:20px;text-align:center;
-    text-indent:6px;
-}
+.form-col.blank{flex:none;width:20px;text-align:center;text-indent:6px;}
 .form-row{display: flex;flex-wrap:wrap;position: relative;}
 
 /* croos-bowsing */

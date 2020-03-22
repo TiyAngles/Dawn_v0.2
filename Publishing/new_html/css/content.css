@@ -1,5 +1,8 @@
 @charset 'utf-8';
-
+/* content */
+/* 
+공통으로 쓰이는 버튼과 게시판 페이저가 담겨져 있습니다
+*/
 
 /* btn */
 button{
@@ -67,15 +70,6 @@ button{
     border:1px solid transparent;
     border-bottom:1px solid #ccc;
 }
-.form-list .btn-search-wrapper{
-
-}
-
-
-
-
-
-
 
 /* pagination */
 .pagination-wrapper {
@@ -218,7 +212,6 @@ button{
     margin:20px 0 10px;
     padding:5px 0;
 }
-
 .profile-info span{
     display: inline-block;
     margin:0 10px 0 0;
@@ -226,7 +219,6 @@ button{
     font-size:12px;
     color:#888;
 }
-
 .profile-info span.member{
     display: block;
     font-weight:700;
@@ -243,18 +235,15 @@ button{
     padding:0 10px;
     line-height:26px;
 }
-
 .tab-content .list-item .bo-v-info{
     margin-bottom:4px;
 }
 .tab-content .list-item .profile-list{
     margin:20px 0;
 }
-
 .profile-info.textarea{
     width:100%;
 }
-
 .tab-content .list-item .bo-v-info{
     margin-bottom:4px;
 }

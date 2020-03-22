@@ -24,6 +24,7 @@
 }
 /* 짧은 모달 */
 .modal-container .modal.min{
+    overflow:visible;
     top:50%;
     transform:translateY(-50%);
     height:auto;

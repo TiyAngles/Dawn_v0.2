@@ -656,6 +656,10 @@
 
 /*--------------------------------------------------------------------------*/
 
+.alert-message .btn-basic>button{
+    background:none;
+}
+
 /*alert창*/
 .modal-inner.alert-message{
     padding:0;
@@ -669,7 +673,8 @@
 }
 .alert-message h2{
     font-size:21px;
-    margin:20px 0 12px;
+    margin:20px 0 4px;
+    padding:0;
 }
 .alert-message p{
     color:#454545;
@@ -682,14 +687,14 @@
 .alert-message .login-fail .alert-ico{
     color:#ffc62e
 }
-.alert-message .login-fail button{
+.alert-message .login-fail .btn-basic>button{
     background-color:#ffc62e ;
 }
 /* alert-message success */
 .alert-message .login-success .alert-ico{
     color:#6ac510
 }
-.alert-message .login-success button{
+.alert-message .login-success .btn-basic>button{
     background-color:#6ac510 ;
 }
 
@@ -697,7 +702,7 @@
 .alert-message .sign-up-fail .alert-ico{
     color:#ff2e2e
 }
-.alert-message .sign-up-fail button{
+.alert-message .sign-up-fail .btn-basic>button{
     background-color:#ff2e2e;
 }
 
@@ -706,7 +711,7 @@
     color:#2e8bff;
 }
 
-.alert-message .sign-up-success button{
+.alert-message .sign-up-success .btn-basic>button{
     background-color:#2e8bff;
 }
 /*-----------------------------------------------------------------------*/

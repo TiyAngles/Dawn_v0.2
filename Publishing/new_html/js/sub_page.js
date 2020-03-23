@@ -14,6 +14,19 @@ $(document).ready(function(){
         $('.tab-content>div').eq(i).addClass('on');
     });
 
+    $('.sub-page-tab-account .tab-list li').on('click',function(e){
+      e.preventDefault();
+      var i = $(this).index();
+
+      // tab-list 
+      $('.sub-page-tab-account .tab-list li').children('a').removeClass('on');
+      $('.sub-page-tab-account .tab-list li').eq(i).children('a').addClass('on');
+
+      // tab-content
+      $('.sub-page-tab-account .tab-content>div').removeClass('on');
+      $('.sub-page-tab-account .tab-content>div').eq(i).addClass('on');
+    });
+
     //위소현
     var swiper = new Swiper(".swiper-container.reco-slide", {
         loop: true,

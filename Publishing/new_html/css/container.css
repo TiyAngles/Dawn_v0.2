@@ -714,6 +714,23 @@
 .alert-message .sign-up-success .btn-basic>button{
     background-color:#2e8bff;
 }
+
+/* alert-join */
+.alert-message .join .alert-ico{
+    color:#ffc62e
+}
+.alert-message .join .btn-basic>button{
+    background-color:#ffc62e ;
+}
+
+/* alert-join-ask */
+.alert-message .join-ask .alert-ico{
+    color:#ff2e2e
+}
+.alert-message .join-ask .btn-basic>button{
+    background-color:#ff2e2e;
+}
+
 /*-----------------------------------------------------------------------*/
 /*sub-page*/
 

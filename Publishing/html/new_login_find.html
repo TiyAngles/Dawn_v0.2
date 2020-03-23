@@ -4,8 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport"
-        content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
     <meta name="keywords" content="traveler 샘플페이지" />
     <meta name="description" content="작성자:문현규,곽민상,위소현" />
     <title>TRAVELER</title>
@@ -120,7 +119,7 @@
                     <!-- tab -->
                     <div class="find-tab">
                         <ul>
-                            <li><a href="#">아이디 찾기</a></li>
+                            <li class="on"><a href="#" class="on">아이디 찾기</a></li>
                             <li><a href="#">비밀번호 찾기</a></li>
                         </ul>
                     </div>
@@ -134,14 +133,18 @@
             <!-- Id -->
             <div class="id-find border">
                 <div class="inner">
-                    <h3>아이디 찾기</h3>
+                    <h3>
+                        <span><i class="fas fa-id-card"></i></span>
+
+                        아이디 찾기
+                    </h3>
                     <p>아이디는 회원가입시 등록하신 이름과 이메일을 입력하시면 정보를 확인하실 수 있습니다.</p>
                     <div class="user-info w-res">
                         <div class="form-content">
                             <form action="#">
-                                <label for="userName">이름 : </label>
-                                <input type="text" id="userName"">
-                                        <label for=" userEmail">이메일 : </label>
+                                <label for="userName">이름</label>
+                                <input type="text" id="userName">
+                                <label for="userEmail">이메일</label>
                                 <input type="text" id="userEmail">
                                 <div class="user-btn mg-btn">
                                     <a href="#">아이디찾기</a>
@@ -159,16 +162,19 @@
             <!-- pw-->
             <div class="pw-find border">
                 <div class="inner">
-                    <h3>비밀번호 찾기</h3>
+                    <h3>
+                        <span><i class="fas fa-lock"></i></span>
+                        비밀번호 찾기
+                    </h3>
                     <p>비밀번호는 회원가입시 등록하신 아이디와 이름과 이메일을 입력하시면 비밀번호 변경을 하실 수 있습니다.</p>
                     <div class="user-info w-res">
                         <div class="form-content">
                             <form action="#">
-                                <label for="userId">아이디 : </label>
-                                <input type="text" id="userId"">
-                                <label for=" userName">이름 : </label>
-                                <input type="text" id="userName"">
-                                <label for=" userEmail">이메일 : </label>
+                                <label for="userId">아이디</label>
+                                <input type="text" id="userId">
+                                <label for=" userName">이름</label>
+                                <input type="text" id="userName">
+                                <label for=" userEmail">이메일</label>
                                 <input type="text" id="userEmail">
                                 <div class="user-btn mg-btn">
                                     <a href="#">비밀번호찾기</a>
@@ -180,98 +186,93 @@
             </div>
             <!-- //pw-->
         </div>
-        <!- //-container-inner-->
-    </div>
-    <!--//container-->
-    <!--footer-->
-    <div id="footer">
-        <div class="footer-inner">
-            <div class="footer-top">
-                <div class="">
-                    <h2><a href="#">Tiyangle.co</a></h2>
-                    <ul id="instagram-source">
-                        <li><a href="#">1</a></li>
-                        <li><a href="#">2</a></li>
-                        <li><a href="#">3</a></li>
-                    </ul>
-                    <p>Follow us on <a href="#">tiyangle.co</a></p>
-                </div>
-                <div class="">
-                    <h3>leave a message</h3>
-                    <ul>
-                        <li><a href="#">dawn@tiyangle.co</a></li>
-                        <li><a href="tel:000-0000-0000">(+82) 000-0000-0000</a></li>
-                    </ul>
-                </div>
-                <div class="">
-                    <h3>info</h3>
-                    <ul>
-                        <li>
-                            <a href="#"><span>T</span>erms <span>O</span>f <span>S</span>ervice terms
-                                of use</a>
-                        </li>
-                        <li><a href="#">Privacy Policy</a></li>
-                        <li><a href="#">Inquiry Board</a></li>
-                    </ul>
-                </div>
-                <div class="">
-                    <h3>maker</h3>
-                    <ul>
-                        <li>
-                            <span>PM</span>
-                            <a href="https://github.com/vapvin">문현규</a>
-                        </li>
-                        <li>
-                            <span>PUB & DESIGN</span>
-                            <a href="https://github.com/qkaxhfms"><span>P.L</span> 곽민상</a>
-                            <a href="https://github.com/sohyun0"><span>P.A</span> 위소현</a>
-                        </li>
-                        <li>
-                            <span>FRONT-END</span>
-                            <a href="https://github.com/kangdonghune">강동훈</a>
-                            <a href="https://github.com/spacedawn96">웅</a>
-                            <a href="https://github.com/peppermint100">페퍼민트</a>
-                        </li>
-                        <li>
-                            <span>BACK-END</span>
-                            <a href="https://github.com/pyeeun"><span>P.L</span> 예니</a>
-                        </li>
-                    </ul>
+        <!- //-container-inner--> </div> <!--//container--> <!--footer-->
+            <div id="footer">
+                <div class="footer-inner">
+                    <div class="footer-top">
+                        <div class="">
+                            <h2><a href="#">Tiyangle.co</a></h2>
+                            <ul id="instagram-source">
+                                <li><a href="#">1</a></li>
+                                <li><a href="#">2</a></li>
+                                <li><a href="#">3</a></li>
+                            </ul>
+                            <p>Follow us on <a href="#">tiyangle.co</a></p>
+                        </div>
+                        <div class="">
+                            <h3>leave a message</h3>
+                            <ul>
+                                <li><a href="#">dawn@tiyangle.co</a></li>
+                                <li><a href="tel:000-0000-0000">(+82) 000-0000-0000</a></li>
+                            </ul>
+                        </div>
+                        <div class="">
+                            <h3>info</h3>
+                            <ul>
+                                <li>
+                                    <a href="#"><span>T</span>erms <span>O</span>f <span>S</span>ervice terms
+                                        of use</a>
+                                </li>
+                                <li><a href="#">Privacy Policy</a></li>
+                                <li><a href="#">Inquiry Board</a></li>
+                            </ul>
+                        </div>
+                        <div class="">
+                            <h3>maker</h3>
+                            <ul>
+                                <li>
+                                    <span>PM</span>
+                                    <a href="https://github.com/vapvin">문현규</a>
+                                </li>
+                                <li>
+                                    <span>PUB & DESIGN</span>
+                                    <a href="https://github.com/qkaxhfms"><span>P.L</span> 곽민상</a>
+                                    <a href="https://github.com/sohyun0"><span>P.A</span> 위소현</a>
+                                </li>
+                                <li>
+                                    <span>FRONT-END</span>
+                                    <a href="https://github.com/kangdonghune">강동훈</a>
+                                    <a href="https://github.com/spacedawn96">웅</a>
+                                    <a href="https://github.com/peppermint100">페퍼민트</a>
+                                </li>
+                                <li>
+                                    <span>BACK-END</span>
+                                    <a href="https://github.com/pyeeun"><span>P.L</span> 예니</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="footer-bottom">
+                        <div class="footer-sns">
+                            <ul>
+                                <li>
+                                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fab fa-google"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fab fa-google-drive"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fab fa-github"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fab fa-trello"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fab fa-instagram"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer-description">
+                            <p>
+                                &copy;<span>Traveler</span>. designed and Developed by tiyangle
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
-
-            <div class="footer-bottom">
-                <div class="footer-sns">
-                    <ul>
-                        <li>
-                            <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="fab fa-google"></i></a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="fab fa-google-drive"></i></a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="fab fa-github"></i></a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="fab fa-trello"></i></a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="fab fa-instagram"></i></a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="footer-description">
-                    <p>
-                        &copy;<span>Traveler</span>. designed and Developed by tiyangle
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--//footer-->
-</body>
-
-</html>
+            <!--//footer-->
+</body></html>

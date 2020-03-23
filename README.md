@@ -206,7 +206,7 @@ Message {
 - [x] ~03.08 상세페이지 작성 (반응형)-Sohyun
 - [x] ~03.11 문의 게시판 문의 글 작성(반응형)-Sohyun
 - [x] ~03.13 css 작업물 하나로 통합하기 -Sohyun
-- [ ] ~03.27 로그인관련 추가페이지 작성하기 (아이디/비밀번호찾기/회원탈퇴/회원인증) -Sohyun
+- [x] ~03.27 로그인관련 추가페이지 작성하기 (아이디/비밀번호찾기/회원탈퇴/회원인증) -Sohyun
 - [ ] ~04.15 스타일가이드관련 디스플레이작성 -Sohyun
 
 ---
@@ -266,10 +266,11 @@ Message {
 - 2020 03 15 modal창 html 파일 생성, modal(sign_up login) sub page(myprofile myprofile_edit) 파일 통합 (민상)
 - 2020 03 15 alert-message 4개 파일 통합완료 (로그인실패,로그인성공,회원가입실패,회원가입성공) (민상)
 - 2020 03 16 sub_page 파일 제작(theme 영역) (민상)
-- 2020 03 18 로그인관련 추가페이지 1차작성
 - 2020 03 17 sub_page 상세 파일 제작(theme 영역), 폰트 색상 통일 (민상)
+- 2020 03 18 로그인관련 추가페이지 1차작성
 - 2020 03 18 게시판 파일 제작 (문의게시판), 버튼 통일, content css 제작 후 container.css 분리 (민상)
 - 2020 03 19 게시판 파일 제작 (문의게시판 상세), 버튼 호버 색상, content css애 게시판 본문영역 추가 (민상)
 
 - 2020 03 20 bbs_list_qna,bbs_list_qna_detail_myprofile_edit,myprofile,sub_page_theme,sub_page_detail index 파일 수정 및 css 전체수정(민상)
 - 2020 03 21 modal_login_fail,modal_login_success,modal_sign_up_fail,modal_sign_up_success,modal_login,modal_success 파일 수정 및 css 전체수정(민상)
+- 2020 03 23 로그인관련 추가페이지 작성완료

@@ -1,19 +1,20 @@
 @charset "utf-8";
 /* 공통스타일 */
 
-/* 타이틀 텍스트 */
+/* 상단 타이틀 텍스트 */
 .so .title-text h2{padding-bottom: 0;}
 .so .title-text hr {margin-bottom: 0;}
 /* 로그인관련 버튼디자인 */
 .so .user-btn a {display: block; width: 200px; height: 60px; margin: 0 auto; margin-top: 20px; line-height: 56px; text-align: center; border: 2px solid #2e8bff; border-radius: 15px;}
 .so .user-btn a:hover {background: #2e8bff; color: #fff;}
-.so .mg-btn {margin-bottom: 20px;}
+.so .mg-btn {margin-bottom: 30px;}
 /*hr라인 색상다른것은 line 클래스 지정했습니다*/
 .so .line{background:#dfdfdf;}
 .so .line-b {background: #c0dcff;; height: 3px;}
+.so .line-m {margin: 40px 0;}
 /* 컨텐츠 박스 라인 */
 .so .border {border: 3px solid #dfdfdf;}
-/* 텍스트 간격조절 */
+/* 중앙 안내텍스트 간격조절 */
 .so .text-guide {text-align: center;}
 .so .text-guide p {margin-top: 10px; font-weight: bold; letter-spacing: -0.5px;}
 .so .text-guide p:nth-child(1) {margin-top: 20px;}
@@ -26,6 +27,7 @@
 
 /* ----------alert---------- */
 /*회원탈퇴*/
+/* 기존것에서 텍스트만 달라지고 아이콘만 추가된 것입니다 스타일은 색상만 변경되었습니다  */
 .so .account-delete-alert .alert-content{border-color:#ff2e2e;}
 .so .account-delete-alert .alert-icon .fa-question-circle{color:#ff2e2e;}
 .so .account-delete-alert h2{color:#ff2e2e;}
@@ -41,67 +43,78 @@
 .so .user-service button span{color:#ffc62e;}
 .so .user-service button span:hover{background:#be941f;color:#fff;}
 
-/* span글씨 변경 */
+/* span글씨 변경 -> 전체적으로 span에 스타일을 넣어서 변경해놨는데 기존스타일과 달라서 삭제해도 무관합니다*/
 .so .container-inner .alert-container p span {color: #2e8bff; font-weight: bold; font-size: 20px;}
 
+/* 스크립트 연동클래스 */
 /*버튼누르기전 알럿창 숨김*/
 .so .account-delete-alert, .so .user-service {display:none;}
 /*버튼클릭시 알럿창보이기*/
 .so .account-delete-alert.on, .so .user-service.on {display:block;}
 
 /* ----------account-delete---------- */
-/* 페이지를 꽉차게 보이기 위해서 height값설정  */
-.so .account-delete {height: 90vh;}
-.so .account-delete p {text-align: center; margin-top: 5px;}
-.so .account-delete p:nth-of-type(2) {margin-top: 20px;}
-.so .account-delete p span {color: #2e8bff; font-weight: bold; font-size: 20px;}
-
+/*텍스트 간격설정*/
+.so .account-delete p {text-align: center; margin-top: 5px; letter-spacing:-0.5px;}
+.so .account-delete p:nth-child(1) {margin-top: 50px;}
+.so .account-delete p:nth-child(2) {margin-top: 20px;}
+.so .account-delete p:nth-child(5) {margin-top: 20px; font-weight: bold;}
+.so .account-delete p span {color: #2e8bff; font-weight: bold; font-size: 20px; letter-spacing: 0.3px;}
 /* 해당컨텐츠를 중앙으로 배치하기 위함  */
-.so .account-delete .inner {height: 80%;}
 .so .account-delete-content {display: table;  width: 100%; height: 100%; margin: 0 auto;}
 .so .account-delete-content .account-delete-text {display: table-cell; vertical-align:middle;}
-.so .account-delete-content .account-delete-text hr {display: none;}
 .so .account-delete .account-delete-text .user-btn .user-btn-l {margin-top: 40px;}
 
 /* ----------sign-up-email---------- */
+/*텍스트 간격설정*/
 .so .sign-up-email .text-guide p:nth-child(1){margin-top: 40px;}
-.so .sign-up-email .email-send ul{margin: 0 5%}
+.so .sign-up-email .email-send ul{margin: 5%;}
 .so .sign-up-email .email-send ul li{margin-top: 10px; font-size: 14px;letter-spacing: -0.5px; line-height: 24px;}
 
 /* ----------sign-up-email-success ---------- */
-.so .sign-up-email-success hr {margin: 30px 0;}
+/*텍스트 간격설정*/
 .so .sign-up-email-success .text-guide p:nth-child(1){margin-top: 40px;}
 .so .sign-up-email-success .email-send-success {text-align: center; padding: 30px 0; letter-spacing: -0.5px; line-height: 24px;} 
 
 /* ----------id-find---------- */
-.so .id-find .id-check {display: table; width: 100%; height: 35vh; margin: 50px 0 30px;}
-.so .id-find .id-check .id-card {display: table-cell; width: 100%; vertical-align: middle; text-align: center;}
-.so .id-find .id-check .id-card .fa-id-card {font-size: 55px; text-align: center; color: #979797;}
+/* 해당컨텐츠를 중앙으로 배치하기 위함  */
+.so .id-find .id-check {display: table; width: 100%; margin: 50px 0 30px; padding: 20px;}
+.so .id-find .id-check .id-card {display: table-cell; width: 100%; vertical-align: middle; text-align: center; letter-spacing: -0.5px;}
+/*아이콘스타일*/
+.so .id-find .id-check .id-card .fa-id-card {font-size: 50px; text-align: center; color: #979797;}
 .so .id-find .id-check p {margin-top: 20px;}
-.so .id-find .id-check p span {font-weight: bold; font-size: 20px; color: #1f1f1f;}
-.so .mg-btn {margin-bottom: 30px;}
+/*계정안내란 스타일*/
+.so .id-find .id-check .id-info {font-weight: bold; font-size: 20px; color: #1f1f1f; letter-spacing: 0.3px;}
 
 /* ----------pw-find---------- */
 .so .pw-find .pw-change {width: 100%; margin: 50px 0 30px;}
 .so .pw-find .pw-change .unlock {margin-top: 20px; text-align: center;}
-.so .pw-find .pw-change .unlock .fa-unlock-alt {font-size: 55px; text-align: center; color: #979797;}
-.so .pw-find .pw-change .unlock p {margin-top: 20px; font-weight: bold;}
+/*아이콘스타일*/
+.so .pw-find .pw-change .unlock .fa-unlock-alt {font-size: 50px; text-align: center; color: #979797;}
+.so .pw-find .pw-change .unlock p {margin-top: 20px; font-weight: bold; letter-spacing: -0.5px}
+/*버튼 스타일 , 중앙배치*/
 .so .pw-find .pw-change .form-content .sub-btn  {display: block; width: 200px; height: 60px; margin: 0 auto; margin-top: 20px; line-height: 56px; text-align: center; border: 2px solid #2e8bff; border-radius: 15px;}
 .so .pw-find .pw-change .form-content .sub-btn:hover {background: #2e8bff; color: #fff;}
 
 /* ----------login-find---------- */
+/*컨텐츠 박스 색상 간격변경*/
+.so .forget-id .border, .so .forget-pw .border {margin: 0 0 50px; border: 5px solid #6ba2e5;}
+/*스크립트 작동코드*/
+.so .forget-pw {display: none;}
+.so .forget-pw.on {display: block;} 
 /* id-find,pw-find 같은 클래스 사용으로 아이디찾기 비밀번호 찾기는 위의 스타일 적용 */
+.so .find-tab {margin-top: 30px;}
 .so .find-tab ul::after{display: block; content: ""; clear: both;}
-.so .find-tab ul li {float: left; width: 50%;  border: 5px solid #c0dcff; text-align: center; border-top: 3px solid #c0dcff; }
-.so .find-tab ul li a {display: block;padding: 20px;}
-.so .find-tab ul li a:hover {background: #c0dcff;  color: #3d699e; font-weight: bold;}
+.so .find-tab ul li {float: left; width: 50%;text-align: center;}
+/*아이디찾기 비밀번호찾기 스타일*/
+.so .find-tab ul li a {display: block;padding: 25px 20px;   color: #3d699e;border-radius: 35px   35px 0 0;}
+/*스크립트 작동코드*/
+.so .find-tab ul li a.on{background: #6ba2e5;  color: #163457; font-weight: bold;}
+/*텍스트 간격설정*/
 .so .id-find .inner > h3, .so .id-find .inner > p,
 .so .pw-find .inner > h3, .so .pw-find .inner > p {text-align: center; line-height: 24px;}
 .so .id-find .inner > h3 ,.so .pw-find .inner > h3 {font-size: 22px;}
+.so .id-find .inner > h3 span ,.so .pw-find .inner > h3 span {display: block; margin-bottom: 20px;font-size: 40px;}
 .so .id-find .inner > p, .so .pw-find .inner > p {padding: 0 20px; letter-spacing: -0.5px;}
-.so .forget-id .border, .so .forget-pw .border {margin: 10px 0;}
-.so .forget-pw {display: none;}
-.so .forget-id.on, .so .forget-pw.on {display: block;} 
 
 
 
@@ -118,41 +131,44 @@
 .so .mg-btn{margin: 0 23% 20px;}
 
 /* ----------account-delete---------- */
-/* 페이지를 꽉차게 보이기 위해서 height값설정 // 푸터밑에 빈공간없애기 위하여 마진사용 */
-.so .account-delete {height: 51vh;margin-bottom: 33px;}
-.so .account-delete-content .account-delete-text hr {display: block; margin: 40px 0;}
+/*    버튼 레리아웃 조정시 마진조정*/
+.so .account-delete .user-btn a {margin-top: 0;}
+.so .account-delete {margin-bottom: 20px;}
 .so .account-delete .account-delete-text .user-btn .user-btn-l {margin-top: 0;}
 
 
 /* ----------sign-up-email---------- */
 /* 텍스트 간격조절 */
-.so .sign-up-email .sign-up-welcome p {margin-top: 10px;}
+.so .sign-up-email .sign-up-welcome p {margin-top: 10px; }
 .so .sign-up-email .sign-up-welcome p:nth-child(1) {margin-top: 40px;}
-.so .sign-up-email .email-send  {padding: 50px 0;}
+.so .sign-up-email .email-send ul{margin: 30px;}
 .so .sign-up-email .email-send ul li{font-size: 16px;;}
 
 /* sign-up-email-success */
+/* 간격조정*/
 .so .sign-up-email-success .email-send-success  {padding: 50px 0;}
+    
 /* ----------id-find---------- */
-.so .id-find .id-check {height: 22vh; margin: 50px 0 45px;}
-.so .id-find .mg-btn{margin-bottom: 46px;}
+/* 간격조정*/
+.so .id-find .id-check {margin: 70px 0 20px; padding: 40px 0;}
+.so .id-find .mg-btn{margin-bottom: 50px;}
 
 /* ----------login-find---------- */
-
+/*    아이콘 상단에있다가 옆으로 이동*/
+.so .id-find .inner > h3 span ,.so .pw-find .inner > h3 span {display: inline-block; margin-right: 10px; margin-bottom: 0; vertical-align:middle;}
 }
 @media screen and (min-width:1200px){
     /* 공통스타일 */
-
     /* 양옆마진조절 */
     .so .mg-btn{margin: 0 30% 20px;}
 
-    /* ----------account-delete---------- */
-    .so .account-delete {margin-bottom: 19px;}
     /* ----------id-find---------- */
-    .so .id-find .id-check {margin: 50px 0 38px;}
+    /* 간격조정*/
+    .so .id-find .id-check {margin: 50px 0 18px;}
     .so .id-find .mg-btn{margin-bottom: 39px;}
 
     /* ----------pw-find---------- */
+    /*크기조정*/
     .so .pw-find .pw-change .form-content label { margin: 10px 25%; }
     .so .pw-find .pw-change .form-content input { width: 50%; }
 }

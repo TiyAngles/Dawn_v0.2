@@ -104,9 +104,9 @@
 /* id-find,pw-find 같은 클래스 사용으로 아이디찾기 비밀번호 찾기는 위의 스타일 적용 */
 .so .find-tab {margin-top: 30px;}
 .so .find-tab ul::after{display: block; content: ""; clear: both;}
-.so .find-tab ul li {float: left; width: 50%;text-align: center; }
+.so .find-tab ul li {float: left; width: 50%;text-align: center;}
 /*아이디찾기 비밀번호찾기 스타일*/
-.so .find-tab ul li a {display: block;padding: 25px 20px; background: #c0dcff;  color: #3d699e;}
+.so .find-tab ul li a {display: block;padding: 25px 20px;   color: #3d699e;border-radius: 35px   35px 0 0;}
 /*스크립트 작동코드*/
 .so .find-tab ul li a.on{background: #6ba2e5;  color: #163457; font-weight: bold;}
 /*텍스트 간격설정*/

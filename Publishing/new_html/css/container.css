@@ -1152,3 +1152,76 @@
 .bo-btn-top{
     margin-bottom:30px;
 }
+
+/* ---------------------------------------------------- */
+/* sub-page-account-detail */
+.sub-page-account-detail{}
+.sub-page-account-detail h2{
+    margin-top:80px;
+}
+.sub-page-account-detail .detail{
+    margin:30px 0 60px;
+    border-top:1px solid #eef0f4;
+    border-bottom:1px solid #eef0f4;
+    background:#f9fafc;
+    padding:14px 10px;
+    line-height:28px;
+}
+.sub-page-account-detail .detail .center{
+    text-align: center;
+}
+.sub-page-account-detail .detail{}
+.sub-page-account-detail .detail.info li{
+}
+.sub-page-account-detail .detail.info li span:first-of-type{
+    font-weight:700;
+    margin-right:8px;
+}
+.sub-page-account-detail .detail.info li span:last-of-type{
+    font-size:12px;
+}
+.sub-page-tab-account{
+    margin-top:40px;
+}
+.sub-page-tab-account .tab-list::after{display: block;content:'';clear:both;}
+.sub-page-tab-account .tab-list{}
+.sub-page-tab-account .tab-list li{
+    float: left;
+    width:50%;
+    box-sizing:border-box;
+    border:1px solid #2e8bff
+}
+.sub-page-tab-account .tab-list li a.on{
+    background:#2e8bff;
+    border:1px solid #2e8bff;
+    color:#fff;
+}
+.sub-page-tab-account .tab-list a{
+    display: block;
+    line-height:50px;
+    text-align: center;
+}
+.sub-page-tab-account .tab-list{}
+.sub-page-tab-account .tab-content{
+    position: relative;
+    height:378px;
+}
+
+.sub-page-tab-account .tab-content>div{
+    display: none;
+    position: absolute;
+    width:100%;
+    top:0;
+    left:0;
+}
+.sub-page-tab-account .tab-content>div.on{
+    display:block;
+}
+.sub-page-account-detail .more{
+    font-size:12px;
+    text-decoration:underline;
+    color:#000;
+}
+.sub-page-account-detail h3 + .detail{
+    margin:5px 0;
+}

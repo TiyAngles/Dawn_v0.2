@@ -275,4 +275,4 @@ Message {
 - 2020 03 21 modal_login_fail,modal_login_success,modal_sign_up_fail,modal_sign_up_success,modal_login,modal_success 파일 수정 및 css 전체수정(민상)
 - 2020 03 23 로그인관련 추가페이지 작성완료
 
-- 2020 03 23 modal_join_ask, modal_join modal 파일 제작(민상)
+- 2020 03 24 modal_join_ask, modal_join modal,sub_page_account_delete,sub_page_find_account,sub_page_find_id,sub_page_find_pw 파일 제작(민상)

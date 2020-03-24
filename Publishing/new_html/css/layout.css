@@ -272,7 +272,12 @@ nav {
 
 /* container */
 #container{margin-top:60px;}
-.container-inner{}
+.container-inner{
+  padding:0 20px;
+}
+.container-inner.npd{
+  padding:0;
+}
 
 
 

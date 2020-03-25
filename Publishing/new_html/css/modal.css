@@ -2,7 +2,6 @@
 
 /*modal-container*/
 .modal-container{
-    /* display: none; */
     z-index:1000;
     position: fixed;
     left:0;

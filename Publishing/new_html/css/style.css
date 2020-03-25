@@ -9,47 +9,47 @@
 @import url("container.css");
 
 /*common*/
-body{
-  font-weight:400;
-  font-size:16px;
+body {
+  font-weight: 400;
+  font-size: 16px;
   font-family: "Roboto Condensed", "Noto Sans KR", "Nanum Gothic", sans-serif;
-  line-height:1.37em;
-  letter-spacing:0.014em;
+  line-height: 1.37em;
+  letter-spacing: 0.014em;
 }
 
 /* headiung */
-h1{
-  font-size:40px;
+h1 {
+  font-size: 40px;
 }
-h2{
-  font-size:34px;
-  padding:45px 0 12px;
+h2 {
+  font-size: 34px;
+  padding: 45px 0 12px;
 }
-h3{
-  font-size:28px;
-  padding:45px 0 20px;
+h3 {
+  font-size: 28px;
+  padding: 45px 0 20px;
 }
-a{
-  text-decoration:none;
+a {
+  text-decoration: none;
   color: #222;
 }
 
 /* all */
-.fr{
-  float:right
+.fr {
+  float: right;
 }
-.fl{
-  float:left;
+.fl {
+  float: left;
 }
-.clearfix::after{
+.clearfix::after {
   display: block;
-  content:'';
-  clear:both;
+  content: "";
+  clear: both;
 }
-.blank{
-  position:absolute;
-  left:-9999em;
-  color:transparent;
+.blank {
+  position: absolute;
+  left: -9999em;
+  color: transparent;
 }
 
 /* scrollbar */
@@ -58,12 +58,10 @@ a{
   height: 5px;
 }
 ::-webkit-scrollbar-track {
-  background-color: rgb(46, 139, 255,0.3);
+  background-color: rgb(46, 139, 255, 0.3);
   border-radius: 10px;
 }
 ::-webkit-scrollbar-thumb {
   background-color: rgb(46, 139, 255);
   border-radius: 10px;
 }
-
-

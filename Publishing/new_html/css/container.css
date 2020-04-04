@@ -32,9 +32,10 @@
 
 /* slider-inner-image */
 .slider-custom .slider-inner>div{background-repeat:no-repeat;background-position:50% 50%;background-size:cover;}
-.slider-visual .slider-inner>div:nth-of-type(1){background-image:url('../img/slider/visual_slider_img_1.jpg');}
-.slider-visual .slider-inner>div:nth-of-type(2){background-image:url('../img/slider/visual_slider_img_1.jpg');}
-.slider-visual .slider-inner>div:nth-of-type(3){background-image:url('../img/slider/visual_slider_img_1.jpg');}
+/*  */
+/* .slider-visual .slider-inner>div.inner-1{background-image:url('../img/slider/visual_slider_img_1.jpg');}
+.slider-visual .slider-inner>div.inner-2{background-image:url('../img/slider/visual_slider_img_2.jpg');}
+.slider-visual .slider-inner>div.inner-3{background-image:url('../img/slider/visual_slider_img_3.png');} */
 
 /* slider-inner top */
 .slider-inner .top{background: rgb(2,0,36);background: linear-gradient(180deg, rgba(2,0,36,1) 30%, rgba(0,0,0,0) 100%, rgba(0,212,255,1) 100%);top:0;text-align: right;}

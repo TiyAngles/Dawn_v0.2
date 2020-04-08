@@ -278,3 +278,5 @@ Message {
 - 2020 03 24 modal_join_ask, modal_join modal,sub_page_account_delete,sub_page_find_account,sub_page_find_id,sub_page_find_pw 파일 제작(민상)
 
 - 2020 03 25 전체 css 수정 img 추가
+
+- 2020 04 08 slider-custom css 수정

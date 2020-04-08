@@ -3,22 +3,22 @@
 
 /* slider */
 .slider-wrapper{position: relative;}
-.slider-custom{}
+.slider-custom{position: relative;width:100%;overflow:hidden;}
 
 /* slider-inner */
-.slider-inner{position: relative;height:100%;}
-.slider-inner>div{display: none;/* transition:all 0.5s; */
-    position: absolute;width:100%;left:0;height:100%;color:#fff;}
+.slider-inner::after{display: block;content:'';clear:both;}
+.slider-inner{position: absolute;left:0;top:0;width:300vw;height:100%;}
+.slider-inner>div{position: relative;float: left;width:100vw;height:100%;color:#fff;background:green;}
 
 .slider-inner .top,
 .slider-inner .center,
 .slider-inner .bottom{position: absolute;width:100%;color:#fff;text-shadow: 2px 2px 2px rgba(0,0,0,0.3);}
+
 /* slider-active */
-.slider-inner>div.active{display: block;}
+.slider-inner>div.active{}
 
 /* slider-visual */
 .slider-visual .slider-custom{height:650px;}
-
 /* slider-popular */
 .slider-popular .slider-custom{height:440px;}
 
